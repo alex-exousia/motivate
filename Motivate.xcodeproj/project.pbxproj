@@ -19,6 +19,8 @@
 		C938A16021079BF000139709 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C938A15F21079BF000139709 /* CategoriesViewController.swift */; };
 		C938A1642107A20E00139709 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C938A1632107A20E00139709 /* Home.storyboard */; };
 		C938A1662107A2A800139709 /* Categories.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C938A1652107A2A800139709 /* Categories.storyboard */; };
+		C947BBD62107D74100557583 /* CellContentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C947BBD52107D74100557583 /* CellContentTableViewController.swift */; };
+		C947BBD82107DA9800557583 /* YoutubePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C947BBD72107DA9800557583 /* YoutubePlayerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		C938A15F21079BF000139709 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 		C938A1632107A20E00139709 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		C938A1652107A2A800139709 /* Categories.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Categories.storyboard; sourceTree = "<group>"; };
+		C947BBD52107D74100557583 /* CellContentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellContentTableViewController.swift; sourceTree = "<group>"; };
+		C947BBD72107DA9800557583 /* YoutubePlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubePlayerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				C938A15B21079B1900139709 /* LaunchScreenViewController.swift */,
 				C938A15D21079B8500139709 /* SettingsViewController.swift */,
 				C938A15F21079BF000139709 /* CategoriesViewController.swift */,
+				C947BBD52107D74100557583 /* CellContentTableViewController.swift */,
+				C947BBD72107DA9800557583 /* YoutubePlayerViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -241,7 +247,9 @@
 				C938A16021079BF000139709 /* CategoriesViewController.swift in Sources */,
 				C938A13E210793B000139709 /* AppDelegate.swift in Sources */,
 				C938A15C21079B1900139709 /* LaunchScreenViewController.swift in Sources */,
+				C947BBD62107D74100557583 /* CellContentTableViewController.swift in Sources */,
 				C938A15A21079ABB00139709 /* HomeViewController.swift in Sources */,
+				C947BBD82107DA9800557583 /* YoutubePlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
