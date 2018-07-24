@@ -7,21 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF42AA34CB83F117D07631BD /* Pods_Motivate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9021D7245B0EE463005385DF /* Pods_Motivate.framework */; };
 		C938A13E210793B000139709 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C938A13D210793B000139709 /* AppDelegate.swift */; };
-		C938A140210793B000139709 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C938A13F210793B000139709 /* ViewController.swift */; };
 		C938A143210793B000139709 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C938A141210793B000139709 /* Main.storyboard */; };
 		C938A145210793B000139709 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C938A144210793B000139709 /* Assets.xcassets */; };
 		C938A148210793B000139709 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C938A146210793B000139709 /* LaunchScreen.storyboard */; };
+		C938A15221079A1900139709 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C938A15121079A1900139709 /* Home.storyboard */; };
+		C938A15421079A5800139709 /* Categories.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C938A15321079A5800139709 /* Categories.storyboard */; };
+		C938A15621079A6F00139709 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C938A15521079A6F00139709 /* Settings.storyboard */; };
+		C938A15821079AA400139709 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C938A15721079AA400139709 /* MainTabBarController.swift */; };
+		C938A15A21079ABB00139709 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C938A15921079ABB00139709 /* HomeViewController.swift */; };
+		C938A15C21079B1900139709 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C938A15B21079B1900139709 /* LaunchScreenViewController.swift */; };
+		C938A15E21079B8500139709 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C938A15D21079B8500139709 /* SettingsViewController.swift */; };
+		C938A16021079BF000139709 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C938A15F21079BF000139709 /* CategoriesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4337340419BEBDF88CD537A8 /* Pods-Motivate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motivate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Motivate/Pods-Motivate.debug.xcconfig"; sourceTree = "<group>"; };
+		5BB69A52FF71FAE51808D819 /* Pods-Motivate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motivate.release.xcconfig"; path = "Pods/Target Support Files/Pods-Motivate/Pods-Motivate.release.xcconfig"; sourceTree = "<group>"; };
+		9021D7245B0EE463005385DF /* Pods_Motivate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Motivate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C938A13A210793B000139709 /* Motivate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Motivate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C938A13D210793B000139709 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C938A13F210793B000139709 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C938A142210793B000139709 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C938A144210793B000139709 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C938A147210793B000139709 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C938A149210793B000139709 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C938A15121079A1900139709 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		C938A15321079A5800139709 /* Categories.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Categories.storyboard; sourceTree = "<group>"; };
+		C938A15521079A6F00139709 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		C938A15721079AA400139709 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		C938A15921079ABB00139709 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C938A15B21079B1900139709 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
+		C938A15D21079B8500139709 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		C938A15F21079BF000139709 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +47,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF42AA34CB83F117D07631BD /* Pods_Motivate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8BE54A312DCD973FE64E20C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9021D7245B0EE463005385DF /* Pods_Motivate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C938A131210793B000139709 = {
 			isa = PBXGroup;
 			children = (
 				C938A13C210793B000139709 /* Motivate */,
 				C938A13B210793B000139709 /* Products */,
+				E9BA7514F7BAAB88B51C91EE /* Pods */,
+				8BE54A312DCD973FE64E20C4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +84,45 @@
 			isa = PBXGroup;
 			children = (
 				C938A13D210793B000139709 /* AppDelegate.swift */,
-				C938A13F210793B000139709 /* ViewController.swift */,
-				C938A141210793B000139709 /* Main.storyboard */,
+				C938A150210799A500139709 /* ViewControllers */,
+				C938A14F2107999A00139709 /* Storyboards */,
 				C938A144210793B000139709 /* Assets.xcassets */,
-				C938A146210793B000139709 /* LaunchScreen.storyboard */,
 				C938A149210793B000139709 /* Info.plist */,
 			);
 			path = Motivate;
+			sourceTree = "<group>";
+		};
+		C938A14F2107999A00139709 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C938A141210793B000139709 /* Main.storyboard */,
+				C938A15121079A1900139709 /* Home.storyboard */,
+				C938A15321079A5800139709 /* Categories.storyboard */,
+				C938A146210793B000139709 /* LaunchScreen.storyboard */,
+				C938A15521079A6F00139709 /* Settings.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C938A150210799A500139709 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C938A15721079AA400139709 /* MainTabBarController.swift */,
+				C938A15921079ABB00139709 /* HomeViewController.swift */,
+				C938A15B21079B1900139709 /* LaunchScreenViewController.swift */,
+				C938A15D21079B8500139709 /* SettingsViewController.swift */,
+				C938A15F21079BF000139709 /* CategoriesViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E9BA7514F7BAAB88B51C91EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4337340419BEBDF88CD537A8 /* Pods-Motivate.debug.xcconfig */,
+				5BB69A52FF71FAE51808D819 /* Pods-Motivate.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +132,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C938A14C210793B000139709 /* Build configuration list for PBXNativeTarget "Motivate" */;
 			buildPhases = (
+				2A9AA7FFC86801612A86A069 /* [CP] Check Pods Manifest.lock */,
 				C938A136210793B000139709 /* Sources */,
 				C938A137210793B000139709 /* Frameworks */,
 				C938A138210793B000139709 /* Resources */,
+				625D5668F4ECA66B1069532F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,18 +188,64 @@
 				C938A148210793B000139709 /* LaunchScreen.storyboard in Resources */,
 				C938A145210793B000139709 /* Assets.xcassets in Resources */,
 				C938A143210793B000139709 /* Main.storyboard in Resources */,
+				C938A15621079A6F00139709 /* Settings.storyboard in Resources */,
+				C938A15421079A5800139709 /* Categories.storyboard in Resources */,
+				C938A15221079A1900139709 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A9AA7FFC86801612A86A069 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Motivate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		625D5668F4ECA66B1069532F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Motivate/Pods-Motivate-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/YouTubePlayer/YouTubePlayer.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YouTubePlayer.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Motivate/Pods-Motivate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C938A136210793B000139709 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C938A140210793B000139709 /* ViewController.swift in Sources */,
+				C938A15E21079B8500139709 /* SettingsViewController.swift in Sources */,
+				C938A15821079AA400139709 /* MainTabBarController.swift in Sources */,
+				C938A16021079BF000139709 /* CategoriesViewController.swift in Sources */,
 				C938A13E210793B000139709 /* AppDelegate.swift in Sources */,
+				C938A15C21079B1900139709 /* LaunchScreenViewController.swift in Sources */,
+				C938A15A21079ABB00139709 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +387,7 @@
 		};
 		C938A14D210793B000139709 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4337340419BEBDF88CD537A8 /* Pods-Motivate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -295,6 +405,7 @@
 		};
 		C938A14E210793B000139709 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BB69A52FF71FAE51808D819 /* Pods-Motivate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
