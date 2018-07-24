@@ -10,20 +10,31 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--CATEGORIES-->
+        <scene sceneID="Hl7-bR-Izm">
+            <objects>
+                <viewController id="W6m-Db-7Mh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ANb-cv-iBA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="l4h-O2-caf"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="CATEGORIES" id="I20-au-Maa">
+                        <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jNv-Ro-NDr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-378" y="214"/>
+        </scene>
         <!--SETTINGS-->
         <scene sceneID="Jn0-xC-1rr">
             <objects>
-                <viewController id="HaP-yj-Vav" customClass="SettingsViewController" customModule="Motivate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="HaP-yj-Vav" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="irk-dd-OB9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ruf-ZP-aig">
-                                <rect key="frame" x="67" y="269" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.12273463017407449" green="0.1499971107742476" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="xfS-Tg-FNa"/>
                     </view>
@@ -35,10 +46,10 @@
             </objects>
             <point key="canvasLocation" x="487" y="214"/>
         </scene>
-        <!--Main Tab Bar Controller-->
+        <!--Tab Bar Controller-->
         <scene sceneID="bLf-sD-Q8n">
             <objects>
-                <tabBarController id="KuV-Qd-0fS" customClass="MainTabBarController" customModule="Motivate" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="KuV-Qd-0fS" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gnc-2d-j4p">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -46,7 +57,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="CnT-Sp-nxe" kind="relationship" relationship="viewControllers" id="k07-jL-CD9"/>
-                        <segue destination="OP5-Xe-5hm" kind="relationship" relationship="viewControllers" id="BQl-E7-GqM"/>
+                        <segue destination="W6m-Db-7Mh" kind="relationship" relationship="viewControllers" id="BQl-E7-GqM"/>
                         <segue destination="HaP-yj-Vav" kind="relationship" relationship="viewControllers" id="Zfo-sW-kzk"/>
                     </connections>
                 </tabBarController>
@@ -63,16 +74,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tis-xp-Ugy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1333" y="-73"/>
-        </scene>
-        <!--Categories-->
-        <scene sceneID="bXr-qI-Dy7">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Categories" id="OP5-Xe-5hm" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Lak-wW-D6c"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="25O-Zi-Fhk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-379" y="-73"/>
         </scene>
     </scenes>
 </document>

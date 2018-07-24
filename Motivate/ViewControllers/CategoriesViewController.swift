@@ -7,3 +7,12 @@
 //
 
 import Foundation
+import YouTubePlayer
+import UIKit
+
+class CategoriesViewController: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+}
