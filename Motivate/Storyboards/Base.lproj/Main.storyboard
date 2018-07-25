@@ -36,17 +36,17 @@
         <scene sceneID="YT9-pF-BY3">
             <objects>
                 <viewControllerPlaceholder storyboardName="Home" id="CnT-Sp-nxe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="TabBar_Settings" id="bYm-Jc-Ipy"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="TabBar_Home" id="bYm-Jc-Ipy"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tis-xp-Ugy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1333" y="-73"/>
         </scene>
-        <!--Home-->
+        <!--Discover-->
         <scene sceneID="bXr-qI-Dy7">
             <objects>
-                <viewControllerPlaceholder storyboardName="Home" id="OP5-Xe-5hm" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Discover" image="TabBar_Home" id="Lak-wW-D6c"/>
+                <viewControllerPlaceholder storyboardName="Discover" id="OP5-Xe-5hm" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Discover" image="TabBar_Discover" id="Lak-wW-D6c"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="25O-Zi-Fhk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -64,6 +64,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="TabBar_Discover" width="25" height="25"/>
         <image name="TabBar_Home" width="25" height="25"/>
         <image name="TabBar_Settings" width="25" height="25"/>
     </resources>
