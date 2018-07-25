@@ -8,9 +8,12 @@
 
 import Foundation
 import UIKit
+import YouTubePlayer
 
-class CellContentTableViewController: UITableViewController {
+class CellContentTableViewCell: UITableViewCell {
     
-    
-    
+        @IBOutlet var videoPlayer: YouTubePlayerView!
+   
+        let myVideoURL = URL(string: "https://www.youtube.com/watch?v=mgmVOuLgFB0")
+        videoPlayer.loadVideoURL(myVideoURL! as URL)    
 }

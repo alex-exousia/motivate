@@ -10,7 +10,7 @@ import Foundation
 import YouTubePlayer
 import UIKit
 
-class CategoriesViewController: UIViewController {
+class DiscoverViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

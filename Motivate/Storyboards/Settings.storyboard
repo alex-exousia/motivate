@@ -1,31 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HaP-yj-Vav">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Settings-->
+        <!--Settings View Controller-->
         <scene sceneID="Jn0-xC-1rr">
             <objects>
                 <viewController id="HaP-yj-Vav" customClass="SettingsViewController" customModule="Motivate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="irk-dd-OB9">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="xfS-Tg-FNa"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" image="TabBar_Settings" id="r8F-0l-4Px">
-                        <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
-                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="eWT-XS-W0e"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9eq-8M-h43" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="487" y="214"/>
+            <point key="canvasLocation" x="1424.8" y="213.64317841079463"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="TabBar_Settings" width="25" height="25"/>
-    </resources>
 </document>

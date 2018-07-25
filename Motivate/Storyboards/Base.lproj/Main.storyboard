@@ -22,50 +22,10 @@
                         <color key="barTintColor" red="0.039215686274509803" green="0.039215686274509803" blue="0.039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="selectedImageTintColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
-                    <connections>
-                        <segue destination="CnT-Sp-nxe" kind="relationship" relationship="viewControllers" id="k07-jL-CD9"/>
-                        <segue destination="OP5-Xe-5hm" kind="relationship" relationship="viewControllers" id="BQl-E7-GqM"/>
-                        <segue destination="3re-aC-pux" kind="relationship" relationship="viewControllers" id="Zfo-sW-kzk"/>
-                    </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fds-H7-tVU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-378" y="-584"/>
         </scene>
-        <!--Home-->
-        <scene sceneID="YT9-pF-BY3">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Home" id="CnT-Sp-nxe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="TabBar_Home" id="bYm-Jc-Ipy"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Tis-xp-Ugy" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1333" y="-73"/>
-        </scene>
-        <!--Discover-->
-        <scene sceneID="bXr-qI-Dy7">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Discover" id="OP5-Xe-5hm" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Discover" image="TabBar_Discover" id="Lak-wW-D6c"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="25O-Zi-Fhk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-379" y="-73"/>
-        </scene>
-        <!--Settings-->
-        <scene sceneID="j7E-kY-Hig">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Settings" id="3re-aC-pux" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Settings" image="TabBar_Settings" id="o0Q-Tm-fXs"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FUZ-Bn-FSa" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="334" y="-73"/>
-        </scene>
     </scenes>
-    <resources>
-        <image name="TabBar_Discover" width="25" height="25"/>
-        <image name="TabBar_Home" width="25" height="25"/>
-        <image name="TabBar_Settings" width="25" height="25"/>
-    </resources>
 </document>
