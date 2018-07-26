@@ -9,6 +9,7 @@
 import Foundation
 import YouTubePlayer
 import UIKit
+import GameplayKit
 
 class HomeViewController: UIViewController {
     
@@ -43,8 +44,9 @@ class HomeViewController: UIViewController {
     // MARK: - IBOutlets
     
     @IBOutlet weak var quoteLabel: UILabel!
-    @IBOutlet weak var tableView: UITableView!
-    
+
+    @IBOutlet weak var authorLabel: UILabel!
+    @IBOutlet weak var homeTableView: UITableView!
     // MARK: - View Life Cycle Methods
     
     override func viewDidLoad() {
@@ -60,15 +62,14 @@ class HomeViewController: UIViewController {
     
     // MARK: - Methods
     
+    var shuffleQuotes : [(quote: String,author: String)] = []
     
-
+    func mixQuotes() {
+        shuffleQuotes = GKRandomSource.sharedRandom().arrayByShufflingObjects(in: quotes) as! [(String, String)]
+        print(shuffleQuotes[0].quote)
+        quoteLabel.text = shuffleQuotes[0].quote
+        authorLabel.text = shuffleQuotes[0].author
+    }
+    
     // MARK: - IBActions
-   
-    
-    
-    
-
-    
-    
-    
 }

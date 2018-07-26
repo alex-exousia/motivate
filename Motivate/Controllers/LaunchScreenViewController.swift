@@ -11,34 +11,5 @@ import UIKit
 import GameplayKit
 
 class LaunchScreenViewController: UIViewController {
-    
-    
-    @IBOutlet weak var quoteLabel: UILabel!
-    
-    @IBOutlet weak var authorLabel: UILabel!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        shuffleQuotes = GKRandomSource.sharedRandom().arrayByShufflingObjects(in: quotes) as! [(String, String)]
-       quoteLabel.text = shuffleQuotes[0].quote
-        authorLabel.text = shuffleQuotes[0].author
-        
-    }
-    
-    var quotes = [
-        (quote: "Only I can change my life. No one can do it for me.", author: "Carol Burnett"),
-        (quote: "It always seems impossible until it's done.", author: "Nelson Mandela"),
-        (quote: "It does not matter how slow you go as long as you do not stop.", author: "Confucius"),
-        (quote: "If you can dream it, you can do it", author: "Walt Disney"),
-        (quote: "Innovation distinguishes between a leader and a follower.", author: "Steve Jobs"),
-        (quote: "Well done is better than well said.", author: "Benjamin Franklin"),
-        (quote: "Setting goals is the first step in turning the invisible into the visible.", author: "Tony Robins"),
-        (quote: "If you're going through hell, keep going.", author: "Winston Churchill"),
-        (quote: "Knowing is not enough; we must apply. Willing is not enough; we must do.", author: "Johann Wolfgang Von Goethe"),
-        (quote: "Shoot for the moon and if you miss you will still be among the stars.", author: "Les Brown")
-    ]
-    var shuffleQuotes = [(quote: String,author: String)]()
-
-
 
 }

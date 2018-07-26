@@ -7,12 +7,13 @@
 //
 import Foundation
 import UIKit
+import GameplayKit
 
 class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
-
     override func viewDidLoad() {
         super.viewDidLoad()
         self.delegate = self
+        
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -35,7 +36,5 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
         
         self.viewControllers = [homeVC!, discoverVC!, settingsVC!]
     }
-    
-    
-    
 }
+
