@@ -29,16 +29,16 @@ class HomeViewController: UIViewController {
         ]
     
     var quotes = [
-        Quote(quote: "Only I can change my life. No one can do it for me.", author: "Carol Burnett"),
-        Quote(quote: "It always seems impossible until it's done.", author: "Nelson Mandela"),
-        Quote(quote: "It does not matter how slow you go as long as you do not stop.", author: "Confucius"),
-        Quote(quote: "If you can dream it, you can do it", author: "Walt Disney"),
-        Quote(quote: "Innovation distinguishes between a leader and a follower.", author: "Steve Jobs"),
-        Quote(quote: "Well done is better than well said.", author: "Benjamin Franklin"),
-        Quote(quote: "Setting goals is the first step in turning the invisible into the visible.", author: "Tony Robins"),
-        Quote(quote: "If you're going through hell, keep going.", author: "Winston Churchill"),
-        Quote(quote: "Knowing is not enough; we must apply. Willing is not enough; we must do.", author: "Johann Wolfgang Von Goethe"),
-        Quote(quote: "Shoot for the moon and if you miss you will still be among the stars.", author: "Les Brown")
+        (quote: "Only I can change my life. No one can do it for me.", author: "Carol Burnett"),
+        (quote: "It always seems impossible until it's done.", author: "Nelson Mandela"),
+        (quote: "It does not matter how slow you go as long as you do not stop.", author: "Confucius"),
+        (quote: "If you can dream it, you can do it", author: "Walt Disney"),
+        (quote: "Innovation distinguishes between a leader and a follower.", author: "Steve Jobs"),
+        (quote: "Well done is better than well said.", author: "Benjamin Franklin"),
+        (quote: "Setting goals is the first step in turning the invisible into the visible.", author: "Tony Robins"),
+        (quote: "If you're going through hell, keep going.", author: "Winston Churchill"),
+        (quote: "Knowing is not enough; we must apply. Willing is not enough; we must do.", author: "Johann Wolfgang Von Goethe"),
+        (quote: "Shoot for the moon and if you miss you will still be among the stars.", author: "Les Brown")
     ]
     
     // MARK: - IBOutlets
@@ -51,6 +51,9 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        mixQuotes()
+        homeTableView.delegate = self
+        homeTableView.dataSource = self
         // let myVideoURL = URL(string: "https://www.youtube.com/watch?v=mgmVOuLgFB0")
        // videoPlayer.loadVideoURL(myVideoURL! as URL)
     }
@@ -66,10 +69,55 @@ class HomeViewController: UIViewController {
     
     func mixQuotes() {
         shuffleQuotes = GKRandomSource.sharedRandom().arrayByShufflingObjects(in: quotes) as! [(String, String)]
-        print(shuffleQuotes[0].quote)
         quoteLabel.text = shuffleQuotes[0].quote
         authorLabel.text = shuffleQuotes[0].author
     }
     
     // MARK: - IBActions
 }
+
+extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return videos.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "homeVideoTableViewCell", for: indexPath) as! HomeVideoTableViewCell
+        let video = videos[indexPath.row]
+        
+        cell.titleLabel.text = video.title
+        cell.authorLabel.text = video.author
+        cell.videoLengthLabel.text = video.duration
+     //   cell.videoPlayer.baseURL = video.link
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 215.0
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

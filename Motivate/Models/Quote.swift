@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import UIKit
+
 struct Quote {
     var quote: String
     var author: String
