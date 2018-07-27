@@ -14,7 +14,6 @@ import GameplayKit
 class HomeViewController: UIViewController {
     
     // MARK: - Properties
-    
     var videos = [
         Video(title: "Why Do We Fall", author: "Mateusz M", duration: "6:13", link: "https://www.youtube.com/watch?v=mgmVOuLgFB0"),
         Video(title: "Prove Them Wrong", author: "Be Inspired", duration: "6:59", link: "https://www.youtube.com/watch?v=CPQ1budJRIQ&t=20s"),
@@ -84,11 +83,12 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "homeVideoTableViewCell", for: indexPath) as! HomeVideoTableViewCell
         let video = videos[indexPath.row]
-        
+
         cell.titleLabel.text = video.title
         cell.authorLabel.text = video.author
         cell.videoLengthLabel.text = video.duration
-       // cell.videoPlayer.baseURL = video.link
+        let url = URL(string: video.link)!
+        cell.videoPlayer.loadVideoURL(url)
         
         return cell
     }
@@ -96,7 +96,6 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 215.0
     }
-    
     
 }
 

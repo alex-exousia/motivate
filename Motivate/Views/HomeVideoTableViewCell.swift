@@ -12,7 +12,7 @@ import YouTubePlayer
 
 class HomeVideoTableViewCell: UITableViewCell {
     
-    @IBOutlet var videoPlayer: YouTubePlayerView!
+    @IBOutlet weak var videoPlayer: YouTubePlayerView!
     
     @IBOutlet weak var titleLabel: UILabel!
     

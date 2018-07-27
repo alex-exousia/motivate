@@ -24,7 +24,6 @@
 		C938A1642107A20E00139709 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C938A1632107A20E00139709 /* Home.storyboard */; };
 		C938A1662107A2A800139709 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C938A1652107A2A800139709 /* Discover.storyboard */; };
 		C9B379CC21095231003674BA /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B379CB21095231003674BA /* Launch Screen.storyboard */; };
-		C9B379CE210A44B9003674BA /* Real Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B379CD210A44B9003674BA /* Real Launch Screen.storyboard */; };
 		C9B379D0210A4518003674BA /* fakeLaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B379CF210A4518003674BA /* fakeLaunchScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,7 +49,6 @@
 		C938A1632107A20E00139709 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		C938A1652107A2A800139709 /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discover.storyboard; sourceTree = "<group>"; };
 		C9B379CB21095231003674BA /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		C9B379CD210A44B9003674BA /* Real Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Real Launch Screen.storyboard"; sourceTree = "<group>"; };
 		C9B379CF210A4518003674BA /* fakeLaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fakeLaunchScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,7 +130,6 @@
 				C938A1632107A20E00139709 /* Home.storyboard */,
 				C938A1652107A2A800139709 /* Discover.storyboard */,
 				C9B379CB21095231003674BA /* Launch Screen.storyboard */,
-				C9B379CD210A44B9003674BA /* Real Launch Screen.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -223,7 +220,6 @@
 				C938A145210793B000139709 /* Assets.xcassets in Resources */,
 				C90B0DED21084C42006DA7AA /* Settings.storyboard in Resources */,
 				C938A143210793B000139709 /* Main.storyboard in Resources */,
-				C9B379CE210A44B9003674BA /* Real Launch Screen.storyboard in Resources */,
 				C938A1642107A20E00139709 /* Home.storyboard in Resources */,
 				C9B379CC21095231003674BA /* Launch Screen.storyboard in Resources */,
 			);

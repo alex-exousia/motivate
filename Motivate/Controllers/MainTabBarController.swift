@@ -18,8 +18,6 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        
-        
         let homeStoryboard = UIStoryboard(name: "Home", bundle: .main)
         let homeVC = homeStoryboard.instantiateInitialViewController()
         let tabOneBarItem = UITabBarItem(title: "Home", image: #imageLiteral(resourceName: "TabBar_Home"), tag: 0)
@@ -38,5 +36,7 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
         
         self.viewControllers = [homeVC!, discoverVC!, settingsVC!]
     }
+    
+        
 }
 

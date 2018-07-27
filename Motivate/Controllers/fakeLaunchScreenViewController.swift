@@ -13,15 +13,11 @@ import UIKit
 class fakeLaunchScreenViewController: UIViewController {
     @IBOutlet weak var quoteLabel: UILabel!
     @IBOutlet weak var authorLabel: UILabel!
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         mixQuotes()
         DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(3500)) {
-//            let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-//            let initialVC = mainStoryboard.instantiateInitialViewController()
-//            self.view.window?.rootViewController = initialVC
-//            self.view.window?.makeKeyAndVisible()
             self.showMain()
         }
     }
@@ -29,16 +25,6 @@ class fakeLaunchScreenViewController: UIViewController {
     func showMain() {
         performSegue(withIdentifier: "seguetoMainTabBarController", sender: self)
     }
-    
-    /*
-     segue to main tab bar controller after 10 seconds
-     
-     let timer = Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(segueToMainTabBar), userInfo: nil, repeats: false)
-     
-     @objc func segueToMainTabBar() {
-     self.performSegue(withIdentifier: "mainTabBarController", sender: self)
-     }
-     */
     
     var quotes = [
         (quote: "Only I can change my life. No one can do it for me", author: "Carol Burnett"),
