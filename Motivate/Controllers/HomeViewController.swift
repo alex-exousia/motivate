@@ -88,7 +88,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         cell.titleLabel.text = video.title
         cell.authorLabel.text = video.author
         cell.videoLengthLabel.text = video.duration
-     //   cell.videoPlayer.baseURL = video.link
+       // cell.videoPlayer.baseURL = video.link
         
         return cell
     }

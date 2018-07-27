@@ -141,11 +141,11 @@
 			isa = PBXGroup;
 			children = (
 				C938A15721079AA400139709 /* MainTabBarController.swift */,
+				C9B379CF210A4518003674BA /* fakeLaunchScreenViewController.swift */,
 				C938A15921079ABB00139709 /* HomeViewController.swift */,
 				C938A15D21079B8500139709 /* SettingsViewController.swift */,
 				C938A15F21079BF000139709 /* DiscoverViewController.swift */,
 				C938A15B21079B1900139709 /* LaunchScreenViewController.swift */,
-				C9B379CF210A4518003674BA /* fakeLaunchScreenViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
