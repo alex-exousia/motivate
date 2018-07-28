@@ -15,7 +15,7 @@ class HomeViewController: UIViewController {
     
     // MARK: - Properties
     var videos = [
-        Video(title: "Why Do We Fall", author: "Mateusz M", duration: "6:13", link: "https://www.youtube.com/watch?v=mgmVOuLgFB0"),
+        Video(title: "Vision", author: "Mateusz M", duration: "11:03", link: "https://www.youtube.com/watch?v=ZOy0YgUDwDg"),
         Video(title: "Prove Them Wrong", author: "Be Inspired", duration: "6:59", link: "https://www.youtube.com/watch?v=CPQ1budJRIQ&t=20s"),
         Video(title: "Why it Pays to Be Hungry | Les Brown |", author: "Goalcast", duration: "6:35", link: "https://www.youtube.com/watch?v=xFr0FKnaLDk"),
         Video(title: "Steve Jobs' Commencement Address", author: "Stanford", duration: "15:04", link: "https://www.youtube.com/watch?v=UF8uR6Z6KLc"),
@@ -53,8 +53,6 @@ class HomeViewController: UIViewController {
         mixQuotes()
         homeTableView.delegate = self
         homeTableView.dataSource = self
-        // let myVideoURL = URL(string: "https://www.youtube.com/watch?v=mgmVOuLgFB0")
-       // videoPlayer.loadVideoURL(myVideoURL! as URL)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -92,22 +90,12 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         
         return cell
     }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 215.0
+        
+     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return tableView.frame.width * 1.7777
     }
     
 }
-
-
-
-
-
-
-
-
-
-
 
 
 

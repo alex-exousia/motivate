@@ -42,7 +42,6 @@ class fakeLaunchScreenViewController: UIViewController {
     
     func mixQuotes() {
         shuffleQuotes = GKRandomSource.sharedRandom().arrayByShufflingObjects(in: quotes) as! [(String, String)]
-        print(shuffleQuotes[0].quote)
         quoteLabel.text = shuffleQuotes[0].quote
         authorLabel.text = shuffleQuotes[0].author
     }
