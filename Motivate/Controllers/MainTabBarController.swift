@@ -24,17 +24,17 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
         homeVC?.tabBarItem = tabOneBarItem
         
         
-        let discoverStoryboard = UIStoryboard(name: "Discover", bundle: .main)
-        let discoverVC = discoverStoryboard.instantiateInitialViewController()
-        let tabTwoBarItem = UITabBarItem(title: "Discover", image: #imageLiteral(resourceName: "TabBar_Discover"), tag: 1)
-        discoverVC?.tabBarItem = tabTwoBarItem
+        let categoryStoryboard = UIStoryboard(name: "Categories", bundle: .main)
+        let categoryVC = categoryStoryboard.instantiateInitialViewController()
+        let tabTwoBarItem = UITabBarItem(title: "Categories", image: #imageLiteral(resourceName: "TabBar_Discover"), tag: 1)
+        categoryVC?.tabBarItem = tabTwoBarItem
         
         let settingsStoryboard = UIStoryboard(name: "Settings", bundle: .main)
         let settingsVC = settingsStoryboard.instantiateInitialViewController()
         let tabThreeBarItem = UITabBarItem(title: "Settings", image: #imageLiteral(resourceName: "TabBar_Settings"), tag: 2) // Add the selected image to the init
         settingsVC?.tabBarItem = tabThreeBarItem
         
-        self.viewControllers = [homeVC!, discoverVC!, settingsVC!]
+        self.viewControllers = [homeVC!, categoryVC!, settingsVC!]
     }
     
         

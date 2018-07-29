@@ -12,10 +12,6 @@ import UIKit
 struct Quote {
     var quote: String
     var author: String
-    
-//    init(quote: String, author: String) {
-//        self.quote = quote
-//        self.author = author
-//    }
+
 }
 
