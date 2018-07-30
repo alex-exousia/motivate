@@ -37,7 +37,7 @@ class VideosInCategoriesViewController: UIViewController {
         super.viewDidLoad()
         //            videosInCategoryTableView.delegate = self
         //            videosInCategoryTableView.dataSource = self
-        self.navigationController?.isNavigationBarHidden = true
+        self.navigationController?.isNavigationBarHidden = false
 
     }
     
