@@ -10,6 +10,6 @@ import Foundation
 import UIKit
 
 struct Categories {
-    var image: UIImageView
+    var image: UIImage
     var label: String
 }
