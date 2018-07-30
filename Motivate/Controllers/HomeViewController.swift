@@ -91,7 +91,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
         
-     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    private func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return tableView.frame.width * 1.7777
     }
     

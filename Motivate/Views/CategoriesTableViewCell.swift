@@ -17,7 +17,7 @@ class CategoriesTableViewCell: UITableViewCell{
     
     @IBOutlet weak var categoryLabel: UILabel!
     
-    @IBOutlet weak var categoryImageView: UIImage!
+    @IBOutlet weak var categoryImageView: UIImageView!
     
 
     // MARK: - View Life Cycle Methods

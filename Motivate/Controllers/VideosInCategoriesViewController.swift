@@ -12,19 +12,17 @@ import UIKit
 class VideosInCategoriesViewController: UIViewController {
     // MARK: - Properties
     
-    var nameOfCategory = [("Life Stories", "In Failure We Grow", "Dream Big" )]
- 
-/*      var videosInCategories = [
-        VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"), title: <#String#>, author: <#String#>, duration: <#String#>, links: <#[String]#>),
-        VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"), title: <#String#>, author: <#String#>, duration: <#String#>, links: <#[String]#>),
-        VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"), title: <#String#>, author: <#String#>, duration: <#String#>, links: <#[String]#>),
-        VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"), title: <#String#>, author: <#String#>, duration: <#String#>, links: <#[String]#>),
-        VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"), title: <#String#>, author: <#String#>, duration: <#String#>, links: <#[String]#>),
-        VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"), title: <#String#>, author: <#String#>, duration: <#String#>, links: <#[String]#>),
-        VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"), title: <#String#>, author: <#String#>, duration: <#String#>, links: <#[String]#>),
-        VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"), title: <#String#>, author: <#String#>, duration: <#String#>, links: <#[String]#>),
-        VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"), title: <#String#>, author: <#String#>, duration: <#String#>, links: <#[String]#>),
-        VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"), title: <#String#>, author: <#String#>, duration: <#String#>, links: <#[String]#>)
+ /*     var videosInCategories = [
+        VideosInCategories(image: UIImageView(image: #imageLiteral(resourceName: "temporaryBlack")), title: <#String#>, author: <#String#>, duration: <#String#>, links: <#[String]#>),
+        VideosInCategories(image: UIImageView(image: #imageLiteral(resourceName: "temporaryBlack")), title: <#String#>, author: <#String#>, duration: <#String#>, links: <#[String]#>),
+        VideosInCategories(image: UIImageView(image: #imageLiteral(resourceName: "temporaryBlack")), title: <#String#>, author: <#String#>, duration: <#String#>, links: <#[String]#>),
+        VideosInCategories(image: UIImageView(image: #imageLiteral(resourceName: "temporaryBlack")), title: <#String#>, author: <#String#>, duration: <#String#>, links: <#[String]#>),
+        VideosInCategories(image: UIImageView(image: #imageLiteral(resourceName: "temporaryBlack")), title: <#String#>, author: <#String#>, duration: <#String#>, links: <#[String]#>),
+        VideosInCategories(image: UIImageView(image: #imageLiteral(resourceName: "temporaryBlack")), title: <#String#>, author: <#String#>, duration: <#String#>, links: <#[String]#>),
+        VideosInCategories(image: UIImageView(image: #imageLiteral(resourceName: "temporaryBlack")), title: <#String#>, author: <#String#>, duration: <#String#>, links: <#[String]#>),
+        VideosInCategories(image: UIImageView(image: #imageLiteral(resourceName: "temporaryBlack")), title: <#String#>, author: <#String#>, duration: <#String#>, links: <#[String]#>),
+        VideosInCategories(image: UIImageView(image: #imageLiteral(resourceName: "temporaryBlack")), title: <#String#>, author: <#String#>, duration: <#String#>, links: <#[String]#>),
+        VideosInCategories(image: UIImageView(image: #imageLiteral(resourceName: "temporaryBlack")), title: <#String#>, author: <#String#>, duration: <#String#>, links: <#[String]#>)
     ] */
  
     // MARK: - IBOutlets
