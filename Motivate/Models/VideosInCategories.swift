@@ -10,12 +10,9 @@ import Foundation
 import UIKit
 
 struct VideosInCategories {
-    var image: UIImageView
+    var image: UIImage
     var title: String
     var author: String
     var duration: String
-    var links = [String]()
-    
-    
     
 }

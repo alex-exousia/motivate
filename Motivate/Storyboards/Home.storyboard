@@ -18,22 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HtI-Ss-12z">
-                                <rect key="frame" x="30" y="27" width="315" height="75"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jrb-Fl-Hhi">
-                                        <rect key="frame" x="135.5" y="0.0" width="44.5" height="75"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="75" id="DA2-iw-rUr"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <color key="textColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oCK-8J-dII">
-                                <rect key="frame" x="0.0" y="131" width="375" height="536"/>
+                                <rect key="frame" x="0.0" y="93.5" width="375" height="573.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="0.95999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
@@ -102,12 +88,23 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KVW-Je-Tub">
-                                <rect key="frame" x="112.5" y="74" width="150" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HtI-Ss-12z">
+                                <rect key="frame" x="30" y="27" width="315" height="36.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jrb-Fl-Hhi">
+                                        <rect key="frame" x="135.5" y="0.0" width="44.5" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KVW-Je-Tub">
+                                        <rect key="frame" x="136" y="19.5" width="43.5" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="0.95999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -116,10 +113,7 @@
                             <constraint firstItem="HtI-Ss-12z" firstAttribute="top" secondItem="maI-2p-6Mo" secondAttribute="top" constant="27" id="5mA-tD-Akd"/>
                             <constraint firstItem="oCK-8J-dII" firstAttribute="trailing" secondItem="3Rk-wg-bc0" secondAttribute="trailing" id="HUp-7n-mtj"/>
                             <constraint firstItem="3Rk-wg-bc0" firstAttribute="bottom" secondItem="oCK-8J-dII" secondAttribute="bottom" id="Qob-ak-ckL"/>
-                            <constraint firstItem="KVW-Je-Tub" firstAttribute="centerX" secondItem="HtI-Ss-12z" secondAttribute="centerX" id="Sif-J4-ZaK"/>
-                            <constraint firstItem="KVW-Je-Tub" firstAttribute="leading" secondItem="3Rk-wg-bc0" secondAttribute="leading" constant="112" id="fM7-oh-oGo"/>
-                            <constraint firstItem="KVW-Je-Tub" firstAttribute="top" secondItem="3Rk-wg-bc0" secondAttribute="top" constant="54" id="jTi-1F-kXg"/>
-                            <constraint firstItem="oCK-8J-dII" firstAttribute="top" secondItem="HtI-Ss-12z" secondAttribute="bottom" constant="29" id="oWI-yC-iGA"/>
+                            <constraint firstItem="oCK-8J-dII" firstAttribute="top" secondItem="HtI-Ss-12z" secondAttribute="bottom" constant="30" id="oWI-yC-iGA"/>
                             <constraint firstItem="oCK-8J-dII" firstAttribute="leading" secondItem="3Rk-wg-bc0" secondAttribute="leading" id="sVe-Sj-CHs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3Rk-wg-bc0"/>

@@ -12,18 +12,9 @@ import UIKit
 class VideosInCategoriesViewController: UIViewController {
     // MARK: - Properties
     
- /*     var videosInCategories = [
-        VideosInCategories(image: UIImageView(image: #imageLiteral(resourceName: "temporaryBlack")), title: <#String#>, author: <#String#>, duration: <#String#>, links: <#[String]#>),
-        VideosInCategories(image: UIImageView(image: #imageLiteral(resourceName: "temporaryBlack")), title: <#String#>, author: <#String#>, duration: <#String#>, links: <#[String]#>),
-        VideosInCategories(image: UIImageView(image: #imageLiteral(resourceName: "temporaryBlack")), title: <#String#>, author: <#String#>, duration: <#String#>, links: <#[String]#>),
-        VideosInCategories(image: UIImageView(image: #imageLiteral(resourceName: "temporaryBlack")), title: <#String#>, author: <#String#>, duration: <#String#>, links: <#[String]#>),
-        VideosInCategories(image: UIImageView(image: #imageLiteral(resourceName: "temporaryBlack")), title: <#String#>, author: <#String#>, duration: <#String#>, links: <#[String]#>),
-        VideosInCategories(image: UIImageView(image: #imageLiteral(resourceName: "temporaryBlack")), title: <#String#>, author: <#String#>, duration: <#String#>, links: <#[String]#>),
-        VideosInCategories(image: UIImageView(image: #imageLiteral(resourceName: "temporaryBlack")), title: <#String#>, author: <#String#>, duration: <#String#>, links: <#[String]#>),
-        VideosInCategories(image: UIImageView(image: #imageLiteral(resourceName: "temporaryBlack")), title: <#String#>, author: <#String#>, duration: <#String#>, links: <#[String]#>),
-        VideosInCategories(image: UIImageView(image: #imageLiteral(resourceName: "temporaryBlack")), title: <#String#>, author: <#String#>, duration: <#String#>, links: <#[String]#>),
-        VideosInCategories(image: UIImageView(image: #imageLiteral(resourceName: "temporaryBlack")), title: <#String#>, author: <#String#>, duration: <#String#>, links: <#[String]#>)
-    ] */
+      var videosInCategories = [
+     VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"), title: "First", author: "Him/Her", duration: "3:01")
+    ]
  
     // MARK: - IBOutlets
     
@@ -35,8 +26,8 @@ class VideosInCategoriesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //            videosInCategoryTableView.delegate = self
-        //            videosInCategoryTableView.dataSource = self
+        videosInCategoryTableView.delegate = self
+        videosInCategoryTableView.dataSource = self
         self.navigationController?.isNavigationBarHidden = false
 
     }
@@ -45,12 +36,14 @@ class VideosInCategoriesViewController: UIViewController {
         super.viewWillAppear(animated)
     }
     
+}
+    
     // MARK: - Methods
     
     // MARK: - IBActions
- /*   extension VideosInCategoriesViewController: UITableViewDelegate, UITableViewDataSource {
+    extension VideosInCategoriesViewController: UITableViewDelegate, UITableViewDataSource {
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return categories.count
+            return videosInCategories.count
         }
     
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -58,12 +51,11 @@ class VideosInCategoriesViewController: UIViewController {
             let video = videosInCategories[indexPath.row]
     
             cell.titleLabel.text = video.title
-            cell.auhtorLabel.text = video.author
+            cell.authorLabel.text = video.author
             cell.durationLabel.text = video.duration
-            cell.videoPreviewImageView.UIImageView = video.image
-    
-    
+            cell.videoPreviewImageView.image = video.image
+            
             return cell
-        }*/
+    }
 }
 

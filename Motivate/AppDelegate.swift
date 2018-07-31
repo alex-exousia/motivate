@@ -16,9 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         Thread.sleep(forTimeInterval: 0.0)
         // Override point for customization after application launch.
-        //configure storyboard
-        
-//        configureInitialRootViewController(for: window)
         
         return true
     }
