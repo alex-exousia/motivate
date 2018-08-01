@@ -202,14 +202,26 @@
             </objects>
             <point key="canvasLocation" x="1654" y="181"/>
         </scene>
-        <!--View Controller-->
+        <!--Showvideo View Controller-->
         <scene sceneID="zWg-F6-tJd">
             <objects>
-                <viewController id="56e-Py-KKv" sceneMemberID="viewController">
+                <viewController id="56e-Py-KKv" customClass="showvideoViewController" customModule="Motivate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KHd-S1-eGB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kD9-uR-kB0" customClass="YouTubePlayerView" customModule="YouTubePlayer">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xzg-c1-5oN" firstAttribute="trailing" secondItem="kD9-uR-kB0" secondAttribute="trailing" id="GJf-tB-G4B"/>
+                            <constraint firstItem="xzg-c1-5oN" firstAttribute="bottom" secondItem="kD9-uR-kB0" secondAttribute="bottom" id="iW7-Hu-EI7"/>
+                            <constraint firstItem="kD9-uR-kB0" firstAttribute="leading" secondItem="xzg-c1-5oN" secondAttribute="leading" id="qqn-2n-dZy"/>
+                            <constraint firstItem="kD9-uR-kB0" firstAttribute="top" secondItem="xzg-c1-5oN" secondAttribute="top" id="sH4-ON-GoT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="xzg-c1-5oN"/>
                     </view>
                 </viewController>

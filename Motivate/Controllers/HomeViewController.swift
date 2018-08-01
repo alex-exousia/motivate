@@ -92,7 +92,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
         
     private func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return tableView.frame.width * 1.7777
+        return 215
     }
     
 }
