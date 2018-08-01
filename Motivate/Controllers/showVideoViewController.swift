@@ -16,6 +16,7 @@ class showvideoViewController: UIViewController {
     
     // MARK: - IBOutlets
     
+    @IBOutlet weak var showVideoYoutubePlayerView: YouTubePlayerView!
     
 }
 
