@@ -14,15 +14,15 @@ class CategoriesViewController: UIViewController {
     // MARK: - Properties
     
     var categories = [
-        Categories(image: #imageLiteral(resourceName: "temporaryBlack"), label: "Find Your Purpose", links: [""]),
-        Categories(image: #imageLiteral(resourceName: "temporaryBlack"), label: "Happiness", links: [""]),
-        Categories(image: #imageLiteral(resourceName: "temporaryBlack"), label: "Peace Of Mind", links: [""]),
-        Categories(image: #imageLiteral(resourceName: "temporaryBlack"), label: "Be Confident", links: [""]),
-        Categories(image: #imageLiteral(resourceName: "temporaryBlack"), label: "Limits Don't Exist", links: [""]),
-        Categories(image: #imageLiteral(resourceName: "temporaryBlack"), label: "No Plan B", links: [""]),
-        Categories(image: #imageLiteral(resourceName: "temporaryBlack"), label: "Dream Big", links: [""]),
-        Categories(image: #imageLiteral(resourceName: "temporaryBlack"), label: "Do More", links: [""]),
-        Categories(image: #imageLiteral(resourceName: "temporaryBlack"), label: "Life Stories", links: [""])
+        Categories(image: #imageLiteral(resourceName: "temporaryBlack"), label: "Find Your Purpose", links: ["https://www.youtube.com/watch?v=2uFNfBGC72Q, https://www.youtube.com/watch?v=_LSmJIe4luY, https://www.youtube.com/watch?v=lRzIcOEewVg"])
+//        Categories(image: #imageLiteral(resourceName: "temporaryBlack"), label: "Happiness", links: [""]),
+//        Categories(image: #imageLiteral(resourceName: "temporaryBlack"), label: "Peace Of Mind", links: [""]),
+//        Categories(image: #imageLiteral(resourceName: "temporaryBlack"), label: "Be Confident", links: [""]),
+//        Categories(image: #imageLiteral(resourceName: "temporaryBlack"), label: "Limits Don't Exist", links: [""]),
+//        Categories(image: #imageLiteral(resourceName: "temporaryBlack"), label: "No Plan B", links: [""]),
+//        Categories(image: #imageLiteral(resourceName: "temporaryBlack"), label: "Dream Big", links: [""]),
+//        Categories(image: #imageLiteral(resourceName: "temporaryBlack"), label: "Do More", links: [""]),
+//        Categories(image: #imageLiteral(resourceName: "temporaryBlack"), label: "Life Stories", links: [""])
     ]
     
     // MARK: - IBOutlets
@@ -60,7 +60,6 @@ class CategoriesViewController: UIViewController {
             let video = categories[indexPath.row]
             
             cell.categoryLabel.text = video.label
-            print("God help me !!! \(video.image)")
             cell.categoryImageView.image = video.image 
             
             return cell
@@ -69,5 +68,21 @@ class CategoriesViewController: UIViewController {
         func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
             return 68
         }
+        
+      /*  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            guard let identifier = segue.identifier else { return }
+            
+            switch identifier {
+            case "openToVideos":
+                guard let indexPath = categoriesTableview.indexPathForSelectedRow else { return }
+                let video = categories[indexPath.row]
+                let destination = segue.destination as! VideosInCategoriesViewController
+                destination.video = video
+                
+            default:
+                print("unexpected segue identifier")
+            }
+ 
+        } */
         
     }

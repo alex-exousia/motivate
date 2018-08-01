@@ -58,7 +58,7 @@
                                                 <connections>
                                                     <outlet property="categoryImageView" destination="pZG-Gr-piR" id="Bo7-gm-il7"/>
                                                     <outlet property="categoryLabel" destination="VGE-ik-kMa" id="irH-Ne-ZM9"/>
-                                                    <segue destination="W6m-Db-7Mh" kind="show" id="jWP-yH-zxU"/>
+                                                    <segue destination="W6m-Db-7Mh" kind="show" identifier="openToVideos" id="jWP-yH-zxU"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
@@ -167,6 +167,7 @@
                                                     <outlet property="durationLabel" destination="uF7-CT-3qN" id="8He-WP-hqy"/>
                                                     <outlet property="titleLabel" destination="okI-n9-5j9" id="zaF-aV-mR4"/>
                                                     <outlet property="videoPreviewImageView" destination="hNZ-Nk-56g" id="9dt-X1-euN"/>
+                                                    <segue destination="56e-Py-KKv" kind="show" identifier="openVideo" id="o3W-RW-iLd"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
@@ -200,6 +201,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jNv-Ro-NDr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1654" y="181"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zWg-F6-tJd">
+            <objects>
+                <viewController id="56e-Py-KKv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KHd-S1-eGB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="xzg-c1-5oN"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x8J-Nj-ped" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2386" y="180"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="G16-dG-i1g">

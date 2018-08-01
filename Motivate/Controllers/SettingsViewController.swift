@@ -12,6 +12,16 @@ import UIKit
 
 class SettingsViewController: UIViewController {
     
+    // MARK: - Properties
+    
+    // MARK: - IBOutlets
+    
+    @IBOutlet weak var settingsLabel: UILabel!
+    
+    @IBOutlet weak var settingsTableView: UITableView!
+    
+    // MARK: - View Life Cycle Methods
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -20,4 +30,22 @@ class SettingsViewController: UIViewController {
         super.viewWillAppear(animated)
         self.navigationController?.isNavigationBarHidden = true
     }
+
+// MARK: - Methods
+
+
+// MARK: - IBActions
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
