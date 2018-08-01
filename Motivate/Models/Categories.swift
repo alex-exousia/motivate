@@ -11,6 +11,7 @@ import UIKit
 
 struct Categories {
     var image: UIImage
-    var label: String
-    var links: [String]
+    var name: String
+    var videos : [VideosInCategories]
+//    var links: [String]
 }

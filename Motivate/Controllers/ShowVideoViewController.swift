@@ -9,14 +9,24 @@
 import Foundation
 import UIKit
 import YouTubePlayer
+import NVActivityIndicatorView
 
-class showvideoViewController: UIViewController {
+class ShowvideoViewController: UIViewController {
     
     // MARK: - Properties
+    var video: VideosInCategories?
+//    activityIndicatorView.startAnimating()
     
     // MARK: - IBOutlets
     
     @IBOutlet weak var showVideoYoutubePlayerView: YouTubePlayerView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        print(video?.author)
+        print(video?.link)
+    }
     
 }
 

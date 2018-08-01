@@ -12,9 +12,9 @@ import UIKit
 
 class CategoriesViewController: UIViewController {
     // MARK: - Properties
-    
     var categories = [
-        Categories(image: #imageLiteral(resourceName: "temporaryBlack"), label: "Find Your Purpose", links: ["https://www.youtube.com/watch?v=2uFNfBGC72Q, https://www.youtube.com/watch?v=_LSmJIe4luY, https://www.youtube.com/watch?v=lRzIcOEewVg"])
+        Categories(image: #imageLiteral(resourceName: "temporaryBlack"), name: "Happiness", videos: [VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"),title: "NOB", author: "bOB", duration: "3:54", link: "https://www.youtube.com/watch?v=2uFNfBGC72Q")])
+//        Categories(image: #imageLiteral(resourceName: "temporaryBlack"), label: "Find Your Purpose", links: ["https://www.youtube.com/watch?v=2uFNfBGC72Q, https://www.youtube.com/watch?v=_LSmJIe4luY, https://www.youtube.com/watch?v=lRzIcOEewVg"])
 //        Categories(image: #imageLiteral(resourceName: "temporaryBlack"), label: "Happiness", links: [""]),
 //        Categories(image: #imageLiteral(resourceName: "temporaryBlack"), label: "Peace Of Mind", links: [""]),
 //        Categories(image: #imageLiteral(resourceName: "temporaryBlack"), label: "Be Confident", links: [""]),
@@ -57,10 +57,13 @@ class CategoriesViewController: UIViewController {
     
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: "categoriesTableViewCell", for: indexPath) as! CategoriesTableViewCell
-            let video = categories[indexPath.row]
+            let category = categories[indexPath.row]
             
-            cell.categoryLabel.text = video.label
-            cell.categoryImageView.image = video.image 
+            cell.categoryLabel.text = category.name
+            cell.categoryImageView.image = category.image
+            
+//            cell.categoryLabel.text = video.label
+//            cell.categoryImageView.image = video.image
             
             return cell
         }
@@ -69,20 +72,31 @@ class CategoriesViewController: UIViewController {
             return 68
         }
         
-      /*  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            guard let identifier = segue.identifier else { return }
+        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//            let video = categories[0].videos[indexPath.row]
             
+            self.performSegue(withIdentifier: "openToVideos", sender: nil)
+            
+        }
+        
+      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            guard let identifier = segue.identifier else { return }
+         
             switch identifier {
             case "openToVideos":
-                guard let indexPath = categoriesTableview.indexPathForSelectedRow else { return }
-                let video = categories[indexPath.row]
-                let destination = segue.destination as! VideosInCategoriesViewController
-                destination.video = video
                 
+//                let video = categories[0].videos[indexPath.row]
+                
+                guard let indexPath = categoriesTableview.indexPathForSelectedRow else { return }
+                let videosInCategories = categories[indexPath.row].videos
+                
+                let destination = segue.destination as! VideosInCategoriesViewController
+                destination.videosInCategories = videosInCategories
+         
             default:
                 print("unexpected segue identifier")
             }
  
-        } */
+        }
         
     }

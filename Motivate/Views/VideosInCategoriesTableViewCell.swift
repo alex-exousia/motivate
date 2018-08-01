@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import YouTubePlayer
 
-class VideosInCategoriesTableViewController: UITableViewCell {
+class VideosInCategoriesTableViewCell: UITableViewCell {
     
     @IBOutlet weak var videoPreviewImageView: UIImageView!
     

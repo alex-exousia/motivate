@@ -12,9 +12,7 @@ import UIKit
 class VideosInCategoriesViewController: UIViewController {
     // MARK: - Properties
     
-      var videosInCategories = [
-     VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"), title: "First", author: "Him/Her", duration: "3:01")
-    ]
+    var videosInCategories = [VideosInCategories]()
  
     // MARK: - IBOutlets
     
@@ -26,6 +24,9 @@ class VideosInCategoriesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        print(videosInCategories.count)
+        
         videosInCategoryTableView.delegate = self
         videosInCategoryTableView.dataSource = self
         self.navigationController?.isNavigationBarHidden = false
@@ -41,13 +42,13 @@ class VideosInCategoriesViewController: UIViewController {
     // MARK: - Methods
     
     // MARK: - IBActions
-    extension VideosInCategoriesViewController: UITableViewDelegate, UITableViewDataSource {
-        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+extension VideosInCategoriesViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             return videosInCategories.count
-        }
+    }
     
-        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "videosInCategoriesTableViewCell", for: indexPath) as! VideosInCategoriesTableViewController
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "videosInCategoriesTableViewCell", for: indexPath) as! VideosInCategoriesTableViewCell
             let video = videosInCategories[indexPath.row]
     
             cell.titleLabel.text = video.title
@@ -57,5 +58,29 @@ class VideosInCategoriesViewController: UIViewController {
             
             return cell
     }
+        
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "openVideo", sender: nil)
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let identifier = segue.identifier else { return }
+        
+        switch identifier {
+        case "openVideo":
+            
+            guard let indexPath = videosInCategoryTableView.indexPathForSelectedRow else { return }
+            let video = videosInCategories[indexPath.row]
+            
+            let destination = segue.destination as! ShowvideoViewController
+            destination.video = video
+            
+        default:
+            print("unexpected segue identifier")
+        }
+        
+    }
+    
 }
 

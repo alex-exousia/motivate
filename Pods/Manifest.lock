@@ -1,16 +1,22 @@
 PODS:
+  - NVActivityIndicatorView (4.3.0):
+    - NVActivityIndicatorView/Presenter (= 4.3.0)
+  - NVActivityIndicatorView/Presenter (4.3.0)
   - YouTubePlayer (0.4.0)
 
 DEPENDENCIES:
+  - NVActivityIndicatorView
   - YouTubePlayer
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - NVActivityIndicatorView
     - YouTubePlayer
 
 SPEC CHECKSUMS:
+  NVActivityIndicatorView: 963f62bf9f993fcf23218e55958e5b1761b9504c
   YouTubePlayer: 028451f6772f372d4759866db99824c676ac1473
 
-PODFILE CHECKSUM: 05ad7ae50f14e8bdb7557b2688ecdd49f23fe55d
+PODFILE CHECKSUM: 33907640212f3221fd60c009b8a714e025fc8fda
 
 COCOAPODS: 1.5.3

@@ -7,5 +7,6 @@ target 'Motivate' do
 
   # Pods for Motivate
 pod 'YouTubePlayer'
+pod 'NVActivityIndicatorView'
 
 end
