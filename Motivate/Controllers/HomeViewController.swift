@@ -53,11 +53,13 @@ class HomeViewController: UIViewController {
         mixQuotes()
         homeTableView.delegate = self
         homeTableView.dataSource = self
+        AppUtility.lockOrientation(.portrait)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.isNavigationBarHidden = true
+        AppUtility.lockOrientation(.portrait)
     }
     
     // MARK: - Methods

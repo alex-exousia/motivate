@@ -125,12 +125,15 @@ class CategoriesViewController: UIViewController {
         super.viewDidLoad()
         categoriesTableview.delegate = self
         categoriesTableview.dataSource = self
-        //            categoriesTableview.backgroundColor = UIColor.white
         categoriesTableview.reloadData()
+        AppUtility.lockOrientation(.portrait)
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        AppUtility.lockOrientation(.portrait)
+
     }
     
     // MARK: - Methods

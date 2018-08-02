@@ -29,11 +29,13 @@ class VideosInCategoriesViewController: UIViewController {
         videosInCategoryTableView.dataSource = self
         self.navigationController?.isNavigationBarHidden = false
         nameOfCategoryInVideosLabel.text = categoryTitle
+        AppUtility.lockOrientation(.portrait)
 
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        AppUtility.lockOrientation(.portrait)
     }
     
     // MARK: - Methods

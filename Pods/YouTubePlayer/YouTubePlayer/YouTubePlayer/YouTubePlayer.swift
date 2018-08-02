@@ -121,7 +121,7 @@ open class YouTubePlayerView: UIView, UIWebViewDelegate {
     
     // MARK: Web view initialization
     
-    fileprivate func buildWebView(_ parameters: [String: AnyObject]) {
+    open func buildWebView(_ parameters: [String: AnyObject]) {
         webView = UIWebView()
         webView.isOpaque = false
         webView.backgroundColor = UIColor.black
