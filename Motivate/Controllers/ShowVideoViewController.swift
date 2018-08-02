@@ -15,18 +15,19 @@ class ShowvideoViewController: UIViewController {
     
     // MARK: - Properties
     var video: VideosInCategories?
-//    activityIndicatorView.startAnimating()
     
     // MARK: - IBOutlets
     
     @IBOutlet weak var showVideoYoutubePlayerView: YouTubePlayerView!
     
+    // MARK: - View Life Cycle Methods
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(video?.author)
-        print(video?.link)
+        guard let videoURL = URL(string: (video?.link)!) else { return }
+        showVideoYoutubePlayerView.loadVideoURL(videoURL as URL)
+        
     }
-    
 }
 

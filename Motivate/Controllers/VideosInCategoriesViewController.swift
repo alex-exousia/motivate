@@ -13,7 +13,8 @@ class VideosInCategoriesViewController: UIViewController {
     // MARK: - Properties
     
     var videosInCategories = [VideosInCategories]()
- 
+    var categoryTitle: String!
+    
     // MARK: - IBOutlets
     
     @IBOutlet weak var nameOfCategoryInVideosLabel: UILabel!
@@ -24,12 +25,10 @@ class VideosInCategoriesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        print(videosInCategories.count)
-        
         videosInCategoryTableView.delegate = self
         videosInCategoryTableView.dataSource = self
         self.navigationController?.isNavigationBarHidden = false
+        nameOfCategoryInVideosLabel.text = categoryTitle
 
     }
     
@@ -37,11 +36,13 @@ class VideosInCategoriesViewController: UIViewController {
         super.viewWillAppear(animated)
     }
     
-}
-    
     // MARK: - Methods
     
     // MARK: - IBActions
+    
+}
+    
+
 extension VideosInCategoriesViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             return videosInCategories.count

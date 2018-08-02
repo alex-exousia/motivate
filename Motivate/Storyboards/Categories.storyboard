@@ -107,14 +107,15 @@
                                             <constraint firstAttribute="width" secondItem="Wdu-ab-sUV" secondAttribute="height" multiplier="22:4" id="Lgt-Gv-h4j"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hEB-hj-9AA" userLabel="Videos in Categories Table View">
                                         <rect key="frame" x="0.0" y="76" width="375" height="527"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="sectionIndexBackgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="videosInCategoriesTableViewCell" rowHeight="80" id="i5o-Cw-JRB" userLabel="Cell" customClass="VideosInCategoriesTableViewCell" customModule="Motivate" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="videosInCategoriesTableViewCell" rowHeight="80" id="i5o-Cw-JRB" userLabel="Cell" customClass="VideosInCategoriesTableViewCell" customModule="Motivate" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="i5o-Cw-JRB" id="gOz-6O-C2Y">
@@ -124,7 +125,7 @@
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uF7-CT-3qN" userLabel="Duration">
                                                             <rect key="frame" x="313" y="31" width="35.5" height="17"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                            <nil key="textColor"/>
+                                                            <color key="textColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hNZ-Nk-56g">
@@ -139,13 +140,13 @@
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJJ-HX-dIn" userLabel="Title">
                                                                     <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                    <nil key="textColor"/>
+                                                                    <color key="textColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okI-n9-5j9" userLabel="Author">
                                                                     <rect key="frame" x="0.0" y="20.5" width="42" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                    <nil key="textColor"/>
+                                                                    <color key="textColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
@@ -162,6 +163,7 @@
                                                         <constraint firstItem="hNZ-Nk-56g" firstAttribute="top" secondItem="gOz-6O-C2Y" secondAttribute="top" constant="5" id="zNj-aN-3hA"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
+                                                <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <outlet property="authorLabel" destination="okI-n9-5j9" id="Sg7-q4-0z4"/>
                                                     <outlet property="durationLabel" destination="uF7-CT-3qN" id="8He-WP-hqy"/>
@@ -182,7 +184,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.15686274509803921" green="0.15686274509803921" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="l4h-O2-caf" firstAttribute="trailing" secondItem="pEO-EM-92k" secondAttribute="trailing" id="F65-gK-wfC"/>
                             <constraint firstItem="l4h-O2-caf" firstAttribute="bottom" secondItem="pEO-EM-92k" secondAttribute="bottom" id="ibV-Pd-OT8"/>
@@ -205,29 +207,22 @@
         <!--Showvideo View Controller-->
         <scene sceneID="zWg-F6-tJd">
             <objects>
-                <viewController id="56e-Py-KKv" customClass="ShowvideoViewController" customModule="Motivate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" id="56e-Py-KKv" customClass="ShowvideoViewController" customModule="Motivate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KHd-S1-eGB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kD9-uR-kB0" customClass="YouTubePlayerView" customModule="YouTubePlayer">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="4" y="230" width="366" height="207"/>
                                 <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tUc-cR-C7T" customClass="NVActivityIndicatorView" customModule="Motivate">
-                                <rect key="frame" x="67" y="269" width="240" height="128"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="tUc-cR-C7T" firstAttribute="top" secondItem="xzg-c1-5oN" secondAttribute="top" constant="205" id="Ch8-Zc-McL"/>
-                            <constraint firstItem="xzg-c1-5oN" firstAttribute="trailing" secondItem="kD9-uR-kB0" secondAttribute="trailing" id="GJf-tB-G4B"/>
-                            <constraint firstItem="tUc-cR-C7T" firstAttribute="centerY" secondItem="KHd-S1-eGB" secondAttribute="centerY" id="Hod-nU-73S"/>
-                            <constraint firstItem="tUc-cR-C7T" firstAttribute="centerX" secondItem="KHd-S1-eGB" secondAttribute="centerX" id="R8S-Os-Iou"/>
-                            <constraint firstItem="tUc-cR-C7T" firstAttribute="leading" secondItem="xzg-c1-5oN" secondAttribute="leading" constant="67" id="cnY-fb-ogR"/>
-                            <constraint firstItem="xzg-c1-5oN" firstAttribute="bottom" secondItem="kD9-uR-kB0" secondAttribute="bottom" id="iW7-Hu-EI7"/>
-                            <constraint firstItem="kD9-uR-kB0" firstAttribute="leading" secondItem="xzg-c1-5oN" secondAttribute="leading" id="qqn-2n-dZy"/>
-                            <constraint firstItem="kD9-uR-kB0" firstAttribute="top" secondItem="xzg-c1-5oN" secondAttribute="top" id="sH4-ON-GoT"/>
+                            <constraint firstItem="kD9-uR-kB0" firstAttribute="centerX" secondItem="KHd-S1-eGB" secondAttribute="centerX" id="Ee9-ut-CMN"/>
+                            <constraint firstItem="kD9-uR-kB0" firstAttribute="leading" secondItem="xzg-c1-5oN" secondAttribute="leading" constant="4" id="XTO-Fy-mNv"/>
+                            <constraint firstItem="kD9-uR-kB0" firstAttribute="centerY" secondItem="KHd-S1-eGB" secondAttribute="centerY" id="b6o-YN-Awf"/>
+                            <constraint firstItem="kD9-uR-kB0" firstAttribute="top" secondItem="xzg-c1-5oN" secondAttribute="top" constant="166" id="ypp-GR-cfY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xzg-c1-5oN"/>
                     </view>
@@ -237,7 +232,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x8J-Nj-ped" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2386" y="180"/>
+            <point key="canvasLocation" x="2384.8000000000002" y="179.46026986506749"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="G16-dG-i1g">

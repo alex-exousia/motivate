@@ -155,8 +155,8 @@
 				C938A15921079ABB00139709 /* HomeViewController.swift */,
 				C938A15F21079BF000139709 /* CategoriesViewController.swift */,
 				C95ECDCF210D78BC00280631 /* VideosInCategoriesViewController.swift */,
-				C938A15D21079B8500139709 /* SettingsViewController.swift */,
 				C91934AE21125C7600E9E74E /* ShowVideoViewController.swift */,
+				C938A15D21079B8500139709 /* SettingsViewController.swift */,
 				C938A15B21079B1900139709 /* LaunchScreenViewController.swift */,
 			);
 			path = Controllers;
