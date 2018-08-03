@@ -19,4 +19,5 @@ class HomeVideoTableViewCell: UITableViewCell {
     @IBOutlet weak var authorLabel: UILabel!
     
     @IBOutlet weak var videoLengthLabel: UILabel!
+    
 }

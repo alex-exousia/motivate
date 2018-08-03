@@ -27,6 +27,7 @@ class ShowvideoViewController: UIViewController {
         
         guard let videoURL = URL(string: (video?.link)!) else { return }
         showVideoYoutubePlayerView.loadVideoURL(videoURL as URL)
+        showVideoYoutubePlayerView.clear()
     }
 
 }

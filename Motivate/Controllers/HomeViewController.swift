@@ -58,6 +58,7 @@ class HomeViewController: UIViewController {
         homeTableView.dataSource = self
         AppUtility.lockOrientation(.portrait)
         
+        
 //        NotificationCenter.default.addObserver(self, selector: #selector(HomeViewController.playInBackground), name: NSNotification.Name.UIApplicationDidEnterBackground, object: nil)
     }
     
@@ -98,6 +99,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         cell.videoLengthLabel.text = video.duration
         let url = URL(string: video.link)!
         cell.videoPlayer.loadVideoURL(url)
+        cell.videoPlayer.clear()
         
         return cell
     }
