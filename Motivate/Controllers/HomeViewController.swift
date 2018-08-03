@@ -14,6 +14,9 @@ import GameplayKit
 class HomeViewController: UIViewController {
     
     // MARK: - Properties
+    
+    var shuffleQuotes : [(quote: String,author: String)] = []
+    
     var videos = [
         Video(title: "Vision", author: "Mateusz M", duration: "11:03", link: "https://www.youtube.com/watch?v=ZOy0YgUDwDg"),
         Video(title: "Prove Them Wrong", author: "Be Inspired", duration: "6:59", link: "https://www.youtube.com/watch?v=CPQ1budJRIQ&t=20s"),
@@ -54,6 +57,8 @@ class HomeViewController: UIViewController {
         homeTableView.delegate = self
         homeTableView.dataSource = self
         AppUtility.lockOrientation(.portrait)
+        
+//        NotificationCenter.default.addObserver(self, selector: #selector(HomeViewController.playInBackground), name: NSNotification.Name.UIApplicationDidEnterBackground, object: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -64,7 +69,11 @@ class HomeViewController: UIViewController {
     
     // MARK: - Methods
     
-    var shuffleQuotes : [(quote: String,author: String)] = []
+//    @objc func playInBackground(){
+//        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(250)) {
+//            self.videoPlayer.play()
+//        }
+//    }
     
     func mixQuotes() {
         shuffleQuotes = GKRandomSource.sharedRandom().arrayByShufflingObjects(in: quotes) as! [(String, String)]
