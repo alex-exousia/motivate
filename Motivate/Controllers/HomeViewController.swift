@@ -94,8 +94,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "homeVideoTableViewCell", for: indexPath) as! HomeVideoTableViewCell
         let video = videos[indexPath.row]
 
-        cell.titleLabel.text = video.title
-        cell.authorLabel.text = video.author
+//        cell.titleLabel.text = video.title
+//        cell.authorLabel.text = video.author
         cell.videoLengthLabel.text = video.duration
         let url = URL(string: video.link)!
         cell.videoPlayer.loadVideoURL(url)

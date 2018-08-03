@@ -212,6 +212,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VbS-SC-iG0">
+                                <rect key="frame" x="0.0" y="229" width="375" height="63"/>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kD9-uR-kB0" customClass="YouTubePlayerView" customModule="YouTubePlayer">
                                 <rect key="frame" x="4" y="230" width="366" height="207"/>
                                 <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="calibratedRGB"/>
@@ -220,8 +223,12 @@
                         <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="kD9-uR-kB0" firstAttribute="centerX" secondItem="KHd-S1-eGB" secondAttribute="centerX" id="Ee9-ut-CMN"/>
+                            <constraint firstItem="xzg-c1-5oN" firstAttribute="trailing" secondItem="VbS-SC-iG0" secondAttribute="trailing" id="F3R-UB-H1u"/>
+                            <constraint firstItem="VbS-SC-iG0" firstAttribute="top" secondItem="xzg-c1-5oN" secondAttribute="top" constant="165" id="T8c-Rn-1Fx"/>
+                            <constraint firstItem="xzg-c1-5oN" firstAttribute="bottom" secondItem="VbS-SC-iG0" secondAttribute="bottom" constant="375" id="TPg-WL-qna"/>
                             <constraint firstItem="kD9-uR-kB0" firstAttribute="leading" secondItem="xzg-c1-5oN" secondAttribute="leading" constant="4" id="XTO-Fy-mNv"/>
                             <constraint firstItem="kD9-uR-kB0" firstAttribute="centerY" secondItem="KHd-S1-eGB" secondAttribute="centerY" id="b6o-YN-Awf"/>
+                            <constraint firstItem="VbS-SC-iG0" firstAttribute="leading" secondItem="xzg-c1-5oN" secondAttribute="leading" id="t7Q-pz-MAT"/>
                             <constraint firstItem="kD9-uR-kB0" firstAttribute="top" secondItem="xzg-c1-5oN" secondAttribute="top" constant="166" id="ypp-GR-cfY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xzg-c1-5oN"/>
