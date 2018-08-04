@@ -15,6 +15,8 @@ class HomeViewController: UIViewController {
     
     // MARK: - Properties
     
+    var playingVideo: YouTubePlayerView?
+    
     var shuffleQuotes : [(quote: String,author: String)] = []
     
     var videos = [
@@ -58,8 +60,7 @@ class HomeViewController: UIViewController {
         homeTableView.dataSource = self
         AppUtility.lockOrientation(.portrait)
         
-        
-//        NotificationCenter.default.addObserver(self, selector: #selector(HomeViewController.playInBackground), name: NSNotification.Name.UIApplicationDidEnterBackground, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(HomeViewController.playInBackground), name: NSNotification.Name.UIApplicationDidEnterBackground, object: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -70,11 +71,11 @@ class HomeViewController: UIViewController {
     
     // MARK: - Methods
     
-//    @objc func playInBackground(){
-//        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(250)) {
-//            self.videoPlayer.play()
-//        }
-//    }
+    @objc func playInBackground(){
+        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(250)) {
+            self.playingVideo?.play()
+        }
+    }
     
     func mixQuotes() {
         shuffleQuotes = GKRandomSource.sharedRandom().arrayByShufflingObjects(in: quotes) as! [(String, String)]
@@ -98,6 +99,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 //        cell.authorLabel.text = video.author
         cell.videoLengthLabel.text = video.duration
         let url = URL(string: video.link)!
+        cell.videoPlayer.delegate = self
         cell.videoPlayer.loadVideoURL(url)
         cell.videoPlayer.clear()
         
@@ -108,6 +110,15 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         return 215
     }
     
+}
+
+extension HomeViewController: YouTubePlayerDelegate {
+    func playerStateChanged(_ videoPlayer: YouTubePlayerView, playerState: YouTubePlayerState) {
+        if case .Playing = playerState {
+            playingVideo = videoPlayer
+            videoPlayer.play()
+        }
+    }
 }
 
 
