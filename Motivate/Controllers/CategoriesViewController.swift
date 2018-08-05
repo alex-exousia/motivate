@@ -14,16 +14,16 @@ class CategoriesViewController: UIViewController {
     // MARK: - Properties
     var categories : [Categories] = [
         Categories(image: #imageLiteral(resourceName: "temporaryBlack"), name: "Find Your Purpose", videos: [
-            VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"),title: "NOB", author: "bOB", duration: "3:54", link: "https://www.youtube.com/watch?v=2uFNfBGC72Q"),
-            VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"),title: "NOB", author: "bOB", duration: "3:54", link: "https://www.youtube.com/watch?v=2uFNfBGC72Q"),
-            VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"),title: "NOB", author: "bOB", duration: "3:54", link: "https://www.youtube.com/watch?v=2uFNfBGC72Q"),
-            VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"),title: "NOB", author: "bOB", duration: "3:54", link: "https://www.youtube.com/watch?v=2uFNfBGC72Q"),
-            VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"),title: "NOB", author: "bOB", duration: "3:54", link: "https://www.youtube.com/watch?v=2uFNfBGC72Q"),
-            VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"),title: "NOB", author: "bOB", duration: "3:54", link: "https://www.youtube.com/watch?v=2uFNfBGC72Q"),
-            VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"),title: "NOB", author: "bOB", duration: "3:54", link: "https://www.youtube.com/watch?v=2uFNfBGC72Q"),
-            VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"),title: "NOB", author: "bOB", duration: "3:54", link: "https://www.youtube.com/watch?v=2uFNfBGC72Q"),
-            VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"),title: "NOB", author: "bOB", duration: "3:54", link: "https://www.youtube.com/watch?v=2uFNfBGC72Q"),
-            VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"),title: "NOB", author: "bOB", duration: "3:54", link: "https://www.youtube.com/watch?v=2uFNfBGC72Q")]),
+            VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"),title: "The Meaning - Jim Carrey", author: "Absolute Motivation", duration: "4:16", link: "https://www.youtube.com/watch?v=Z0ZrkBCnfxw"),
+            VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"),title: "The Purpose", author: "Chispa Motivation", duration: "4:04", link: "https://www.youtube.com/watch?v=_LSmJIe4luY"),
+            VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"),title: "Purpose", author: "RedFrost Motivatinon", duration: "6:19", link: "https://www.youtube.com/watch?v=2uFNfBGC72Q"),
+            VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"),title: "How To Find Purpose In Your Life", author: "Goalcast", duration: "7:51", link: "https://www.youtube.com/watch?v=58HPpS514Bc"),
+            VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"),title: "Purpose", author: "Chispa Motivation", duration: "4:33", link: "https://www.youtube.com/watch?v=lRzIcOEewVg"),
+            VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"),title: "How To Actually Find Your Purpose", author: "Goalcast", duration: "7:51", link: "https://www.youtube.com/watch?v=58HPpS514Bc"),
+            VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"),title: "What Do You Desire?", author: "Chispa Motivation", duration: "1:51", link: "https://www.youtube.com/watch?v=Nb7EaaF51eY"),
+            VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"),title: "Find Your True Passion and Purpose", author: "Habits of The Wealthy", duration: "8:00", link: "https://www.youtube.com/watch?v=6ACLuqeNe10"),
+            VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"),title: "What's The Meaning Of Life", author: "MotivationGrid", duration: "7:22", link: "https://www.youtube.com/watch?v=kuR5OhK5B_U"),
+            VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"),title: "3 Truths To Wake You Up", author: "Goalcast", duration: "4:35", link: "https://www.youtube.com/watch?v=ecvS9ArwykA")]),
         Categories(image: #imageLiteral(resourceName: "temporaryBlack"), name: "Happiness", videos: [
             VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"),title: "NOB", author: "bOB", duration: "3:54", link: "https://www.youtube.com/watch?v=2uFNfBGC72Q"),
             VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"),title: "NOB", author: "bOB", duration: "3:54", link: "https://www.youtube.com/watch?v=2uFNfBGC72Q"),
