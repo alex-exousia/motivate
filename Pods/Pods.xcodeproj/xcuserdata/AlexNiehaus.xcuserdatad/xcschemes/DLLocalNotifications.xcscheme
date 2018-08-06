@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "64068909F9D5627C775BAEBB22219E09"
-               BuildableName = "Pods_Motivate.framework"
-               BlueprintName = "Pods-Motivate"
+               BlueprintIdentifier = "CFF01178F4956BBF078B25E04E3ED060"
+               BuildableName = "DLLocalNotifications.framework"
+               BlueprintName = "DLLocalNotifications"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "64068909F9D5627C775BAEBB22219E09"
-            BuildableName = "Pods_Motivate.framework"
-            BlueprintName = "Pods-Motivate"
+            BlueprintIdentifier = "CFF01178F4956BBF078B25E04E3ED060"
+            BuildableName = "DLLocalNotifications.framework"
+            BlueprintName = "DLLocalNotifications"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "522B9ED53F0D5352B1E1129E6A57E931"
+               BlueprintIdentifier = "6AFA172C8CEDE826A3D362C61B39414E"
                BuildableName = "YouTubePlayer.framework"
                BlueprintName = "YouTubePlayer"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "522B9ED53F0D5352B1E1129E6A57E931"
+            BlueprintIdentifier = "6AFA172C8CEDE826A3D362C61B39414E"
             BuildableName = "YouTubePlayer.framework"
             BlueprintName = "YouTubePlayer"
             ReferencedContainer = "container:Pods.xcodeproj">
