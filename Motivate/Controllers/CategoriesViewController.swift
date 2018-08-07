@@ -13,7 +13,7 @@ import UIKit
 class CategoriesViewController: UIViewController {
     // MARK: - Properties
     var categories : [Categories] = [
-        Categories(image: #imageLiteral(resourceName: "temporaryBlack"), name: "Find Your Purpose", videos: [
+        Categories(image: #imageLiteral(resourceName: "purpose"), name: "Find Your Purpose", videos: [
             VideosInCategories(image: #imageLiteral(resourceName: "the meaning"),title: "The Meaning", author: "Absolute Motivation", duration: "4:16", link: "https://www.youtube.com/watch?v=Z0ZrkBCnfxw"),
             VideosInCategories(image: #imageLiteral(resourceName: "the purpose"),title: "The Purpose", author: "Chispa Motivation", duration: "4:04", link: "https://www.youtube.com/watch?v=_LSmJIe4luY"),
             VideosInCategories(image: #imageLiteral(resourceName: "Purpose"),title: "Purpose", author: "RedFrost Motivatinon", duration: "6:19", link: "https://www.youtube.com/watch?v=2uFNfBGC72Q"),
@@ -24,7 +24,7 @@ class CategoriesViewController: UIViewController {
             VideosInCategories(image: #imageLiteral(resourceName: "passion"),title: "Find Your True Passion and Purpose", author: "Habits of The Wealthy", duration: "8:00", link: "https://www.youtube.com/watch?v=6ACLuqeNe10"),
             VideosInCategories(image: #imageLiteral(resourceName: "meaning of life"),title: "What's The Meaning Of Life", author: "MotivationGrid", duration: "7:22", link: "https://www.youtube.com/watch?v=kuR5OhK5B_U"),
             VideosInCategories(image: #imageLiteral(resourceName: "3 truths"),title: "3 Truths To Wake You Up", author: "Goalcast", duration: "4:35", link: "https://www.youtube.com/watch?v=ecvS9ArwykA")]),
-        Categories(image: #imageLiteral(resourceName: "temporaryBlack"), name: "Happiness", videos: [
+        Categories(image: #imageLiteral(resourceName: "happiness"), name: "Happiness", videos: [
             VideosInCategories(image: #imageLiteral(resourceName: "not happy"),title: "This Is Why Your're Not Happy", author: "Absolute Motivation", duration: "9:29", link: "https://www.youtube.com/watch?v=p0p1fjLPjYQ"),
             VideosInCategories(image: #imageLiteral(resourceName: "stop comparing"),title: "How to Stop Comparing Yourself to Others", author: "Infinite Water (Diving Deep)", duration: "11:08", link: "https://www.youtube.com/watch?v=y-3rFZqOOaw"),
             VideosInCategories(image: #imageLiteral(resourceName: "what it all means"),title: "What It All Means", author: "Absolute Motivation", duration: "5:44", link: "https://www.youtube.com/watch?v=wTblbYqQQag"),
@@ -35,7 +35,7 @@ class CategoriesViewController: UIViewController {
             VideosInCategories(image: #imageLiteral(resourceName: "never unhappy again"),title: "How to NEVER Be Unhappy Again", author: "Word Porn", duration: "2:47", link: "https://www.youtube.com/watch?v=p5zn6pgmlTE"),
             VideosInCategories(image: #imageLiteral(resourceName: "live happy"),title: "How To Live A Happy Life", author: "Habits Of The Wealthy", duration: "6:44", link: "https://www.youtube.com/watch?v=4hfUgPVqBks"),
             VideosInCategories(image: #imageLiteral(resourceName: "power of thought"),title: "The Power Of Thought", author: "RedFrost Motivation", duration: "5:27", link: "https://www.youtube.com/watch?v=zZ4NjopCA00")]),
-        Categories(image: #imageLiteral(resourceName: "temporaryBlack"), name: "Peace Of Mind", videos: [
+        Categories(image: #imageLiteral(resourceName: "peace of mind"), name: "Peace Of Mind", videos: [
             VideosInCategories(image: #imageLiteral(resourceName: "inner peace"),title: "How I Found True Inner Peace While Facing Death Row", author: "Goalcast", duration: "5:17", link: "https://www.youtube.com/watch?v=AeyKRl60szQ"),
             VideosInCategories(image: #imageLiteral(resourceName: "letter word"),title: "The 5-Letter Secret to a Worry-Free Life", author: "Goalcast", duration: "2:08", link: "https://www.youtube.com/watch?v=cyaFMYWA0Qk"),
             VideosInCategories(image: #imageLiteral(resourceName: "great day "),title: "It's a Great Day To Be Alive", author: "Goalcast", duration: "9:56", link: "https://www.youtube.com/watch?v=mRR_hNtFJeE"),
@@ -46,7 +46,7 @@ class CategoriesViewController: UIViewController {
             VideosInCategories(image: #imageLiteral(resourceName: "past"),title: "Get Over Your Past", author: "HESMotivation", duration: "5:29", link: "https://www.youtube.com/watch?v=DqHHLFktQIk"),
             VideosInCategories(image: #imageLiteral(resourceName: "do the right thing"),title: "How To Always Do The Right Thing", author: "Word Porn", duration: "3:31", link: "https://www.youtube.com/watch?v=Ny_oZca0CcQ"),
             VideosInCategories(image: #imageLiteral(resourceName: "never stress"),title: "How To Never Stress Again", author: "Word Porn", duration: "1:43", link: "https://www.youtube.com/watch?v=qJq8IovXFYQ")]),
-        Categories(image: #imageLiteral(resourceName: "temporaryBlack"), name: "Be Confident", videos: [
+        Categories(image: #imageLiteral(resourceName: "confident"), name: "Be Confident", videos: [
             VideosInCategories(image: #imageLiteral(resourceName: "rejection"),title: "Be Prepared For Rejection", author: "Absolute Motivation", duration: "15:44", link: "https://www.youtube.com/watch?v=vwBJfxx85YU"),
             VideosInCategories(image: #imageLiteral(resourceName: "HERO"),title: "The Hero In You", author: "Absolute Motivation", duration: "6:42", link: "https://www.youtube.com/watch?v=ztChrYW_25w"),
             VideosInCategories(image: #imageLiteral(resourceName: "trust yourself"),title: "Trust Yourself", author: "Chispa Motivation", duration: "4:35", link: "https://www.youtube.com/watch?v=XUOWcwNXFeU"),
@@ -57,7 +57,7 @@ class CategoriesViewController: UIViewController {
             VideosInCategories(image: #imageLiteral(resourceName: "self confidence"),title: "Self Confidence", author: "HESMotivation", duration: "11:26", link: "https://www.youtube.com/watch?v=1bJz9yzmKXs"),
             VideosInCategories(image: #imageLiteral(resourceName: "believe in yourself"),title: "Believe In Yourself", author: "HESMotivation", duration: "11:47", link: "https://www.youtube.com/watch?v=QPLPnlWhkA4"),
             VideosInCategories(image: #imageLiteral(resourceName: "change the way you see yourself"),title: "How to Change the Way You See Yourself", author: "Goalcast", duration: "8:07", link: "https://www.youtube.com/watch?v=1IH0digwjds&t=182s")]),
-        Categories(image: #imageLiteral(resourceName: "temporaryBlack"), name: "Limits Don't Exist", videos: [
+        Categories(image: #imageLiteral(resourceName: "limits"), name: "Limits Don't Exist", videos: [
             VideosInCategories(image: #imageLiteral(resourceName: "remember what you are"),title: "Remember What You Are", author: "MulliganBrothers", duration: "4:02", link: "https://www.youtube.com/watch?v=flBd7yQ-bv8"),
             VideosInCategories(image: #imageLiteral(resourceName: "Muhammad Ali"),title: "Muhammad Ali", author: "MulliganBrothers", duration: "3:54", link: "https://www.youtube.com/watch?v=Y2eKdCmKgcM"),
             VideosInCategories(image: #imageLiteral(resourceName: "resiliency"),title: "Resilienzy", author: "Matuesz M", duration: "2:09", link: "https://www.youtube.com/watch?v=UNQhuFL6CWg"),
@@ -68,7 +68,7 @@ class CategoriesViewController: UIViewController {
             VideosInCategories(image: #imageLiteral(resourceName: "obsession"),title: "Obsession", author: "Chispa Motivation", duration: "6:00", link: "https://www.youtube.com/watch?v=APOKZLzKnFw"),
             VideosInCategories(image: #imageLiteral(resourceName: "effort"),title: "Effort", author: "HESMotivation", duration: "10:39", link: "https://www.youtube.com/watch?v=67fB-mqtXbY"),
             VideosInCategories(image: #imageLiteral(resourceName: "champion"),title: "Be A Champion", author: "HESMotivation", duration: "10:19", link: "https://www.youtube.com/watch?v=TjskLAh1SO8")]),
-        Categories(image: #imageLiteral(resourceName: "temporaryBlack"), name: "No Plan B", videos: [
+        Categories(image: #imageLiteral(resourceName: "Plan B"), name: "No Plan B", videos: [
             VideosInCategories(image: #imageLiteral(resourceName: "rules for success"),title: "5 Rules For Success In Life", author: "HESMotivation", duration: "11:11", link: "https://www.youtube.com/watch?v=f3uaq6Bm8hQ"),
             VideosInCategories(image: #imageLiteral(resourceName: "sucks"),title: "Plan B Sucks", author: "MulliganBrothers", duration: "2:40", link: "https://www.youtube.com/watch?v=uPGNrGfjOIE"),
             VideosInCategories(image: #imageLiteral(resourceName: "decide"),title: "Decide", author: "MulliganBrothers", duration: "3:29", link: "https://www.youtube.com/watch?v=WldsRzmu4zs"),
@@ -79,7 +79,7 @@ class CategoriesViewController: UIViewController {
             VideosInCategories(image: #imageLiteral(resourceName: "business"),title: "Business[Warren Buffett]", author: "MulliganBrothers", duration: "3:08", link: "https://www.youtube.com/watch?v=oLWScthpAgY"),
             VideosInCategories(image: #imageLiteral(resourceName: "push yourself today"),title: "Push Yourself Today", author: "Habits Of The Wealthy", duration: "12:20", link: "https://www.youtube.com/watch?v=ULHMQ4ENIyk"),
             VideosInCategories(image: #imageLiteral(resourceName: "how bad do you want it"),title: "How Bad Do You Want It?", author: "Chispa Motivation", duration: "3:41", link: "https://www.youtube.com/watch?v=PX1vUSuFhrA")]),
-        Categories(image: #imageLiteral(resourceName: "temporaryBlack"), name: "Dream Big", videos: [
+        Categories(image: #imageLiteral(resourceName: "Dream big"), name: "Dream Big", videos: [
             VideosInCategories(image: #imageLiteral(resourceName: "focus on one thing"),title: "Focus On One Thing", author: "Habits of the Wealthy", duration: "15:47", link: "https://www.youtube.com/watch?v=4cfbvM-TFjY"),
             VideosInCategories(image: #imageLiteral(resourceName: "fears n dreams"),title: "Fears and Dreams", author: "MulliganBrothers", duration: "15:12", link: "https://www.youtube.com/watch?v=9qLx-oy6Zlc"),
             VideosInCategories(image: #imageLiteral(resourceName: "get angry and get to work"),title: "Get Angry & Get To Work", author: "MulliganBrothers", duration: "13:55", link: "https://www.youtube.com/watch?v=BWW-5Q_EzKM"),
@@ -90,7 +90,7 @@ class CategoriesViewController: UIViewController {
             VideosInCategories(image: #imageLiteral(resourceName: "mark the world"),title: "Leave Your Mark On The World", author: "Absolute Motivation", duration: "5:35", link: "https://www.youtube.com/watch?v=SSijcZjWMng"),
             VideosInCategories(image: #imageLiteral(resourceName: "fall forward"),title: "Fall Foward", author: "Absolute Motivation", duration: "5:11", link: "https://www.youtube.com/watch?v=6cgxSL926N8"),
             VideosInCategories(image: #imageLiteral(resourceName: "ambition"),title: "Ambition", author: "Absolute Motivation", duration: "11:26", link: "https://www.youtube.com/watch?v=tP7cpSVy92Y")]),
-        Categories(image: #imageLiteral(resourceName: "temporaryBlack"), name: "Do More", videos: [
+        Categories(image: , name: "Do More", videos: [
             VideosInCategories(image: #imageLiteral(resourceName: "22 year old"),title: "Millennials and Procrastination", author: "MulliganBrothers", duration: "15:48", link: "https://www.youtube.com/watch?v=nShlloNgM2E"),
             VideosInCategories(image: #imageLiteral(resourceName: "broke the internet"),title: "Future Generations", author: "Be Inspired", duration: "18:39", link: "https://www.youtube.com/watch?v=As8XkJNaHbs"),
             VideosInCategories(image: #imageLiteral(resourceName: "end laziness"),title: "Retrain Your Mind", author: "Be Inspired", duration: "10:34", link: "https://www.youtube.com/watch?v=xp2qjshr-r4&t=44s"),
@@ -133,6 +133,7 @@ class CategoriesViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         AppUtility.lockOrientation(.portrait)
+        categoriesTableview.separatorStyle = UITableViewCellSeparatorStyle.none
 
     }
     

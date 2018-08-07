@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -26,32 +27,32 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                         <color key="backgroundColor" red="0.013913008384406567" green="0.00053720909636467695" blue="0.00077200174564495683" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoriesTableViewCell" rowHeight="70" id="UFu-P1-yhB" userLabel="Cell" customClass="CategoriesTableViewCell" customModule="Motivate" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="375" height="70"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoriesTableViewCell" rowHeight="80" id="UFu-P1-yhB" userLabel="Cell" customClass="CategoriesTableViewCell" customModule="Motivate" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UFu-P1-yhB" id="j0r-gp-DHD">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pZG-Gr-piR">
-                                                            <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                                                            <rect key="frame" x="0.0" y="4" width="375" height="75.5"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGE-ik-kMa">
-                                                            <rect key="frame" x="28" y="24.5" width="239" height="21"/>
+                                                            <rect key="frame" x="28" y="29" width="239" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="0.95999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.95999999999999996" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <constraints>
                                                         <constraint firstItem="VGE-ik-kMa" firstAttribute="centerY" secondItem="j0r-gp-DHD" secondAttribute="centerY" id="2BP-kq-o78"/>
                                                         <constraint firstAttribute="trailing" secondItem="pZG-Gr-piR" secondAttribute="trailing" id="F29-w5-bzf"/>
                                                         <constraint firstAttribute="trailingMargin" secondItem="VGE-ik-kMa" secondAttribute="trailing" constant="100" id="TeU-Th-EsQ"/>
                                                         <constraint firstItem="pZG-Gr-piR" firstAttribute="leading" secondItem="j0r-gp-DHD" secondAttribute="leading" id="evj-lQ-Clf"/>
                                                         <constraint firstAttribute="bottom" secondItem="pZG-Gr-piR" secondAttribute="bottom" id="f2F-fc-aAg"/>
-                                                        <constraint firstItem="pZG-Gr-piR" firstAttribute="top" secondItem="j0r-gp-DHD" secondAttribute="top" id="lOv-F6-FeM"/>
                                                         <constraint firstItem="VGE-ik-kMa" firstAttribute="leading" secondItem="j0r-gp-DHD" secondAttribute="leadingMargin" constant="20" id="qZJ-oe-gom"/>
+                                                        <constraint firstItem="pZG-Gr-piR" firstAttribute="top" secondItem="j0r-gp-DHD" secondAttribute="top" constant="4" id="v1V-sD-xjl"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <connections>
@@ -70,7 +71,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.18823529411764706" green="0.39215686274509803" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.030918065458536148" green="0.0092353159561753273" blue="0.0072957132942974567" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Ybv-MM-Ivb" firstAttribute="top" secondItem="t15-9F-6jU" secondAttribute="top" id="F8S-l3-T9a"/>
                             <constraint firstItem="t15-9F-6jU" firstAttribute="trailing" secondItem="Ybv-MM-Ivb" secondAttribute="trailing" id="Yel-qE-wPi"/>
