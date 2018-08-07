@@ -90,7 +90,7 @@ class CategoriesViewController: UIViewController {
             VideosInCategories(image: #imageLiteral(resourceName: "mark the world"),title: "Leave Your Mark On The World", author: "Absolute Motivation", duration: "5:35", link: "https://www.youtube.com/watch?v=SSijcZjWMng"),
             VideosInCategories(image: #imageLiteral(resourceName: "fall forward"),title: "Fall Foward", author: "Absolute Motivation", duration: "5:11", link: "https://www.youtube.com/watch?v=6cgxSL926N8"),
             VideosInCategories(image: #imageLiteral(resourceName: "ambition"),title: "Ambition", author: "Absolute Motivation", duration: "11:26", link: "https://www.youtube.com/watch?v=tP7cpSVy92Y")]),
-        Categories(image: , name: "Do More", videos: [
+        Categories(image: #imageLiteral(resourceName: "DO MORE"), name: "Do More", videos: [
             VideosInCategories(image: #imageLiteral(resourceName: "22 year old"),title: "Millennials and Procrastination", author: "MulliganBrothers", duration: "15:48", link: "https://www.youtube.com/watch?v=nShlloNgM2E"),
             VideosInCategories(image: #imageLiteral(resourceName: "broke the internet"),title: "Future Generations", author: "Be Inspired", duration: "18:39", link: "https://www.youtube.com/watch?v=As8XkJNaHbs"),
             VideosInCategories(image: #imageLiteral(resourceName: "end laziness"),title: "Retrain Your Mind", author: "Be Inspired", duration: "10:34", link: "https://www.youtube.com/watch?v=xp2qjshr-r4&t=44s"),
