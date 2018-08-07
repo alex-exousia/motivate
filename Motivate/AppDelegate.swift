@@ -7,6 +7,7 @@
 
 import UIKit
 import UserNotifications
+import DLLocalNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,7 +20,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         Thread.sleep(forTimeInterval: 0.0)
         // Override point for customization after application launch.
+        
+        var compoents = Calendar.current.dateComponents([.timeZone, .calendar, .year, .month, .day, .hour, .minute], from: Date())
+        compoents.hour = 20
+        compoents.minute = 18
+        compoents.second = 0
+        
+        guard let dateToRepeat = compoents.date else {
+            print("failed to create date from components")
+            
+            return true
+        }
+        
+        let firstNotification = DLNotification(identifier: "firstNotification", alertTitle: "Notification Alert", alertBody: "You have successfully created a notification", date: dateToRepeat, repeats: .Daily)
+        
+        let scheduler = DLNotificationScheduler()
+        scheduler.scheduleNotification(notification: firstNotification)
+        
+        
+        
         registerForPushNotifications()
+        
         return true
     }
     
@@ -31,7 +52,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UNUserNotificationCenter.current().getNotificationSettings { (settings) in
             print("Notification settings: \(settings)")
             guard settings.authorizationStatus == .authorized else { return }
-            UIApplication.shared.registerForRemoteNotifications()
+            DispatchQueue.main.async {
+                UIApplication.shared.registerForRemoteNotifications()
+            }
         }
     }
     
@@ -43,21 +66,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             guard granted else { return }
             self.getNotificationSettings()
         }
-    }
-    
-    func application(_ application: UIApplication,
-                     didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        let tokenParts = deviceToken.map { data -> String in
-            return String(format: "%02.2hhx", data)
-        }
-        
-        let token = tokenParts.joined()
-        print("Device Token: \(token)")
-    }
-    
-    func application(_ application: UIApplication,
-                     didFailToRegisterForRemoteNotificationsWithError error: Error) {
-        print("Failed to register: \(error)")
     }
     
     // MARK: - UNCHANGEDs

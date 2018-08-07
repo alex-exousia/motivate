@@ -86,7 +86,7 @@ public class DLNotificationScheduler{
         return newComponents
     }
     
-    
+    @discardableResult
     public func scheduleNotification ( notification: DLNotification) -> String? {
         
         
