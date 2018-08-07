@@ -21,12 +21,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Thread.sleep(forTimeInterval: 0.0)
         // Override point for customization after application launch.
         
-        var compoents = Calendar.current.dateComponents([.timeZone, .calendar, .year, .month, .day, .hour, .minute], from: Date())
-        compoents.hour = 20
-        compoents.minute = 18
-        compoents.second = 0
+        var components = Calendar.current.dateComponents([.timeZone, .calendar, .year, .month, .day, .hour, .minute], from: Date())
+        components.hour = 6
+        components.minute = 30
+        components.second = 0
         
-        guard let dateToRepeat = compoents.date else {
+        guard let dateToRepeat = components.date else {
             print("failed to create date from components")
             
             return true
@@ -37,15 +37,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let scheduler = DLNotificationScheduler()
         scheduler.scheduleNotification(notification: firstNotification)
         
-        
-        
         registerForPushNotifications()
         
         return true
-    }
-    
-    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
-        return self.orientationLock
     }
     
     func getNotificationSettings() {
@@ -66,6 +60,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             guard granted else { return }
             self.getNotificationSettings()
         }
+    }
+    
+    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+        return self.orientationLock
     }
     
     // MARK: - UNCHANGEDs
