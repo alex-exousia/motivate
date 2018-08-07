@@ -15,6 +15,4 @@ struct VideosInCategories {
     var author: String
     var duration: String
     var link: String
-    
-    
 }
