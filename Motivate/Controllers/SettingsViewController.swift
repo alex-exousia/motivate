@@ -30,12 +30,27 @@ class SettingsViewController: UIViewController {
         super.viewWillAppear(animated)
         self.navigationController?.isNavigationBarHidden = true
         AppUtility.lockOrientation(.portrait)
-
+        
+        activateBlur()
+        
     }
+    // MARK: - Methods
+    func activateBlur() {
+    let darkBlur = UIBlurEffect(style: UIBlurEffectStyle.dark)
+    let blurView = UIVisualEffectView(effect: darkBlur)
 
-// MARK: - Methods
-
-
+    view.frame = view.bounds
+    view.addSubview(blurView)
+        
+    }
+    
+//    func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        if segue.identifier == "aboutSegue" {
+//            if let destVC = segue.destination as? AboutPopupViewController {
+//                destVC.isButtonClick = true
+//            }
+//        }
+//    }
 // MARK: - IBActions
 }
 

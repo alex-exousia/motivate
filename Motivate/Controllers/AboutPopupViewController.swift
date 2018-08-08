@@ -17,6 +17,9 @@ class AboutPopupViewController: UIViewController {
         popUpView.layer.cornerRadius = 15
         popUpView.layer.masksToBounds = true
         
+        if isButtonClick == true {
+            isButtonClick = !isButtonClick
+        }
     }
     
     @IBOutlet weak var popUpView: UIView!
@@ -24,5 +27,7 @@ class AboutPopupViewController: UIViewController {
     @IBAction func closePopUp(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+    
+    var isButtonClick:Bool!
 
 }

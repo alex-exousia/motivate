@@ -202,7 +202,7 @@
                     <connections>
                         <outlet property="nameOfCategoryInVideosLabel" destination="Wdu-ab-sUV" id="nrD-B9-tGQ"/>
                         <outlet property="videosInCategoryTableView" destination="hEB-hj-9AA" id="39c-Bg-mnS"/>
-                        <segue destination="56e-Py-KKv" kind="show" identifier="openVideo" id="2UW-r4-hXO"/>
+                        <segue destination="56e-Py-KKv" kind="presentation" identifier="openVideo" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="2UW-r4-hXO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jNv-Ro-NDr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -217,32 +217,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e21-pg-C6S">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="closePopup:" destination="56e-Py-KKv" eventType="touchUpInside" id="70r-Z6-UzQ"/>
+                                    <action selector="closePup:" destination="ziK-Il-nF6" eventType="touchUpInside" id="9cv-IM-p7h"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VbS-SC-iG0">
-                                <rect key="frame" x="0.0" y="229" width="375" height="63"/>
+                                <rect key="frame" x="0.0" y="185" width="375" height="107"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kD9-uR-kB0" customClass="YouTubePlayerView" customModule="YouTubePlayer">
-                                <rect key="frame" x="4" y="230" width="366" height="207"/>
+                                <rect key="frame" x="4" y="186" width="366" height="295"/>
                                 <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.6061301256613757" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="e21-pg-C6S" firstAttribute="top" secondItem="KHd-S1-eGB" secondAttribute="topMargin" id="1M9-Tb-2M8"/>
                             <constraint firstItem="kD9-uR-kB0" firstAttribute="centerX" secondItem="KHd-S1-eGB" secondAttribute="centerX" id="Ee9-ut-CMN"/>
                             <constraint firstItem="xzg-c1-5oN" firstAttribute="trailing" secondItem="VbS-SC-iG0" secondAttribute="trailing" id="F3R-UB-H1u"/>
+                            <constraint firstItem="xzg-c1-5oN" firstAttribute="trailing" secondItem="e21-pg-C6S" secondAttribute="trailing" id="HlI-65-Ekm"/>
                             <constraint firstItem="VbS-SC-iG0" firstAttribute="top" secondItem="xzg-c1-5oN" secondAttribute="top" constant="165" id="T8c-Rn-1Fx"/>
                             <constraint firstItem="xzg-c1-5oN" firstAttribute="bottom" secondItem="VbS-SC-iG0" secondAttribute="bottom" constant="375" id="TPg-WL-qna"/>
                             <constraint firstItem="kD9-uR-kB0" firstAttribute="leading" secondItem="xzg-c1-5oN" secondAttribute="leading" constant="4" id="XTO-Fy-mNv"/>
                             <constraint firstItem="kD9-uR-kB0" firstAttribute="centerY" secondItem="KHd-S1-eGB" secondAttribute="centerY" id="b6o-YN-Awf"/>
                             <constraint firstItem="VbS-SC-iG0" firstAttribute="leading" secondItem="xzg-c1-5oN" secondAttribute="leading" id="t7Q-pz-MAT"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="e21-pg-C6S" secondAttribute="bottom" id="u05-zT-PDw"/>
+                            <constraint firstItem="e21-pg-C6S" firstAttribute="leading" secondItem="xzg-c1-5oN" secondAttribute="leading" id="wwi-Iq-fvb"/>
                             <constraint firstItem="kD9-uR-kB0" firstAttribute="top" secondItem="xzg-c1-5oN" secondAttribute="top" constant="166" id="ypp-GR-cfY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xzg-c1-5oN"/>
                     </view>
                     <connections>
                         <outlet property="showVideoYoutubePlayerView" destination="kD9-uR-kB0" id="won-gQ-pKM"/>
+                        <outlet property="videoPopUp" destination="kD9-uR-kB0" id="aff-mg-A3p"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x8J-Nj-ped" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ziK-Il-nF6" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2384.8000000000002" y="179.46026986506749"/>
         </scene>

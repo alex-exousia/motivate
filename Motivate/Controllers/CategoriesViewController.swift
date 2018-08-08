@@ -14,7 +14,7 @@ class CategoriesViewController: UIViewController {
     // MARK: - Properties
     var categories : [Categories] = [
         Categories(image: #imageLiteral(resourceName: "purpose"), name: "Find Your Purpose", videos: [
-            VideosInCategories(image: #imageLiteral(resourceName: "the meaning"),title: "The Meaning", author: "Absolute Motivation", duration: "4:16", link: "https://www.youtube.com/watch?v=Z0ZrkBCnfxw"),
+            VideosInCategories(image: ,title: "Purpose (Discover Your WHY)", author: "beats Reloaded", duration: "4:02", link: "https://www.youtube.com/watch?v=Z0ZrkBCnfxw"),
             VideosInCategories(image: #imageLiteral(resourceName: "the purpose"),title: "The Purpose", author: "Chispa Motivation", duration: "4:04", link: "https://www.youtube.com/watch?v=_LSmJIe4luY"),
             VideosInCategories(image: #imageLiteral(resourceName: "Purpose"),title: "Purpose", author: "RedFrost Motivatinon", duration: "6:19", link: "https://www.youtube.com/watch?v=2uFNfBGC72Q"),
             VideosInCategories(image: #imageLiteral(resourceName: "find purpose"),title: "How To Find Purpose In Your Life", author: "Goalcast", duration: "7:51", link: "https://www.youtube.com/watch?v=58HPpS514Bc"),
