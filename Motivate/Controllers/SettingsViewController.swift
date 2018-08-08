@@ -16,8 +16,6 @@ class SettingsViewController: UIViewController {
     
     // MARK: - IBOutlets
     
-    @IBOutlet weak var settingsLabel: UILabel!
-    
     @IBOutlet weak var settingsTableView: UITableView!
     
     // MARK: - View Life Cycle Methods
