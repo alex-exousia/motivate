@@ -44,6 +44,10 @@ class SettingsViewController: UIViewController {
         
     }
     
+    
+
+
+    
 //    func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 //        if segue.identifier == "aboutSegue" {
 //            if let destVC = segue.destination as? AboutPopupViewController {
