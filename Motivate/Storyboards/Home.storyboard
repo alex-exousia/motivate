@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="215" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oCK-8J-dII">
-                                <rect key="frame" x="0.0" y="93.5" width="375" height="573.5"/>
+                                <rect key="frame" x="0.0" y="99.5" width="375" height="567.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="0.95999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
@@ -96,8 +96,8 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HtI-Ss-12z">
-                                <rect key="frame" x="30" y="27" width="315" height="36.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="HtI-Ss-12z">
+                                <rect key="frame" x="30" y="34" width="315" height="40.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jrb-Fl-Hhi">
                                         <rect key="frame" x="135.5" y="0.0" width="44.5" height="19.5"/>
@@ -106,7 +106,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KVW-Je-Tub">
-                                        <rect key="frame" x="136" y="19.5" width="43.5" height="17"/>
+                                        <rect key="frame" x="136" y="23.5" width="43.5" height="17"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="0.83999999999999997" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -118,10 +118,10 @@
                         <constraints>
                             <constraint firstItem="HtI-Ss-12z" firstAttribute="leading" secondItem="3Rk-wg-bc0" secondAttribute="leading" constant="30" id="0Iw-V9-u6k"/>
                             <constraint firstItem="3Rk-wg-bc0" firstAttribute="trailing" secondItem="HtI-Ss-12z" secondAttribute="trailing" constant="30" id="5af-Gd-cJg"/>
-                            <constraint firstItem="HtI-Ss-12z" firstAttribute="top" secondItem="maI-2p-6Mo" secondAttribute="top" constant="27" id="5mA-tD-Akd"/>
+                            <constraint firstItem="HtI-Ss-12z" firstAttribute="top" secondItem="maI-2p-6Mo" secondAttribute="top" constant="34" id="5mA-tD-Akd"/>
                             <constraint firstItem="oCK-8J-dII" firstAttribute="trailing" secondItem="3Rk-wg-bc0" secondAttribute="trailing" id="HUp-7n-mtj"/>
                             <constraint firstItem="3Rk-wg-bc0" firstAttribute="bottom" secondItem="oCK-8J-dII" secondAttribute="bottom" id="Qob-ak-ckL"/>
-                            <constraint firstItem="oCK-8J-dII" firstAttribute="top" secondItem="HtI-Ss-12z" secondAttribute="bottom" constant="30" id="oWI-yC-iGA"/>
+                            <constraint firstItem="oCK-8J-dII" firstAttribute="top" secondItem="HtI-Ss-12z" secondAttribute="bottom" constant="25" id="oWI-yC-iGA"/>
                             <constraint firstItem="oCK-8J-dII" firstAttribute="leading" secondItem="3Rk-wg-bc0" secondAttribute="leading" id="sVe-Sj-CHs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3Rk-wg-bc0"/>

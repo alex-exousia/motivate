@@ -36,7 +36,7 @@ class CategoriesViewController: UIViewController {
             VideosInCategories(image: #imageLiteral(resourceName: "live happy"),title: "How To Live A Happy Life", author: "Habits Of The Wealthy", duration: "6:44", link: "https://www.youtube.com/watch?v=4hfUgPVqBks"),
             VideosInCategories(image: #imageLiteral(resourceName: "power of thought"),title: "The Power Of Thought", author: "RedFrost Motivation", duration: "5:27", link: "https://www.youtube.com/watch?v=zZ4NjopCA00")]),
         Categories(image: #imageLiteral(resourceName: "peace of mind"), name: "Peace Of Mind", videos: [
-            VideosInCategories(image: #imageLiteral(resourceName: "inner peace"),title: "How I Found True Inner Peace While Facing Death Row", author: "Goalcast", duration: "5:17", link: "https://www.youtube.com/watch?v=AeyKRl60szQ"),
+            VideosInCategories(image: #imageLiteral(resourceName: "inner peace"),title: "How I Found True Inner Peace", author: "Goalcast", duration: "5:17", link: "https://www.youtube.com/watch?v=AeyKRl60szQ"),
             VideosInCategories(image: #imageLiteral(resourceName: "letter word"),title: "The 5-Letter Secret to a Worry-Free Life", author: "Goalcast", duration: "2:08", link: "https://www.youtube.com/watch?v=cyaFMYWA0Qk"),
             VideosInCategories(image: #imageLiteral(resourceName: "great day "),title: "It's a Great Day To Be Alive", author: "Goalcast", duration: "9:56", link: "https://www.youtube.com/watch?v=mRR_hNtFJeE"),
             VideosInCategories(image: #imageLiteral(resourceName: "this monk"),title: "This Monk Will Change Your Worldview", author: "Absolute Motivation", duration: "16:03", link: "https://www.youtube.com/watch?v=5hfzEAEMEyY"),

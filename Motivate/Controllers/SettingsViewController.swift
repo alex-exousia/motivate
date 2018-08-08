@@ -31,32 +31,38 @@ class SettingsViewController: UIViewController {
         self.navigationController?.isNavigationBarHidden = true
         AppUtility.lockOrientation(.portrait)
         
-        activateBlur()
+//        settingsTableView.delegate = self
+//        settingsTableView.dataSource = self
+        
+//        activateBlur()
         
     }
     // MARK: - Methods
-    func activateBlur() {
-    let darkBlur = UIBlurEffect(style: UIBlurEffectStyle.dark)
-    let blurView = UIVisualEffectView(effect: darkBlur)
-
-    view.frame = view.bounds
-    view.addSubview(blurView)
-        
-    }
-    
-    
-
-
-    
-//    func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        if segue.identifier == "aboutSegue" {
-//            if let destVC = segue.destination as? AboutPopupViewController {
-//                destVC.isButtonClick = true
-//            }
-//        }
+//    func activateBlur() {
+//    let darkBlur = UIBlurEffect(style: UIBlurEffectStyle.dark)
+//    let blurView = UIVisualEffectView(effect: darkBlur)
+//    view.frame = view.bounds
+//    view.addSubview(blurView)
 //    }
-// MARK: - IBActions
 }
+
+//extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return 5
+//    }
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        <#code#>
+//    }
+//
+//
+//    func settingsTableView(tableView: UITableView,
+//                           didSelectRowAtIndexPath indexPath: NSIndexPath) {
+//        if indexPath.row == 1 {
+//            print("fnejwbfkbewubferi")
+//        }
+//}
+//}
 
 
 

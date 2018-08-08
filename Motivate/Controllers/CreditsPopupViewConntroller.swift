@@ -24,7 +24,5 @@ class CreditsPopupViewConntroller: UIViewController {
     
     @IBAction func closePopup(_ sender: Any) {
         dismiss(animated: true, completion: nil)
-        
-        print("done segue credits")
     }
 }
