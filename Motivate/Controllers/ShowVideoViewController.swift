@@ -36,6 +36,8 @@ class ShowvideoViewController: UIViewController {
         videoPopUp.layer.cornerRadius = 15
         videoPopUp.layer.masksToBounds = true
         
+        showVideoYoutubePlayerView.clear()
+        
     }
 
 }

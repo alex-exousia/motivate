@@ -23,36 +23,37 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ybv-MM-Ivb">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="r6J-9X-LQn" userLabel="Categories Table View">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="86" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="r6J-9X-LQn" userLabel="Categories Table View">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
-                                        <color key="backgroundColor" red="0.013913008384406567" green="0.00053720909636467695" blue="0.00077200174564495683" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoriesTableViewCell" rowHeight="80" id="UFu-P1-yhB" userLabel="Cell" customClass="CategoriesTableViewCell" customModule="Motivate" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="categoriesTableViewCell" rowHeight="86" id="UFu-P1-yhB" userLabel="Cell" customClass="CategoriesTableViewCell" customModule="Motivate" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="375" height="86"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UFu-P1-yhB" id="j0r-gp-DHD">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="85.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pZG-Gr-piR">
-                                                            <rect key="frame" x="0.0" y="4" width="375" height="75.5"/>
-                                                        </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGE-ik-kMa">
-                                                            <rect key="frame" x="28" y="29" width="239" height="21"/>
+                                                            <rect key="frame" x="105" y="10.5" width="244" height="65"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pZG-Gr-piR">
+                                                            <rect key="frame" x="0.0" y="0.5" width="84.5" height="84.5"/>
+                                                        </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.95999999999999996" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <constraints>
-                                                        <constraint firstItem="VGE-ik-kMa" firstAttribute="centerY" secondItem="j0r-gp-DHD" secondAttribute="centerY" id="2BP-kq-o78"/>
-                                                        <constraint firstAttribute="trailing" secondItem="pZG-Gr-piR" secondAttribute="trailing" id="F29-w5-bzf"/>
-                                                        <constraint firstAttribute="trailingMargin" secondItem="VGE-ik-kMa" secondAttribute="trailing" constant="100" id="TeU-Th-EsQ"/>
-                                                        <constraint firstItem="pZG-Gr-piR" firstAttribute="leading" secondItem="j0r-gp-DHD" secondAttribute="leading" id="evj-lQ-Clf"/>
-                                                        <constraint firstAttribute="bottom" secondItem="pZG-Gr-piR" secondAttribute="bottom" id="f2F-fc-aAg"/>
-                                                        <constraint firstItem="VGE-ik-kMa" firstAttribute="leading" secondItem="j0r-gp-DHD" secondAttribute="leadingMargin" constant="20" id="qZJ-oe-gom"/>
-                                                        <constraint firstItem="pZG-Gr-piR" firstAttribute="top" secondItem="j0r-gp-DHD" secondAttribute="top" constant="4" id="v1V-sD-xjl"/>
+                                                        <constraint firstItem="pZG-Gr-piR" firstAttribute="top" secondItem="j0r-gp-DHD" secondAttribute="top" id="6gK-yf-Jze"/>
+                                                        <constraint firstAttribute="bottom" secondItem="pZG-Gr-piR" secondAttribute="bottom" id="7ls-bU-aqx"/>
+                                                        <constraint firstAttribute="trailing" secondItem="pZG-Gr-piR" secondAttribute="trailing" constant="290.5" id="AwZ-ot-fdq"/>
+                                                        <constraint firstItem="VGE-ik-kMa" firstAttribute="leading" secondItem="pZG-Gr-piR" secondAttribute="trailing" constant="20.5" id="dBw-9o-aOs"/>
+                                                        <constraint firstAttribute="trailing" secondItem="VGE-ik-kMa" secondAttribute="trailing" constant="26" id="kaz-fA-02h"/>
+                                                        <constraint firstItem="pZG-Gr-piR" firstAttribute="leading" secondItem="j0r-gp-DHD" secondAttribute="leading" id="pM0-23-e6V"/>
+                                                        <constraint firstItem="VGE-ik-kMa" firstAttribute="top" secondItem="j0r-gp-DHD" secondAttribute="top" constant="10.25" id="q1G-Pj-Vww"/>
+                                                        <constraint firstAttribute="bottom" secondItem="VGE-ik-kMa" secondAttribute="bottom" constant="10.25" id="xmk-49-UBz"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <connections>

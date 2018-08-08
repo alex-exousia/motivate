@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AF42AA34CB83F117D07631BD /* Pods_Motivate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9021D7245B0EE463005385DF /* Pods_Motivate.framework */; };
 		C90B0DED21084C42006DA7AA /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90B0DEC21084C42006DA7AA /* Settings.storyboard */; };
+		C90EFAD0211B88A300295F22 /* rateAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90EFACF211B88A300295F22 /* rateAppViewController.swift */; };
 		C91625A5211A71AE000DC433 /* AboutPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91625A4211A71AE000DC433 /* AboutPopupViewController.swift */; };
 		C91625A7211A84C4000DC433 /* CreditsPopupViewConntroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91625A6211A84C4000DC433 /* CreditsPopupViewConntroller.swift */; };
 		C91934AF21125C7600E9E74E /* ShowVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91934AE21125C7600E9E74E /* ShowVideoViewController.swift */; };
@@ -40,6 +41,7 @@
 		5BB69A52FF71FAE51808D819 /* Pods-Motivate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motivate.release.xcconfig"; path = "Pods/Target Support Files/Pods-Motivate/Pods-Motivate.release.xcconfig"; sourceTree = "<group>"; };
 		9021D7245B0EE463005385DF /* Pods_Motivate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Motivate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C90B0DEC21084C42006DA7AA /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		C90EFACF211B88A300295F22 /* rateAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rateAppViewController.swift; sourceTree = "<group>"; };
 		C91625A4211A71AE000DC433 /* AboutPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPopupViewController.swift; sourceTree = "<group>"; };
 		C91625A6211A84C4000DC433 /* CreditsPopupViewConntroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsPopupViewConntroller.swift; sourceTree = "<group>"; };
 		C91934AE21125C7600E9E74E /* ShowVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowVideoViewController.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				C938A15D21079B8500139709 /* SettingsViewController.swift */,
 				C91625A4211A71AE000DC433 /* AboutPopupViewController.swift */,
 				C91625A6211A84C4000DC433 /* CreditsPopupViewConntroller.swift */,
+				C90EFACF211B88A300295F22 /* rateAppViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 				C95ECDD0210D78BC00280631 /* VideosInCategoriesViewController.swift in Sources */,
 				C9B379D0210A4518003674BA /* fakeLaunchScreenViewController.swift in Sources */,
 				C9D594A62113A733004966AF /* AppUtility.swift in Sources */,
+				C90EFAD0211B88A300295F22 /* rateAppViewController.swift in Sources */,
 				C938A15E21079B8500139709 /* SettingsViewController.swift in Sources */,
 				C938A15821079AA400139709 /* MainTabBarController.swift in Sources */,
 				C926E3832109018700312254 /* CategoriesTableViewCell.swift in Sources */,

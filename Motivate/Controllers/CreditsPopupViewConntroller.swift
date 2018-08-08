@@ -19,7 +19,6 @@ class CreditsPopupViewConntroller: UIViewController {
         
     }
     
-    
     @IBOutlet weak var popUpView: UIView!
     
     @IBAction func closePopup(_ sender: Any) {

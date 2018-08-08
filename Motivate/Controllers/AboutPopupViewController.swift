@@ -17,9 +17,6 @@ class AboutPopupViewController: UIViewController {
         popUpView.layer.cornerRadius = 15
         popUpView.layer.masksToBounds = true
         
-//        if isButtonClick == true {
-//            isButtonClick = !isButtonClick
-//        }
     }
     
     @IBOutlet weak var popUpView: UIView!

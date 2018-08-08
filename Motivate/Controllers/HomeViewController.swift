@@ -99,7 +99,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 //        cell.authorLabel.text = video.author
         cell.videoLengthLabel.text = video.duration
         let url = URL(string: video.link)!
-        cell.videoPlayer.delegate = self
+//        cell.videoPlayer.delegate = self
         cell.videoPlayer.loadVideoURL(url)
         cell.videoPlayer.clear()
         
@@ -112,14 +112,14 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
 }
 
-extension HomeViewController: YouTubePlayerDelegate {
-    func playerStateChanged(_ videoPlayer: YouTubePlayerView, playerState: YouTubePlayerState) {
-        if case .Playing = playerState {
-            playingVideo = videoPlayer
-            videoPlayer.play()
-        }
-    }
-}
+//extension HomeViewController: YouTubePlayerDelegate {
+//    func playerStateChanged(_ videoPlayer: YouTubePlayerView, playerState: YouTubePlayerState) {
+//        if playerState == .Paused && videoPlayer.ready == true {
+//            playingVideo = videoPlayer
+//            videoPlayer.play()
+//        }
+//    }
+//}
 
 
 

@@ -23,7 +23,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="0.95999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="homeVideoTableViewCell" rowHeight="215" id="h6G-hB-P3Y" userLabel="Cell" customClass="HomeVideoTableViewCell" customModule="Motivate" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="homeVideoTableViewCell" rowHeight="215" id="h6G-hB-P3Y" userLabel="Cell" customClass="HomeVideoTableViewCell" customModule="Motivate" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="215"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="h6G-hB-P3Y" id="tle-UY-gaI">
