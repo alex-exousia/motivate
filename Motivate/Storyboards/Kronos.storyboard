@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pqx-DQ-ig1">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -9,16 +9,17 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Kronos View Controller-->
+        <!--KronosViewController-->
         <scene sceneID="qzu-RC-6b3">
             <objects>
-                <viewController id="pqx-DQ-ig1" customClass="KronosViewController" customModule="Motivate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="pqx-DQ-ig1" userLabel="KronosViewController" customClass="KronosViewController" customModule="Motivate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tpy-E6-eYE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KbO-Mu-KaE">
-                                <rect key="frame" x="76" y="528" width="223" height="48"/>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KbO-Mu-KaE">
+                                <rect key="frame" x="72" y="686" width="231" height="48"/>
+                                <color key="backgroundColor" red="0.17254901960784313" green="0.17254901960784313" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Set Your Birthday">
                                     <color key="titleColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -28,65 +29,81 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KRONOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIn-jF-qAc">
-                                <rect key="frame" x="79" y="40" width="217" height="55"/>
+                                <rect key="frame" x="79" y="64" width="217" height="55"/>
                                 <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="45"/>
                                 <color key="textColor" red="0.17581820922813571" green="0.58874396981014621" blue="0.44966906901649545" alpha="0.85207919973544977" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Life is short " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9p-t0-B5T">
-                                <rect key="frame" x="141" y="109" width="94" height="21"/>
+                                <rect key="frame" x="141" y="133" width="94" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.78890581925710046" green="0.38119746546166428" blue="0.35808826588946752" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make the most of yours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4pF-9g-5QY">
-                                <rect key="frame" x="67" y="138" width="241" height="29"/>
+                                <rect key="frame" x="67" y="162" width="241" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" red="0.78890581930000003" green="0.3811974655" blue="0.35808826589999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Age decimal" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35A-g4-005">
-                                <rect key="frame" x="16" y="321" width="343" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weF-Ql-rvG">
+                                <rect key="frame" x="24" y="636" width="327" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9H1-zP-mNG">
+                                <rect key="frame" x="161" y="392.66666666666669" width="54.666666666666657" height="27.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="L7e-G4-heW" firstAttribute="bottom" secondItem="KbO-Mu-KaE" secondAttribute="bottom" constant="44" id="5Jt-ZN-2UR"/>
+                            <constraint firstItem="KbO-Mu-KaE" firstAttribute="centerX" secondItem="Tpy-E6-eYE" secondAttribute="centerX" id="5bx-hf-GG2"/>
+                            <constraint firstItem="L7e-G4-heW" firstAttribute="trailing" secondItem="weF-Ql-rvG" secondAttribute="trailing" constant="24" id="8yx-c0-SiP"/>
                             <constraint firstItem="GIn-jF-qAc" firstAttribute="top" secondItem="L7e-G4-heW" secondAttribute="top" constant="20" id="9FI-Tz-YOk"/>
-                            <constraint firstItem="KbO-Mu-KaE" firstAttribute="centerX" secondItem="Tpy-E6-eYE" secondAttribute="centerX" id="NOV-s4-Lq4"/>
+                            <constraint firstItem="9H1-zP-mNG" firstAttribute="centerY" secondItem="Tpy-E6-eYE" secondAttribute="centerY" id="HQJ-SL-HD5"/>
                             <constraint firstItem="F9p-t0-B5T" firstAttribute="centerX" secondItem="Tpy-E6-eYE" secondAttribute="centerX" id="O2A-eI-0CY"/>
-                            <constraint firstItem="L7e-G4-heW" firstAttribute="bottom" secondItem="KbO-Mu-KaE" secondAttribute="bottom" constant="91" id="Qle-jN-niP"/>
                             <constraint firstItem="GIn-jF-qAc" firstAttribute="centerX" secondItem="Tpy-E6-eYE" secondAttribute="centerX" id="RRg-0e-usS"/>
                             <constraint firstItem="F9p-t0-B5T" firstAttribute="top" secondItem="GIn-jF-qAc" secondAttribute="bottom" constant="14" id="S98-fk-TU1"/>
+                            <constraint firstItem="KbO-Mu-KaE" firstAttribute="top" secondItem="weF-Ql-rvG" secondAttribute="bottom" constant="26" id="Y8e-7v-F7Z"/>
+                            <constraint firstItem="L7e-G4-heW" firstAttribute="trailing" secondItem="KbO-Mu-KaE" secondAttribute="trailing" constant="72" id="nTG-w4-vQs"/>
+                            <constraint firstItem="KbO-Mu-KaE" firstAttribute="centerX" secondItem="Tpy-E6-eYE" secondAttribute="centerX" id="oH4-t6-MP7"/>
+                            <constraint firstItem="KbO-Mu-KaE" firstAttribute="leading" secondItem="L7e-G4-heW" secondAttribute="leading" constant="72" id="oz9-CV-YnO"/>
                             <constraint firstItem="4pF-9g-5QY" firstAttribute="top" secondItem="F9p-t0-B5T" secondAttribute="bottom" constant="8" id="pQY-nz-N1A"/>
+                            <constraint firstItem="weF-Ql-rvG" firstAttribute="leading" secondItem="L7e-G4-heW" secondAttribute="leading" constant="24" id="qC7-wr-YSE"/>
                             <constraint firstItem="4pF-9g-5QY" firstAttribute="centerX" secondItem="Tpy-E6-eYE" secondAttribute="centerX" id="qOT-8P-YIG"/>
+                            <constraint firstItem="9H1-zP-mNG" firstAttribute="centerX" secondItem="Tpy-E6-eYE" secondAttribute="centerX" id="vQ7-eu-CCm"/>
+                            <constraint firstItem="weF-Ql-rvG" firstAttribute="centerX" secondItem="Tpy-E6-eYE" secondAttribute="centerX" id="xk2-Hi-8HK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="L7e-G4-heW"/>
                     </view>
                     <connections>
-                        <outlet property="ageDecimalLabel" destination="35A-g4-005" id="Ngw-Uy-92t"/>
+                        <outlet property="ageDecimalLabel" destination="9H1-zP-mNG" id="iIb-Td-gaK"/>
+                        <outlet property="dateLabel" destination="weF-Ql-rvG" id="PWS-tq-yax"/>
+                        <outlet property="setBirthdayButton" destination="KbO-Mu-KaE" id="VTd-kF-Vz0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lgq-Lq-Xw6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-215.19999999999999" y="-4.0479760119940034"/>
+            <point key="canvasLocation" x="-215.19999999999999" y="-4.4334975369458132"/>
         </scene>
         <!--Birthday Setup View Controller-->
         <scene sceneID="wQi-HF-SDu">
             <objects>
                 <viewController id="tEq-fq-8Ed" customClass="birthdaySetupViewController" customModule="Motivate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nOC-KW-pKJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ql4-cr-gyU">
-                                <rect key="frame" x="27" y="300" width="320" height="367"/>
+                                <rect key="frame" x="27" y="324" width="320" height="454"/>
                                 <subviews>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="stg-8P-aC8">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="274"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="361"/>
                                         <date key="date" timeIntervalSinceReferenceDate="555531630.859357">
                                             <!--2018-08-09 18:20:30 +0000-->
                                         </date>
@@ -98,13 +115,13 @@
                                         </date>
                                     </datePicker>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YaM-Xg-vUk">
-                                        <rect key="frame" x="123.5" y="298" width="73" height="33"/>
+                                        <rect key="frame" x="123.66666666666666" y="298" width="73" height="120"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="33"/>
                                         <state key="normal" title="DONE">
                                             <color key="titleColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="Ol2-kl-f5T" kind="unwind" unwindAction="unwindBirthdayPicker:" id="m5G-Td-pn2"/>
+                                            <action selector="doneAction:" destination="tEq-fq-8Ed" eventType="touchUpInside" id="VhF-ha-4lh"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -135,6 +152,7 @@
                     <connections>
                         <outlet property="birthdayPicker" destination="stg-8P-aC8" id="85J-9T-neL"/>
                         <outlet property="birthdayPopUpView" destination="ql4-cr-gyU" id="uvL-9E-f2j"/>
+                        <segue destination="Ol2-kl-f5T" kind="unwind" identifier="unwindToKronos" unwindAction="unwindBirthdayPicker:" id="pfX-20-ZHO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="74o-nc-JoT" userLabel="First Responder" sceneMemberID="firstResponder"/>

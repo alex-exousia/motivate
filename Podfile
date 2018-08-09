@@ -8,5 +8,5 @@ target 'Motivate' do
   # Pods for Motivate
 pod 'YouTubePlayer'
 pod 'DLLocalNotifications'
-
+pod 'AFDateHelper'
 end

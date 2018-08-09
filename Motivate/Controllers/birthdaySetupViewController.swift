@@ -22,7 +22,24 @@ class birthdaySetupViewController: UIViewController{
     
     @IBOutlet weak var birthdayPicker: UIDatePicker!
     
-    @IBAction func unwindBirthdayPicker(_ segue: UIStoryboardSegue) {
+    
+    @IBAction func doneAction(_ sender: Any) {
+        
+        
+        self.performSegue(withIdentifier: "unwindToKronos", sender: self)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let destination = segue.destination as? KronosViewController else { return }
+        
+        let dateFormat = DateFormatter()
+        dateFormat.dateFormat = "dd-MM-yyyy"
+        
+        
+        let date = birthdayPicker.date
+        let dateString = "\(dateFormat.string(from: date))"
+        UserDefaults.standard.set(dateString, forKey: "date")
+        
+        destination.birthDate = date
+    }
 }
