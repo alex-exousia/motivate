@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AF42AA34CB83F117D07631BD /* Pods_Motivate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9021D7245B0EE463005385DF /* Pods_Motivate.framework */; };
+		C904FEBD211CB16F0034D9EF /* Kronos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C904FEBC211CB16F0034D9EF /* Kronos.storyboard */; };
+		C904FEBF211CB1CB0034D9EF /* KronosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C904FEBE211CB1CB0034D9EF /* KronosViewController.swift */; };
 		C90B0DED21084C42006DA7AA /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90B0DEC21084C42006DA7AA /* Settings.storyboard */; };
 		C90EFAD0211B88A300295F22 /* rateAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90EFACF211B88A300295F22 /* rateAppViewController.swift */; };
 		C91625A5211A71AE000DC433 /* AboutPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91625A4211A71AE000DC433 /* AboutPopupViewController.swift */; };
@@ -27,6 +29,7 @@
 		C938A16021079BF000139709 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C938A15F21079BF000139709 /* CategoriesViewController.swift */; };
 		C938A1642107A20E00139709 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C938A1632107A20E00139709 /* Home.storyboard */; };
 		C938A1662107A2A800139709 /* Categories.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C938A1652107A2A800139709 /* Categories.storyboard */; };
+		C94AD86C211CB9DA002D9963 /* birthdaySetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94AD86B211CB9DA002D9963 /* birthdaySetupViewController.swift */; };
 		C95ECDCE210D67DC00280631 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95ECDCD210D67DC00280631 /* Categories.swift */; };
 		C95ECDD0210D78BC00280631 /* VideosInCategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95ECDCF210D78BC00280631 /* VideosInCategoriesViewController.swift */; };
 		C9B379CC21095231003674BA /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B379CB21095231003674BA /* Launch Screen.storyboard */; };
@@ -40,6 +43,8 @@
 		4337340419BEBDF88CD537A8 /* Pods-Motivate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motivate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Motivate/Pods-Motivate.debug.xcconfig"; sourceTree = "<group>"; };
 		5BB69A52FF71FAE51808D819 /* Pods-Motivate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Motivate.release.xcconfig"; path = "Pods/Target Support Files/Pods-Motivate/Pods-Motivate.release.xcconfig"; sourceTree = "<group>"; };
 		9021D7245B0EE463005385DF /* Pods_Motivate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Motivate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C904FEBC211CB16F0034D9EF /* Kronos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Kronos.storyboard; sourceTree = "<group>"; };
+		C904FEBE211CB1CB0034D9EF /* KronosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KronosViewController.swift; sourceTree = "<group>"; };
 		C90B0DEC21084C42006DA7AA /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		C90EFACF211B88A300295F22 /* rateAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rateAppViewController.swift; sourceTree = "<group>"; };
 		C91625A4211A71AE000DC433 /* AboutPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPopupViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +66,7 @@
 		C938A15F21079BF000139709 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 		C938A1632107A20E00139709 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		C938A1652107A2A800139709 /* Categories.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Categories.storyboard; sourceTree = "<group>"; };
+		C94AD86B211CB9DA002D9963 /* birthdaySetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = birthdaySetupViewController.swift; sourceTree = "<group>"; };
 		C95ECDCD210D67DC00280631 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
 		C95ECDCF210D78BC00280631 /* VideosInCategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosInCategoriesViewController.swift; sourceTree = "<group>"; };
 		C9B379CB21095231003674BA /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
@@ -152,6 +158,7 @@
 				C938A1632107A20E00139709 /* Home.storyboard */,
 				C938A1652107A2A800139709 /* Categories.storyboard */,
 				C9B379CB21095231003674BA /* Launch Screen.storyboard */,
+				C904FEBC211CB16F0034D9EF /* Kronos.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -170,6 +177,8 @@
 				C91625A4211A71AE000DC433 /* AboutPopupViewController.swift */,
 				C91625A6211A84C4000DC433 /* CreditsPopupViewConntroller.swift */,
 				C90EFACF211B88A300295F22 /* rateAppViewController.swift */,
+				C904FEBE211CB1CB0034D9EF /* KronosViewController.swift */,
+				C94AD86B211CB9DA002D9963 /* birthdaySetupViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -257,6 +266,7 @@
 				C938A143210793B000139709 /* Main.storyboard in Resources */,
 				C938A1642107A20E00139709 /* Home.storyboard in Resources */,
 				C9B379CC21095231003674BA /* Launch Screen.storyboard in Resources */,
+				C904FEBD211CB16F0034D9EF /* Kronos.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,13 +299,11 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Motivate/Pods-Motivate-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/DLLocalNotifications/DLLocalNotifications.framework",
-				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/YouTubePlayer/YouTubePlayer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DLLocalNotifications.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YouTubePlayer.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,6 +322,7 @@
 				C9B379D0210A4518003674BA /* fakeLaunchScreenViewController.swift in Sources */,
 				C9D594A62113A733004966AF /* AppUtility.swift in Sources */,
 				C90EFAD0211B88A300295F22 /* rateAppViewController.swift in Sources */,
+				C904FEBF211CB1CB0034D9EF /* KronosViewController.swift in Sources */,
 				C938A15E21079B8500139709 /* SettingsViewController.swift in Sources */,
 				C938A15821079AA400139709 /* MainTabBarController.swift in Sources */,
 				C926E3832109018700312254 /* CategoriesTableViewCell.swift in Sources */,
@@ -326,6 +335,7 @@
 				C938A15C21079B1900139709 /* LaunchScreenViewController.swift in Sources */,
 				C926E381210900C700312254 /* HomeVideoTableViewCell.swift in Sources */,
 				C926E37C2108FF1800312254 /* Video.swift in Sources */,
+				C94AD86C211CB9DA002D9963 /* birthdaySetupViewController.swift in Sources */,
 				C926E38521091F4300312254 /* Quote.swift in Sources */,
 				C938A15A21079ABB00139709 /* HomeViewController.swift in Sources */,
 				C91934AF21125C7600E9E74E /* ShowVideoViewController.swift in Sources */,

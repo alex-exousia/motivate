@@ -1,26 +1,20 @@
 PODS:
   - DLLocalNotifications (0.06)
-  - NVActivityIndicatorView (4.3.0):
-    - NVActivityIndicatorView/Presenter (= 4.3.0)
-  - NVActivityIndicatorView/Presenter (4.3.0)
   - YouTubePlayer (0.4.0)
 
 DEPENDENCIES:
   - DLLocalNotifications
-  - NVActivityIndicatorView
   - YouTubePlayer
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - DLLocalNotifications
-    - NVActivityIndicatorView
     - YouTubePlayer
 
 SPEC CHECKSUMS:
   DLLocalNotifications: 751d53da896bc396bb23d4d3570b7fd3c7654e4e
-  NVActivityIndicatorView: 963f62bf9f993fcf23218e55958e5b1761b9504c
   YouTubePlayer: 028451f6772f372d4759866db99824c676ac1473
 
-PODFILE CHECKSUM: ee93a9c56494ba5358aa4ffb4b23771378678603
+PODFILE CHECKSUM: 9316ba7982bf9f21e4a2fc4400caacc15d47740a
 
 COCOAPODS: 1.5.3

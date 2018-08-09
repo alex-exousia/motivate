@@ -9,7 +9,6 @@
 import Foundation
 import UIKit
 import YouTubePlayer
-import NVActivityIndicatorView
 
 class ShowvideoViewController: UIViewController {
     

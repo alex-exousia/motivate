@@ -112,16 +112,6 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
 }
 
-//extension HomeViewController: YouTubePlayerDelegate {
-//    func playerStateChanged(_ videoPlayer: YouTubePlayerView, playerState: YouTubePlayerState) {
-//        if playerState == .Paused && videoPlayer.ready == true {
-//            playingVideo = videoPlayer
-//            videoPlayer.play()
-//        }
-//    }
-//}
-
-
 
 
 
