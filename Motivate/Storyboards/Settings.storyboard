@@ -249,19 +249,24 @@
                                 <rect key="frame" x="42" y="172" width="291" height="352"/>
                                 <color key="backgroundColor" red="0.19004735300938291" green="0.19004735300938291" blue="0.19004735300938291" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPh-x8-nhR">
-                                <rect key="frame" x="166" y="238" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="16" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPh-x8-nhR">
+                                <rect key="frame" x="69" y="191" width="237" height="316"/>
+                                <string key="text">MindUP will be your solution to overpriced coffee and unhealthy energy drinks. Get a boost of energy just by watching a video that get you ready for any type of activity you will have during the day.  Recharge your mind with hundreds of cherry picked motivational videos. Daily notifications will remind you to watch your daily video to start the day off right. Day to day quotes will also be there to help you wake up ready for your day. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.00143316024863549" green="0.00143316024863549" blue="0.00143316024863549" alpha="0.24719131336045055" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="GUE-72-pBz" firstAttribute="bottom" secondItem="Rjf-6E-y3v" secondAttribute="bottom" constant="143" id="636-vN-cnM"/>
+                            <constraint firstItem="GUE-72-pBz" firstAttribute="bottom" secondItem="zPh-x8-nhR" secondAttribute="bottom" constant="160" id="8PQ-HJ-Xg1"/>
                             <constraint firstItem="0eZ-o6-zTq" firstAttribute="top" secondItem="GUE-72-pBz" secondAttribute="top" id="8zE-6t-NRm"/>
+                            <constraint firstItem="GUE-72-pBz" firstAttribute="trailing" secondItem="zPh-x8-nhR" secondAttribute="trailing" constant="69" id="DFi-eH-LoB"/>
+                            <constraint firstItem="zPh-x8-nhR" firstAttribute="leading" secondItem="GUE-72-pBz" secondAttribute="leading" constant="69" id="JFd-g2-Uos"/>
+                            <constraint firstItem="zPh-x8-nhR" firstAttribute="centerX" secondItem="0eZ-o6-zTq" secondAttribute="centerX" id="UeU-tw-iqU"/>
                             <constraint firstItem="Rjf-6E-y3v" firstAttribute="centerX" secondItem="0eZ-o6-zTq" secondAttribute="centerX" id="Weg-D4-vrK"/>
+                            <constraint firstItem="zPh-x8-nhR" firstAttribute="top" secondItem="GUE-72-pBz" secondAttribute="top" constant="171" id="YE2-Yu-sVr"/>
                             <constraint firstItem="GUE-72-pBz" firstAttribute="bottom" secondItem="0eZ-o6-zTq" secondAttribute="bottom" id="cxU-X4-tFq"/>
                             <constraint firstItem="0eZ-o6-zTq" firstAttribute="leading" secondItem="GUE-72-pBz" secondAttribute="leading" id="egY-9Q-B4I"/>
                             <constraint firstItem="Rjf-6E-y3v" firstAttribute="top" secondItem="GUE-72-pBz" secondAttribute="top" constant="152" id="sX5-Wg-A9G"/>
@@ -276,7 +281,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bpI-1y-lTY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2964" y="610"/>
+            <point key="canvasLocation" x="2964" y="609.44527736131943"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0hw-aW-GBu">
@@ -316,7 +321,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resources take from:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EpV-0P-Pg5">
                                         <rect key="frame" x="64" y="32" width="162" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="ZZV-DZ-Vze">
@@ -325,37 +330,37 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Icon made by Google from www.flaticon.com" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufB-mV-tM0">
                                                 <rect key="frame" x="0.0" y="0.0" width="234" height="13.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Icon made by Smashicons from www.flaticon.com" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0QO-ws-esZ">
                                                 <rect key="frame" x="0.0" y="13.5" width="260" height="13.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Icon made by Geotatah from www.flaticon.com" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uAl-Y2-7VN">
                                                 <rect key="frame" x="0.0" y="27" width="245" height="13.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Icon made by Freepick from www.flaticon.com" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erL-I4-wyR">
                                                 <rect key="frame" x="0.0" y="40.5" width="242" height="13.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Icon made by Smartline from www.flaticon.com" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDz-nc-Si8">
                                                 <rect key="frame" x="0.0" y="54" width="247" height="13.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Icon made by Becris from www.flaticon.com" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywT-oV-hzv">
                                                 <rect key="frame" x="0.0" y="67.5" width="229.5" height="13.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
