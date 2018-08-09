@@ -22,7 +22,10 @@ class KronosViewController: UIViewController {
         super.viewWillAppear(animated)
         setBirthdayButton.layer.cornerRadius = 10
         dateLabel.text = UserDefaults.standard.string(forKey: "date")  ?? ""
-        ageDecimalLabel.text = "\(updateAge())"
+        
+        let ans = updateAge()
+        ageDecimalLabel.text = "\(ans)"
+        self.view.layoutIfNeeded()
     }
     
     override func didReceiveMemoryWarning() {
