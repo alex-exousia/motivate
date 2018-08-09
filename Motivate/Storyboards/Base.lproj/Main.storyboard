@@ -43,7 +43,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ijb-hZ-26Z">
-                                <rect key="frame" x="29" y="318" width="316" height="61"/>
+                                <rect key="frame" x="29" y="279" width="316" height="100"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="0.95999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -73,7 +73,7 @@
                             <constraint firstItem="i1l-B6-WzO" firstAttribute="top" secondItem="Ijb-hZ-26Z" secondAttribute="bottom" constant="15" id="iUk-Oc-y25"/>
                             <constraint firstItem="3Di-wl-Gcz" firstAttribute="top" secondItem="SDk-WI-PnJ" secondAttribute="top" constant="15" id="jgB-TF-epI"/>
                             <constraint firstItem="Ijb-hZ-26Z" firstAttribute="leading" secondItem="SDk-WI-PnJ" secondAttribute="leading" constant="29" id="x4D-li-gfz"/>
-                            <constraint firstItem="Ijb-hZ-26Z" firstAttribute="top" secondItem="3Di-wl-Gcz" secondAttribute="bottom" constant="92" id="xb6-lX-bbN"/>
+                            <constraint firstItem="Ijb-hZ-26Z" firstAttribute="top" secondItem="3Di-wl-Gcz" secondAttribute="bottom" constant="53" id="xb6-lX-bbN"/>
                             <constraint firstItem="i1l-B6-WzO" firstAttribute="centerX" secondItem="Ijb-hZ-26Z" secondAttribute="centerX" constant="1" id="zx1-mk-cuJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SDk-WI-PnJ"/>
