@@ -26,33 +26,12 @@ class birthdaySetupViewController: UIViewController{
         let dateFormat = DateFormatter()
         dateFormat.dateFormat = "dd-MM-yyyy"
         
-        
         let date = birthdayPicker.date
         let dateString = "\(dateFormat.string(from: date))"
         UserDefaults.standard.set(dateString, forKey: "dateString")
         UserDefaults.standard.set(date, forKey: "date")
         
-//        self.performSegue(withIdentifier: "unwindToKronos", sender: self)
         self.dismiss(animated: true) {
         }
     }
-    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        guard let destination = segue.destination as? KronosViewController else { return }
-//
-//        let dateFormat = DateFormatter()
-//        dateFormat.dateFormat = "dd-MM-yyyy"
-//
-//        
-//        let date = birthdayPicker.date
-//        let dateString = "\(dateFormat.string(from: date))"
-//        UserDefaults.standard.set(dateString, forKey: "dateString")
-//        UserDefaults.standard.set(date, forKey: "date")
-//
-//        destination.birthDate = date
-//
-//        destination.updateAge()
-//
-//        destination.ageDecimalLabel.text = "\(destination.ans)"
-//    }
 }

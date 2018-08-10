@@ -19,8 +19,11 @@ class KronosViewController: UIViewController {
         }
     }
     
+    var timer = Timer()
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: (#selector(updateAge)), userInfo: nil, repeats: true)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -28,9 +31,7 @@ class KronosViewController: UIViewController {
         setBirthdayButton.layer.cornerRadius = 10
         dateLabel.text = UserDefaults.standard.string(forKey: "dateString")  ?? ""
         birthDate = UserDefaults.standard.object(forKey: "date") as? Date ?? Date()
-//        if ans == 0 {
-            
-//        }
+
         updateAge()
     }
     
@@ -38,8 +39,6 @@ class KronosViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-//    @IBAction func unwindBirthdayPicker(_ segue: UIStoryboardSegue) {
-//    }
     
     @IBOutlet weak var ageDecimalLabel: UILabel!
     
@@ -47,10 +46,10 @@ class KronosViewController: UIViewController {
     
     @IBOutlet weak var setBirthdayButton: UIButton!
     
-    func updateAge() {
+    @objc func updateAge() {
         guard let date = birthDate else {return}
         let calendar = NSCalendar.current
-        
+
         let currentDate = Date()
         let dateComparison = calendar.dateComponents([.day], from: date, to: currentDate)
         let answer = (Double(dateComparison.day!) / 365.0)
