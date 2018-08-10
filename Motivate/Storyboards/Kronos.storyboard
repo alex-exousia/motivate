@@ -52,8 +52,8 @@
                                 <color key="textColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9H1-zP-mNG">
-                                <rect key="frame" x="161" y="392.66666666666669" width="54.666666666666657" height="27.666666666666686"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9H1-zP-mNG">
+                                <rect key="frame" x="188.33333333333334" y="406.66666666666669" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="textColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -102,10 +102,10 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ql4-cr-gyU">
                                 <rect key="frame" x="27" y="324" width="320" height="454"/>
                                 <subviews>
-                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="stg-8P-aC8">
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="stg-8P-aC8">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="361"/>
-                                        <date key="date" timeIntervalSinceReferenceDate="555531630.859357">
-                                            <!--2018-08-09 18:20:30 +0000-->
+                                        <date key="date" timeIntervalSinceReferenceDate="189285630.859357">
+                                            <!--2006-12-31 19:20:30 +0000-->
                                         </date>
                                         <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
                                             <!--1970-01-01 11:00:00 +0000-->
@@ -152,11 +152,9 @@
                     <connections>
                         <outlet property="birthdayPicker" destination="stg-8P-aC8" id="85J-9T-neL"/>
                         <outlet property="birthdayPopUpView" destination="ql4-cr-gyU" id="uvL-9E-f2j"/>
-                        <segue destination="Ol2-kl-f5T" kind="unwind" identifier="unwindToKronos" unwindAction="unwindBirthdayPicker:" id="pfX-20-ZHO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="74o-nc-JoT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="Ol2-kl-f5T" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="549.60000000000002" y="-4.0479760119940034"/>
         </scene>

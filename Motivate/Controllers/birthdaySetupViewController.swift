@@ -16,7 +16,6 @@ class birthdaySetupViewController: UIViewController{
         birthdayPopUpView.layer.cornerRadius = 15
         birthdayPopUpView.layer.masksToBounds = true
         birthdayPicker.setValue(UIColor.white, forKeyPath: "textColor")
-
     }
     @IBOutlet weak var birthdayPopUpView: UIView!
     
@@ -24,22 +23,36 @@ class birthdaySetupViewController: UIViewController{
     
     
     @IBAction func doneAction(_ sender: Any) {
-        
-        
-        self.performSegue(withIdentifier: "unwindToKronos", sender: self)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let destination = segue.destination as? KronosViewController else { return }
-        
         let dateFormat = DateFormatter()
         dateFormat.dateFormat = "dd-MM-yyyy"
         
         
         let date = birthdayPicker.date
         let dateString = "\(dateFormat.string(from: date))"
-        UserDefaults.standard.set(dateString, forKey: "date")
+        UserDefaults.standard.set(dateString, forKey: "dateString")
+        UserDefaults.standard.set(date, forKey: "date")
         
-        destination.birthDate = date
+//        self.performSegue(withIdentifier: "unwindToKronos", sender: self)
+        self.dismiss(animated: true) {
+        }
     }
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        guard let destination = segue.destination as? KronosViewController else { return }
+//
+//        let dateFormat = DateFormatter()
+//        dateFormat.dateFormat = "dd-MM-yyyy"
+//
+//        
+//        let date = birthdayPicker.date
+//        let dateString = "\(dateFormat.string(from: date))"
+//        UserDefaults.standard.set(dateString, forKey: "dateString")
+//        UserDefaults.standard.set(date, forKey: "date")
+//
+//        destination.birthDate = date
+//
+//        destination.updateAge()
+//
+//        destination.ageDecimalLabel.text = "\(destination.ans)"
+//    }
 }

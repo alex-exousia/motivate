@@ -31,7 +31,7 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
         
         let settingsStoryboard = UIStoryboard(name: "Settings", bundle: .main)
         let settingsVC = settingsStoryboard.instantiateInitialViewController()
-        let tabThreeBarItem = UITabBarItem(title: "Settings", image: #imageLiteral(resourceName: "TabBar_Settings"), tag: 2) // Add the selected image to the init
+        let tabThreeBarItem = UITabBarItem(title: "Settings", image: #imageLiteral(resourceName: "TabBar_Settings"), tag: 2) 
         settingsVC?.tabBarItem = tabThreeBarItem
         
         let kronosStoryboard = UIStoryboard(name: "Kronos", bundle: .main)
