@@ -13,6 +13,7 @@ import UIKit
 class KronosViewController: UIViewController {
     
     var birthDate: Date?
+    var ans: Double = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,10 +23,10 @@ class KronosViewController: UIViewController {
         super.viewWillAppear(animated)
         setBirthdayButton.layer.cornerRadius = 10
         dateLabel.text = UserDefaults.standard.string(forKey: "date")  ?? ""
-        
-        let ans = updateAge()
-        ageDecimalLabel.text = "\(ans)"
-        self.view.layoutIfNeeded()
+        if ans == 0 {
+            updateAge()
+            ageDecimalLabel.text = "\(ans)"
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -41,17 +42,15 @@ class KronosViewController: UIViewController {
     
     @IBOutlet weak var setBirthdayButton: UIButton!
     
-    func updateAge() -> Double {
-        if birthDate == nil {
-            return 0
-        }
+    func updateAge() {
+        guard let date = birthDate else {return}
         let calendar = NSCalendar.current
         
         let currentDate = Date()
-        let dateComparison = calendar.dateComponents([.day], from: birthDate!, to: currentDate)
+        let dateComparison = calendar.dateComponents([.day], from: date, to: currentDate)
         let answer = (Double(dateComparison.day!) / 365.0)
         
-        return answer
+        ans = answer
     }
     
     // Replace the hour (time) of both dates with 00:00
