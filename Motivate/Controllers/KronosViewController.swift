@@ -23,7 +23,6 @@ class KronosViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: (#selector(updateAge)), userInfo: nil, repeats: true)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -31,7 +30,7 @@ class KronosViewController: UIViewController {
         setBirthdayButton.layer.cornerRadius = 10
         dateLabel.text = UserDefaults.standard.string(forKey: "dateString")  ?? ""
         birthDate = UserDefaults.standard.object(forKey: "date") as? Date ?? Date()
-
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: (#selector(updateAge)), userInfo: nil, repeats: true)
         updateAge()
     }
     
@@ -51,10 +50,15 @@ class KronosViewController: UIViewController {
         let calendar = NSCalendar.current
 
         let currentDate = Date()
-        let dateComparison = calendar.dateComponents([.day], from: date, to: currentDate)
-        let answer = (Double(dateComparison.day!) / 365.0)
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+
+        let difference = currentDate.timeIntervalSince1970 - date.timeIntervalSince1970
+        let difference2 = difference / 3.154e+10
+        let answer = difference2 * 1000
         
         ans = answer
+
     }
     
 }
