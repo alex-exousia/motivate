@@ -9,4 +9,6 @@ target 'Motivate' do
 pod 'YouTubePlayer'
 pod 'DLLocalNotifications'
 pod 'AFDateHelper'
+pod "CountdownView"
+
 end
