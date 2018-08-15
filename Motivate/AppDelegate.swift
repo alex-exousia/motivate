@@ -32,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             return true
         }
         
-        let firstNotification = DLNotification(identifier: "firstNotification", alertTitle: "Notification Alert", alertBody: "You have successfully created a notification", date: dateToRepeat, repeats: .Daily)
+        let firstNotification = DLNotification(identifier: "firstNotification", alertTitle: "ACT TODAY, NOT TOMORROW", alertBody: "Do it! Just do it!", date: dateToRepeat, repeats: .Daily)
         
         let scheduler = DLNotificationScheduler()
         scheduler.scheduleNotification(notification: firstNotification)
