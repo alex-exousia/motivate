@@ -35,7 +35,7 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
         
         let visionStoryboard = UIStoryboard(name: "Vision", bundle: .main)
         let visionVC = visionStoryboard.instantiateInitialViewController()
-        let tabfiveItem = UITabBarItem(title: "Vision", image: #imageLiteral(resourceName: "TabBar_Home"), tag: 4)
+        let tabfiveItem = UITabBarItem(title: "Vision", image: #imageLiteral(resourceName: "mind"), tag: 4)
         visionVC?.tabBarItem = tabfiveItem
         
         self.viewControllers = [visionVC!, categoryVC!, kronosVC!, settingsVC!]
