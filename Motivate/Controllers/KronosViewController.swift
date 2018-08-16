@@ -60,7 +60,6 @@ class KronosViewController: UIViewController {
         dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         
         let difference = currentDate.timeIntervalSince1970 - date.timeIntervalSince1970
-//        let difference = currentDate.timeIntervalSince(1950)
         let difference2 = difference / 3.154e+10
         let answer = difference2 * 1000
         

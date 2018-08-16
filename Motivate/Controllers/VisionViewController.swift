@@ -36,7 +36,7 @@ class VisionViewController: UIViewController {
             CountdownView.shared.colorTransition = true
             CountdownView.shared.backgroundViewColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.85)
 
-            CountdownView.show(countdownFrom: 10.0, spin: true, animation: zoomIn, autoHide: true, completion: nil)
+            CountdownView.show(countdownFrom: 60.0, spin: true, animation: zoomIn, autoHide: true, completion: nil)
     }
     
     

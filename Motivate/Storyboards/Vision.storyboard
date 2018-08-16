@@ -49,12 +49,24 @@
                                     <action selector="startTimerTapped:" destination="3fy-L9-t5X" eventType="touchUpInside" id="3w6-nq-gh5"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="close your eyes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEr-HG-XS6">
+                                <rect key="frame" x="96" y="362" width="183" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fEr-HG-XS6" secondAttribute="height" multiplier="61:7" id="KIu-Tp-9Zd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.70710354956139299" green="0.8434537073118541" blue="0.95195555686950684" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="sCT-yK-0fe" firstAttribute="trailing" secondItem="Czi-ar-P4y" secondAttribute="trailing" constant="88" id="0OS-Uk-Ut7"/>
+                            <constraint firstItem="fEr-HG-XS6" firstAttribute="top" secondItem="qwM-3v-cge" secondAttribute="bottom" id="1xq-Cl-rZr"/>
                             <constraint firstItem="XZ9-EM-nnR" firstAttribute="centerX" secondItem="Czi-ar-P4y" secondAttribute="centerX" id="FGb-bq-McB"/>
+                            <constraint firstItem="fEr-HG-XS6" firstAttribute="centerX" secondItem="mzt-NJ-9bh" secondAttribute="centerX" id="SYa-0M-uPR"/>
                             <constraint firstItem="Czi-ar-P4y" firstAttribute="top" secondItem="sCT-yK-0fe" secondAttribute="top" constant="12" id="Sdf-V9-LJI"/>
+                            <constraint firstItem="fEr-HG-XS6" firstAttribute="centerX" secondItem="qwM-3v-cge" secondAttribute="centerX" id="cLQ-4c-hR3"/>
                             <constraint firstItem="XZ9-EM-nnR" firstAttribute="top" secondItem="Czi-ar-P4y" secondAttribute="bottom" constant="4" id="dIn-Wr-W46"/>
                             <constraint firstItem="Czi-ar-P4y" firstAttribute="leading" secondItem="sCT-yK-0fe" secondAttribute="leading" constant="88" id="e6x-TA-RLQ"/>
                             <constraint firstItem="qwM-3v-cge" firstAttribute="centerY" secondItem="mzt-NJ-9bh" secondAttribute="centerY" id="gFZ-uF-21R"/>
