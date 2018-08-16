@@ -33,7 +33,6 @@ class CategoriesViewController: UIViewController {
             VideosInCategories(image: #imageLiteral(resourceName: "what it all means"),title: "What It All Means", author: "Absolute Motivation", duration: "5:44", link: "https://www.youtube.com/watch?v=wTblbYqQQag"),
             VideosInCategories(image:  #imageLiteral(resourceName: "money doesn't"),title: "Money Doesn't Buy Pleasure", author: "Chispa Motivation", duration: "3:37", link: "https://www.youtube.com/watch?v=pwuuAPsE9UQ"),
             VideosInCategories(image: #imageLiteral(resourceName: "being fulfilled"),title: "Being Fulfilled", author: "Absolute Motivation", duration: "3:50", link: "https://www.youtube.com/watch?v=TFeCuTiitmU"),
-            VideosInCategories(image: #imageLiteral(resourceName: "never truly loved"),title: "Why You Never Truly Loved", author: "Word Porn", duration: "4:50", link: "https://www.youtube.com/watch?v=Yiv9ay1TLPM"),
             VideosInCategories(image: #imageLiteral(resourceName: "self love"),title: "Self Love", author: "HESMotivation", duration: "7:11", link: "https://www.youtube.com/watch?v=xImqF2-oaf8"),
             VideosInCategories(image: #imageLiteral(resourceName: "never unhappy again"),title: "How to NEVER Be Unhappy Again", author: "Word Porn", duration: "2:47", link: "https://www.youtube.com/watch?v=p5zn6pgmlTE"),
             VideosInCategories(image: #imageLiteral(resourceName: "live happy"),title: "How To Live A Happy Life", author: "Habits Of The Wealthy", duration: "6:44", link: "https://www.youtube.com/watch?v=4hfUgPVqBks"),
