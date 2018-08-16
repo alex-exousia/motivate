@@ -10,15 +10,18 @@ import Foundation
 import YouTubePlayer
 import UIKit
 
+
 class CategoriesViewController: UIViewController {
     // MARK: - Properties
     var categories : [Categories] = [
         Categories(image: #imageLiteral(resourceName: "find your purpose"), name: "Find Your Purpose", videos: [
             VideosInCategories(image: #imageLiteral(resourceName: "PURPOSE-1") ,title: "Purpose (Discover Your WHY)", author: "beats Reloaded", duration: "4:02", link: "https://www.youtube.com/watch?v=_yBwzuVI6sA"),
+            VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"), title: "Steve Jobs' Commencement Address", author: "Stanford", duration: "15:04", link: "https://www.youtube.com/watch?v=UF8uR6Z6KLc"),
             VideosInCategories(image: #imageLiteral(resourceName: "the purpose"),title: "The Purpose", author: "Chispa Motivation", duration: "4:04", link: "https://www.youtube.com/watch?v=_LSmJIe4luY"),
             VideosInCategories(image: #imageLiteral(resourceName: "Purpose"),title: "Purpose", author: "RedFrost Motivatinon", duration: "6:19", link: "https://www.youtube.com/watch?v=2uFNfBGC72Q"),
             VideosInCategories(image: #imageLiteral(resourceName: "find purpose"),title: "How To Find Purpose In Your Life", author: "Goalcast", duration: "7:51", link: "https://www.youtube.com/watch?v=58HPpS514Bc"),
             VideosInCategories(image: #imageLiteral(resourceName: "find your why"),title: "How To Find Your Why", author: "HESMotivation", duration: "14:22", link: "https://www.youtube.com/watch?v=YnBs6YGPAu4"),
+            VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"),title: "Here's why you're wasting your life away | Muhammad Ali", author: "Word Porn", duration: "2:51", link: "https://www.youtube.com/watch?v=-Ab3tQ_6P4E"),
             VideosInCategories(image: #imageLiteral(resourceName: "actually find your purpose"),title: "How To Actually Find Your Purpose", author: "Goalcast", duration: "4:20", link: "https://www.youtube.com/watch?v=WO1onAijq88"),
             VideosInCategories(image: #imageLiteral(resourceName: "desire"),title: "What Do You Desire?", author: "Chispa Motivation", duration: "1:51", link: "https://www.youtube.com/watch?v=Nb7EaaF51eY"),
             VideosInCategories(image: #imageLiteral(resourceName: "passion"),title: "Find Your True Passion and Purpose", author: "Habits of The Wealthy", duration: "8:00", link: "https://www.youtube.com/watch?v=6ACLuqeNe10"),
@@ -39,9 +42,11 @@ class CategoriesViewController: UIViewController {
             VideosInCategories(image: #imageLiteral(resourceName: "inner peace"),title: "How I Found True Inner Peace", author: "Goalcast", duration: "5:17", link: "https://www.youtube.com/watch?v=AeyKRl60szQ"),
             VideosInCategories(image: #imageLiteral(resourceName: "letter word"),title: "The 5-Letter Secret to a Worry-Free Life", author: "Goalcast", duration: "2:08", link: "https://www.youtube.com/watch?v=cyaFMYWA0Qk"),
             VideosInCategories(image: #imageLiteral(resourceName: "great day "),title: "It's a Great Day To Be Alive", author: "Goalcast", duration: "9:56", link: "https://www.youtube.com/watch?v=mRR_hNtFJeE"),
+            VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"), title: "Dream", author: "Mateusz M", duration: "6:19", link: "https://www.youtube.com/watch?v=g-jwWYX7Jlo&t=2s"),
             VideosInCategories(image: #imageLiteral(resourceName: "this monk"),title: "This Monk Will Change Your Worldview", author: "Absolute Motivation", duration: "16:03", link: "https://www.youtube.com/watch?v=5hfzEAEMEyY"),
             VideosInCategories(image: #imageLiteral(resourceName: "let go"),title: "Let Go Of Your Past", author: "MotivationGrid", duration: "3:46", link: "https://www.youtube.com/watch?v=CSJTbmFgPV8"),
             VideosInCategories(image: #imageLiteral(resourceName: "let life unfold"),title: "Let Life Unfold Itself To You", author: "Habits of The Wealthy", duration: "13:14", link: "https://www.youtube.com/watch?v=JBnVpmawVdI"),
+            VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"), title: "How to never fear again | Will Smith", author: "Word Porn", duration: "4:01", link: "https://www.youtube.com/watch?v=rfcqhxrnQQQ"),
             VideosInCategories(image: #imageLiteral(resourceName: "what you want"),title: "Focusing On What You Want", author: "Habits of The Wealthy", duration: "11:40", link: "https://www.youtube.com/watch?v=4FYjj9aa75c"),
             VideosInCategories(image: #imageLiteral(resourceName: "past"),title: "Get Over Your Past", author: "HESMotivation", duration: "5:29", link: "https://www.youtube.com/watch?v=DqHHLFktQIk"),
             VideosInCategories(image: #imageLiteral(resourceName: "do the right thing"),title: "How To Always Do The Right Thing", author: "Word Porn", duration: "3:31", link: "https://www.youtube.com/watch?v=Ny_oZca0CcQ"),
@@ -54,10 +59,13 @@ class CategoriesViewController: UIViewController {
             VideosInCategories(image: #imageLiteral(resourceName: "conquer your mind"),title: "How to Conquer Your Mind And Embrace The Suck", author: "Goalcast", duration: "10:32", link: "https://www.youtube.com/watch?v=_J_bOqPhuZA"),
             VideosInCategories(image: #imageLiteral(resourceName: "billionaire"),title: "How I Became A Billionaire By Being Rejected", author: "Word Porn", duration: "2:00", link: "https://www.youtube.com/watch?v=DPlybGCGEwY"),
             VideosInCategories(image: #imageLiteral(resourceName: "they doubted me"),title: "They Doubted Me - This Is What I Did", author: "Word Porn", duration: "1:37", link: "https://www.youtube.com/watch?v=TlTAqToxRLg"),
+            VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"), title: "Tony Robbins: SELF DISCIPLINE", author: "Law of Attraction Coaching", duration: "6:28", link: "https://www.youtube.com/watch?v=BrzcwXvKMaA"),
             VideosInCategories(image: #imageLiteral(resourceName: "self confidence"),title: "Self Confidence", author: "HESMotivation", duration: "11:26", link: "https://www.youtube.com/watch?v=1bJz9yzmKXs"),
             VideosInCategories(image: #imageLiteral(resourceName: "believe in yourself"),title: "Believe In Yourself", author: "HESMotivation", duration: "11:47", link: "https://www.youtube.com/watch?v=QPLPnlWhkA4"),
             VideosInCategories(image: #imageLiteral(resourceName: "change the way you see yourself"),title: "How to Change the Way You See Yourself", author: "Goalcast", duration: "8:07", link: "https://www.youtube.com/watch?v=1IH0digwjds&t=182s")]),
         Categories(image: #imageLiteral(resourceName: "success"), name: "Limits Don't Exist", videos: [
+            VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"), title: "Prove Them Wrong", author: "Be Inspired", duration: "6:59", link: "https://www.youtube.com/watch?v=CPQ1budJRIQ&t=20s"),
+            VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"), title: "Why it Pays to Be Hungry | Les Brown |", author: "Goalcast", duration: "6:35", link: "https://www.youtube.com/watch?v=xFr0FKnaLDk"),
             VideosInCategories(image: #imageLiteral(resourceName: "remember what you are"),title: "Remember What You Are", author: "MulliganBrothers", duration: "4:02", link: "https://www.youtube.com/watch?v=flBd7yQ-bv8"),
             VideosInCategories(image: #imageLiteral(resourceName: "Muhammad Ali"),title: "Muhammad Ali", author: "MulliganBrothers", duration: "3:54", link: "https://www.youtube.com/watch?v=Y2eKdCmKgcM"),
             VideosInCategories(image: #imageLiteral(resourceName: "resiliency"),title: "Resilienzy", author: "Matuesz M", duration: "2:09", link: "https://www.youtube.com/watch?v=UNQhuFL6CWg"),
@@ -66,6 +74,7 @@ class CategoriesViewController: UIViewController {
             VideosInCategories(image: #imageLiteral(resourceName: "process"),title: "The Process", author: "Chispa Motivation", duration: "3:54", link: "https://www.youtube.com/watch?v=350F0VsECvo"),
             VideosInCategories(image: #imageLiteral(resourceName: "contenders"),title: "Contenders", author: "Mateusz M", duration: "3:17", link: "https://www.youtube.com/watch?v=YDSwwEeF_K8"),
             VideosInCategories(image: #imageLiteral(resourceName: "obsession"),title: "Obsession", author: "Chispa Motivation", duration: "6:00", link: "https://www.youtube.com/watch?v=APOKZLzKnFw"),
+            VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"), title: "The Pyschology Of Winners", author: "Goal Achiever", duration: "7:16", link: "https://www.youtube.com/watch?v=L7DWWwdPDgk"),
             VideosInCategories(image: #imageLiteral(resourceName: "effort"),title: "Effort", author: "HESMotivation", duration: "10:39", link: "https://www.youtube.com/watch?v=67fB-mqtXbY"),
             VideosInCategories(image: #imageLiteral(resourceName: "champion"),title: "Be A Champion", author: "HESMotivation", duration: "10:19", link: "https://www.youtube.com/watch?v=TjskLAh1SO8")]),
         Categories(image: #imageLiteral(resourceName: "focus"), name: "No Plan B", videos: [
@@ -78,8 +87,10 @@ class CategoriesViewController: UIViewController {
             VideosInCategories(image: #imageLiteral(resourceName: "be great"),title: "You Can Also Be Great", author: "MulliganBrothers", duration: "3:54", link: "https://www.youtube.com/watch?v=XQnzk334PtA"),
             VideosInCategories(image: #imageLiteral(resourceName: "business"),title: "Business[Warren Buffett]", author: "MulliganBrothers", duration: "3:08", link: "https://www.youtube.com/watch?v=oLWScthpAgY"),
             VideosInCategories(image: #imageLiteral(resourceName: "push yourself today"),title: "Push Yourself Today", author: "Habits Of The Wealthy", duration: "12:20", link: "https://www.youtube.com/watch?v=ULHMQ4ENIyk"),
+            VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"), title: "How Bad Do You Want It?", author: "Matt Howell", duration: "5:50", link: "https://www.youtube.com/watch?v=lsSC2vx7zFQ"),
             VideosInCategories(image: #imageLiteral(resourceName: "how bad do you want it"),title: "How Bad Do You Want It?", author: "Chispa Motivation", duration: "3:41", link: "https://www.youtube.com/watch?v=PX1vUSuFhrA")]),
         Categories(image: #imageLiteral(resourceName: "buyer"), name: "Dream Big", videos: [
+            VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"), title: "Vision", author: "Matuesz M", duration: "11:03", link: "https://www.youtube.com/watch?v=ZOy0YgUDwDg"),
             VideosInCategories(image: #imageLiteral(resourceName: "focus on one thing"),title: "Focus On One Thing", author: "Habits of the Wealthy", duration: "15:47", link: "https://www.youtube.com/watch?v=4cfbvM-TFjY"),
             VideosInCategories(image: #imageLiteral(resourceName: "fears n dreams"),title: "Fears and Dreams", author: "MulliganBrothers", duration: "15:12", link: "https://www.youtube.com/watch?v=9qLx-oy6Zlc"),
             VideosInCategories(image: #imageLiteral(resourceName: "get angry and get to work"),title: "Get Angry & Get To Work", author: "MulliganBrothers", duration: "13:55", link: "https://www.youtube.com/watch?v=BWW-5Q_EzKM"),
@@ -101,17 +112,6 @@ class CategoriesViewController: UIViewController {
             VideosInCategories(image: #imageLiteral(resourceName: "push yourself"),title: "Push Yourself", author: "Motivation2Study", duration: "5:40", link: "https://www.youtube.com/watch?v=d9gwmyPMByM"),
             VideosInCategories(image: #imageLiteral(resourceName: "never give up"),title: "Never Give Up", author: "Ben Lionel Scott", duration: "5:01", link: "https://www.youtube.com/watch?v=PjP9r-HU4fk"),
             VideosInCategories(image: #imageLiteral(resourceName: "deserve more"),title: "Deserve More", author: "Ben Lionel Scott", duration: "4:36", link: "https://www.youtube.com/watch?v=U3Iohi17MeU")])]
-//        Categories(image: #imageLiteral(resourceName: "temporaryBlack"), name: "", videos: [
-//            VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"),title: "NOB", author: "bOB", duration: "3:54", link: "https://www.youtube.com/watch?v=2uFNfBGC72Q"),
-//            VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"),title: "NOB", author: "bOB", duration: "3:54", link: "https://www.youtube.com/watch?v=2uFNfBGC72Q"),
-//            VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"),title: "NOB", author: "bOB", duration: "3:54", link: "https://www.youtube.com/watch?v=2uFNfBGC72Q"),
-//            VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"),title: "NOB", author: "bOB", duration: "3:54", link: "https://www.youtube.com/watch?v=2uFNfBGC72Q"),
-//            VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"),title: "NOB", author: "bOB", duration: "3:54", link: "https://www.youtube.com/watch?v=2uFNfBGC72Q"),
-//            VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"),title: "NOB", author: "bOB", duration: "3:54", link: "https://www.youtube.com/watch?v=2uFNfBGC72Q"),
-//            VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"),title: "NOB", author: "bOB", duration: "3:54", link: "https://www.youtube.com/watch?v=2uFNfBGC72Q"),
-//            VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"),title: "NOB", author: "bOB", duration: "3:54", link: "https://www.youtube.com/watch?v=2uFNfBGC72Q"),
-//            VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"),title: "NOB", author: "bOB", duration: "3:54", link: "https://www.youtube.com/watch?v=2uFNfBGC72Q"),
-//            VideosInCategories(image: #imageLiteral(resourceName: "temporaryBlack"),title: "NOB", author: "bOB", duration: "3:54", link: "https://www.youtube.com/watch?v=2uFNfBGC72Q")])       ]
     
     var lastRowSelected : Int?
     

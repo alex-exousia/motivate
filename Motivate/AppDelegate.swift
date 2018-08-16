@@ -32,10 +32,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             return true
         }
         
-        let firstNotification = DLNotification(identifier: "firstNotification", alertTitle: "ACT TODAY, NOT TOMORROW", alertBody: "Do it! Just do it!", date: dateToRepeat, repeats: .Daily)
+        let notification = DLNotification(identifier: "firstNotification", alertTitle: "", alertBody: "ACT TODAY, NOT TOMORROW", date: dateToRepeat, repeats: .Daily)
         
         let scheduler = DLNotificationScheduler()
-        scheduler.scheduleNotification(notification: firstNotification)
+        scheduler.scheduleNotification(notification: notification)
         
         registerForPushNotifications()
         

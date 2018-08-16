@@ -13,5 +13,4 @@ struct Categories {
     var image: UIImage
     var name: String
     var videos : [VideosInCategories]
-//    var links: [String]
 }

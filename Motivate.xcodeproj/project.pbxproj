@@ -23,15 +23,15 @@
 		C938A143210793B000139709 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C938A141210793B000139709 /* Main.storyboard */; };
 		C938A145210793B000139709 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C938A144210793B000139709 /* Assets.xcassets */; };
 		C938A15821079AA400139709 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C938A15721079AA400139709 /* MainTabBarController.swift */; };
-		C938A15A21079ABB00139709 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C938A15921079ABB00139709 /* HomeViewController.swift */; };
 		C938A15C21079B1900139709 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C938A15B21079B1900139709 /* LaunchScreenViewController.swift */; };
 		C938A15E21079B8500139709 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C938A15D21079B8500139709 /* SettingsViewController.swift */; };
 		C938A16021079BF000139709 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C938A15F21079BF000139709 /* CategoriesViewController.swift */; };
-		C938A1642107A20E00139709 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C938A1632107A20E00139709 /* Home.storyboard */; };
 		C938A1662107A2A800139709 /* Categories.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C938A1652107A2A800139709 /* Categories.storyboard */; };
 		C94AD86C211CB9DA002D9963 /* birthdaySetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94AD86B211CB9DA002D9963 /* birthdaySetupViewController.swift */; };
+		C955CFB1212484A800718ACE /* Vision.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C955CFB0212484A800718ACE /* Vision.storyboard */; };
 		C95ECDCE210D67DC00280631 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95ECDCD210D67DC00280631 /* Categories.swift */; };
 		C95ECDD0210D78BC00280631 /* VideosInCategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95ECDCF210D78BC00280631 /* VideosInCategoriesViewController.swift */; };
+		C99795212124089C002DC778 /* VisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99795202124089C002DC778 /* VisionViewController.swift */; };
 		C9B379CC21095231003674BA /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B379CB21095231003674BA /* Launch Screen.storyboard */; };
 		C9B379D0210A4518003674BA /* fakeLaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B379CF210A4518003674BA /* fakeLaunchScreenViewController.swift */; };
 		C9D594A62113A733004966AF /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D594A52113A733004966AF /* AppUtility.swift */; };
@@ -60,15 +60,15 @@
 		C938A144210793B000139709 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C938A149210793B000139709 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C938A15721079AA400139709 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
-		C938A15921079ABB00139709 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C938A15B21079B1900139709 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 		C938A15D21079B8500139709 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		C938A15F21079BF000139709 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
-		C938A1632107A20E00139709 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		C938A1652107A2A800139709 /* Categories.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Categories.storyboard; sourceTree = "<group>"; };
 		C94AD86B211CB9DA002D9963 /* birthdaySetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = birthdaySetupViewController.swift; sourceTree = "<group>"; };
+		C955CFB0212484A800718ACE /* Vision.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Vision.storyboard; sourceTree = "<group>"; };
 		C95ECDCD210D67DC00280631 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
 		C95ECDCF210D78BC00280631 /* VideosInCategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosInCategoriesViewController.swift; sourceTree = "<group>"; };
+		C99795202124089C002DC778 /* VisionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionViewController.swift; sourceTree = "<group>"; };
 		C9B379CB21095231003674BA /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		C9B379CF210A4518003674BA /* fakeLaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fakeLaunchScreenViewController.swift; sourceTree = "<group>"; };
 		C9D594A52113A733004966AF /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
@@ -155,7 +155,7 @@
 			children = (
 				C90B0DEC21084C42006DA7AA /* Settings.storyboard */,
 				C938A141210793B000139709 /* Main.storyboard */,
-				C938A1632107A20E00139709 /* Home.storyboard */,
+				C955CFB0212484A800718ACE /* Vision.storyboard */,
 				C938A1652107A2A800139709 /* Categories.storyboard */,
 				C9B379CB21095231003674BA /* Launch Screen.storyboard */,
 				C904FEBC211CB16F0034D9EF /* Kronos.storyboard */,
@@ -169,7 +169,7 @@
 				C938A15B21079B1900139709 /* LaunchScreenViewController.swift */,
 				C938A15721079AA400139709 /* MainTabBarController.swift */,
 				C9B379CF210A4518003674BA /* fakeLaunchScreenViewController.swift */,
-				C938A15921079ABB00139709 /* HomeViewController.swift */,
+				C99795202124089C002DC778 /* VisionViewController.swift */,
 				C938A15F21079BF000139709 /* CategoriesViewController.swift */,
 				C95ECDCF210D78BC00280631 /* VideosInCategoriesViewController.swift */,
 				C91934AE21125C7600E9E74E /* ShowVideoViewController.swift */,
@@ -264,7 +264,7 @@
 				C938A145210793B000139709 /* Assets.xcassets in Resources */,
 				C90B0DED21084C42006DA7AA /* Settings.storyboard in Resources */,
 				C938A143210793B000139709 /* Main.storyboard in Resources */,
-				C938A1642107A20E00139709 /* Home.storyboard in Resources */,
+				C955CFB1212484A800718ACE /* Vision.storyboard in Resources */,
 				C9B379CC21095231003674BA /* Launch Screen.storyboard in Resources */,
 				C904FEBD211CB16F0034D9EF /* Kronos.storyboard in Resources */,
 			);
@@ -332,6 +332,7 @@
 				C926E3832109018700312254 /* CategoriesTableViewCell.swift in Sources */,
 				C938A16021079BF000139709 /* CategoriesViewController.swift in Sources */,
 				C95ECDCE210D67DC00280631 /* Categories.swift in Sources */,
+				C99795212124089C002DC778 /* VisionViewController.swift in Sources */,
 				C938A13E210793B000139709 /* AppDelegate.swift in Sources */,
 				C91625A5211A71AE000DC433 /* AboutPopupViewController.swift in Sources */,
 				C9D97775210F741E00FE82E0 /* VideosInCategories.swift in Sources */,
@@ -341,7 +342,6 @@
 				C926E37C2108FF1800312254 /* Video.swift in Sources */,
 				C94AD86C211CB9DA002D9963 /* birthdaySetupViewController.swift in Sources */,
 				C926E38521091F4300312254 /* Quote.swift in Sources */,
-				C938A15A21079ABB00139709 /* HomeViewController.swift in Sources */,
 				C91934AF21125C7600E9E74E /* ShowVideoViewController.swift in Sources */,
 				C91625A7211A84C4000DC433 /* CreditsPopupViewConntroller.swift in Sources */,
 			);

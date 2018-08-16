@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -81,7 +80,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="t15-9F-6jU"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Categories" largeTitleDisplayMode="always" id="esB-z0-XiY"/>
+                    <navigationItem key="navigationItem" title="Life Areas" largeTitleDisplayMode="always" id="esB-z0-XiY"/>
                     <connections>
                         <outlet property="categoriesTableview" destination="r6J-9X-LQn" id="dRe-4H-EW6"/>
                         <segue destination="W6m-Db-7Mh" kind="show" identifier="openToVideos" id="H6S-K5-Cyb"/>

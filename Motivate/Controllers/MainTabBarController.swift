@@ -17,16 +17,10 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        let homeStoryboard = UIStoryboard(name: "Home", bundle: .main)
-        let homeVC = homeStoryboard.instantiateInitialViewController()
-        let tabOneBarItem = UITabBarItem(title: "Home", image: #imageLiteral(resourceName: "TabBar_Home"), tag: 0)
-        homeVC?.tabBarItem = tabOneBarItem
-        
-        
+    
         let categoryStoryboard = UIStoryboard(name: "Categories", bundle: .main)
         let categoryVC = categoryStoryboard.instantiateInitialViewController()
-        let tabTwoBarItem = UITabBarItem(title: "Categories", image: #imageLiteral(resourceName: "TabBar_Discover"), tag: 1)
+        let tabTwoBarItem = UITabBarItem(title: "Life Areas", image: #imageLiteral(resourceName: "TabBar_Discover"), tag: 1)
         categoryVC?.tabBarItem = tabTwoBarItem
         
         let settingsStoryboard = UIStoryboard(name: "Settings", bundle: .main)
@@ -39,7 +33,12 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
         let tabFourBarItem = UITabBarItem(title: "Kronos", image: #imageLiteral(resourceName: "stopwatch"), tag: 3)
         kronosVC?.tabBarItem = tabFourBarItem
         
-        self.viewControllers = [homeVC!, categoryVC!, kronosVC!, settingsVC!]
+        let visionStoryboard = UIStoryboard(name: "Vision", bundle: .main)
+        let visionVC = visionStoryboard.instantiateInitialViewController()
+        let tabfiveItem = UITabBarItem(title: "Vision", image: #imageLiteral(resourceName: "TabBar_Home"), tag: 4)
+        visionVC?.tabBarItem = tabfiveItem
+        
+        self.viewControllers = [visionVC!, categoryVC!, kronosVC!, settingsVC!]
     }
     
         

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3fy-L9-t5X">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Vision View Controller-->
+        <scene sceneID="WfF-6j-6fA">
+            <objects>
+                <viewController id="3fy-L9-t5X" customClass="VisionViewController" customModule="Motivate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mzt-NJ-9bh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VISION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Czi-ar-P4y">
+                                <rect key="frame" x="88" y="32" width="199" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Czi-ar-P4y" secondAttribute="height" multiplier="199:55" id="ygw-Pm-umo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="45"/>
+                                <color key="textColor" red="0.43390469528052722" green="0.5648203997122434" blue="0.77999759117762246" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Visualize your goal daily" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XZ9-EM-nnR">
+                                <rect key="frame" x="96" y="91" width="183" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="XZ9-EM-nnR" secondAttribute="height" multiplier="61:7" id="t4e-EC-Uh2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.86274509803921573" green="0.78431372549019607" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qwM-3v-cge">
+                                <rect key="frame" x="115" y="305" width="144" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qwM-3v-cge" secondAttribute="height" multiplier="48:19" id="d2J-nQ-QQe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="36"/>
+                                <state key="normal" title="DIVE IN">
+                                    <color key="titleColor" red="0.87252684843332573" green="0.8373736977267463" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="startTimerTapped:" destination="3fy-L9-t5X" eventType="touchUpInside" id="3w6-nq-gh5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sCT-yK-0fe" firstAttribute="trailing" secondItem="Czi-ar-P4y" secondAttribute="trailing" constant="88" id="0OS-Uk-Ut7"/>
+                            <constraint firstItem="XZ9-EM-nnR" firstAttribute="centerX" secondItem="Czi-ar-P4y" secondAttribute="centerX" id="FGb-bq-McB"/>
+                            <constraint firstItem="Czi-ar-P4y" firstAttribute="top" secondItem="sCT-yK-0fe" secondAttribute="top" constant="12" id="Sdf-V9-LJI"/>
+                            <constraint firstItem="XZ9-EM-nnR" firstAttribute="top" secondItem="Czi-ar-P4y" secondAttribute="bottom" constant="4" id="dIn-Wr-W46"/>
+                            <constraint firstItem="Czi-ar-P4y" firstAttribute="leading" secondItem="sCT-yK-0fe" secondAttribute="leading" constant="88" id="e6x-TA-RLQ"/>
+                            <constraint firstItem="qwM-3v-cge" firstAttribute="centerY" secondItem="mzt-NJ-9bh" secondAttribute="centerY" id="gFZ-uF-21R"/>
+                            <constraint firstItem="XZ9-EM-nnR" firstAttribute="centerX" secondItem="mzt-NJ-9bh" secondAttribute="centerX" id="hwx-q8-jpy"/>
+                            <constraint firstItem="qwM-3v-cge" firstAttribute="centerX" secondItem="mzt-NJ-9bh" secondAttribute="centerX" id="jXL-e8-4Kz"/>
+                            <constraint firstItem="Czi-ar-P4y" firstAttribute="centerX" secondItem="mzt-NJ-9bh" secondAttribute="centerX" id="lev-vX-ipL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sCT-yK-0fe"/>
+                    </view>
+                    <connections>
+                        <outlet property="diveInButton" destination="qwM-3v-cge" id="ptn-FV-VyB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bni-Hb-vqy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="92" y="179.46026986506749"/>
+        </scene>
+    </scenes>
+</document>
