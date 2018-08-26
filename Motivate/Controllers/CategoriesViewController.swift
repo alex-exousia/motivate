@@ -10,7 +10,6 @@ import Foundation
 import YouTubePlayer
 import UIKit
 
-
 class CategoriesViewController: UIViewController {
     // MARK: - Properties
     var categories : [Categories] = [
@@ -138,7 +137,7 @@ class CategoriesViewController: UIViewController {
     // MARK: - Methods
     
     // MARK: - IBActions
-    
+
 }
 
 
@@ -186,5 +185,4 @@ extension CategoriesViewController: UITableViewDelegate, UITableViewDataSource {
         }
         
     }
-    
 }
