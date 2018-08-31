@@ -53,7 +53,6 @@ class KronosViewController: UIViewController {
     
     @objc func updateAge() {
         guard let date = birthDate else {return}
-//        let calendar = NSCalendar.current
 
         let currentDate = Date()
         let dateFormatter = DateFormatter()

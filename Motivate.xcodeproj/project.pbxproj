@@ -173,12 +173,12 @@
 				C938A15F21079BF000139709 /* CategoriesViewController.swift */,
 				C95ECDCF210D78BC00280631 /* VideosInCategoriesViewController.swift */,
 				C91934AE21125C7600E9E74E /* ShowVideoViewController.swift */,
-				C938A15D21079B8500139709 /* SettingsViewController.swift */,
-				C91625A4211A71AE000DC433 /* AboutPopupViewController.swift */,
-				C91625A6211A84C4000DC433 /* CreditsPopupViewConntroller.swift */,
-				C90EFACF211B88A300295F22 /* rateAppViewController.swift */,
 				C904FEBE211CB1CB0034D9EF /* KronosViewController.swift */,
 				C94AD86B211CB9DA002D9963 /* birthdaySetupViewController.swift */,
+				C938A15D21079B8500139709 /* SettingsViewController.swift */,
+				C90EFACF211B88A300295F22 /* rateAppViewController.swift */,
+				C91625A4211A71AE000DC433 /* AboutPopupViewController.swift */,
+				C91625A6211A84C4000DC433 /* CreditsPopupViewConntroller.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";

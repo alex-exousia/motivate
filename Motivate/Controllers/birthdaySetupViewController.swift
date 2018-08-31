@@ -10,6 +10,8 @@ import Foundation
 import UIKit
 
 class birthdaySetupViewController: UIViewController{
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,10 +23,10 @@ class birthdaySetupViewController: UIViewController{
     
     @IBOutlet weak var birthdayPicker: UIDatePicker!
     
-    
     @IBAction func doneAction(_ sender: Any) {
         let dateFormat = DateFormatter()
         dateFormat.dateFormat = "dd-MM-yyyy"
+
         
         let date = birthdayPicker.date
         let dateString = "\(dateFormat.string(from: date))"
