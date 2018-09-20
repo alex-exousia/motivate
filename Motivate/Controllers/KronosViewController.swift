@@ -29,15 +29,15 @@ class KronosViewController: UIViewController {
         super.viewWillAppear(animated)
         setBirthdayButton.layer.cornerRadius = 10
         
-        if birthDate == nil {
-            dateLabel.text = "date of birth"
-            ageDecimalLabel.text = "Your age represented in a new way"
-        } else {
+//        if birthDate == nil {
+//            dateLabel.text = "date of birth"
+//            ageDecimalLabel.text = "Your age represented in a new way"
+//        } else {
             dateLabel.text = UserDefaults.standard.string(forKey: "dateString")  ?? ""
             birthDate = UserDefaults.standard.object(forKey: "date") as? Date ?? Date()
             updateAge()
             timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: (#selector(updateAge)), userInfo: nil, repeats: true)
-        }
+//        }
     }
     
     override func didReceiveMemoryWarning() {

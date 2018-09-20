@@ -1,5 +1,5 @@
 //
-//  CategoriesViewController.swift
+//  LifeAreasViewController.swift
 //  Motivate
 //
 //  Created by Alexander Niehaus on 7/24/18.
@@ -10,7 +10,7 @@ import Foundation
 import YouTubePlayer
 import UIKit
 
-class CategoriesViewController: UIViewController {
+class LifeAreasViewController: UIViewController {
     // MARK: - Properties
     var categories : [Categories] = [
         Categories(image: #imageLiteral(resourceName: "find your purpose"), name: "Find Your Purpose", videos: [
@@ -141,7 +141,7 @@ class CategoriesViewController: UIViewController {
 }
 
 
-extension CategoriesViewController: UITableViewDelegate, UITableViewDataSource {
+extension LifeAreasViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return categories.count
         
@@ -176,7 +176,7 @@ extension CategoriesViewController: UITableViewDelegate, UITableViewDataSource {
             guard let indexPath = categoriesTableview.indexPathForSelectedRow else { return }
             let videosInCategories = categories[indexPath.row].videos
             
-            let destination = segue.destination as! VideosInCategoriesViewController
+            let destination = segue.destination as! VideosInLifeAreasViewController
             destination.videosInCategories = videosInCategories
             destination.categoryTitle = categories[lastRowSelected!].name
             

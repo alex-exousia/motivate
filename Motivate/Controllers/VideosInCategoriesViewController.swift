@@ -1,5 +1,5 @@
 //
-//  VideosInCategoriesViewController.swift
+//  VideosInLifeAreasViewController.swift
 //  Motivate
 //
 //  Created by Alexander Niehaus on 7/28/18.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class VideosInCategoriesViewController: UIViewController {
+class VideosInLifeAreasViewController: UIViewController {
     // MARK: - Properties
     
     var videosInCategories = [VideosInCategories]()
@@ -50,7 +50,7 @@ class VideosInCategoriesViewController: UIViewController {
 }
     
 
-extension VideosInCategoriesViewController: UITableViewDelegate, UITableViewDataSource {
+extension VideosInLifeAreasViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             return videosInCategories.count
     }
