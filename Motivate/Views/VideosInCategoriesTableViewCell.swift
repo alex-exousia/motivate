@@ -10,6 +10,10 @@ import Foundation
 import UIKit
 import YouTubePlayer
 
+protocol VideosInCategoriesTableViewCellDelegate: class {
+    func didTapStarButton(_ starButton: UIButton, on cell: VideosInCategoriesTableViewCell)
+}
+
 class VideosInCategoriesTableViewCell: UITableViewCell {
     
     @IBOutlet weak var videoPreviewImageView: UIImageView!
@@ -19,5 +23,22 @@ class VideosInCategoriesTableViewCell: UITableViewCell {
     @IBOutlet weak var authorLabel: UILabel!
     
     @IBOutlet weak var durationLabel: UILabel!
+    
+    @IBOutlet weak var starButton: UIButton!
+    
+    var isActive:Bool = false
+    
+    @IBAction func starButtonTapped(_ sender: Any) {
+        
+        if isActive {
+            isActive = false
+            starButton.setImage(UIImage(named: "star(2)"), for: .normal)
+        } else {
+            isActive = true
+            starButton.setImage(UIImage(named: "star(3)"), for: .normal)
+
+        }
+    }
+    
     
 }

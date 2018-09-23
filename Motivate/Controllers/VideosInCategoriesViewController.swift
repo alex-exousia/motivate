@@ -21,8 +21,6 @@ class VideosInLifeAreasViewController: UIViewController {
     
     @IBOutlet weak var videosInCategoryTableView: UITableView!
     
-    @IBOutlet weak var starButton: UIButton!
-
     // MARK: - View Life Cycle Methods
     
     override func viewDidLoad() {
@@ -44,9 +42,7 @@ class VideosInLifeAreasViewController: UIViewController {
     
     // MARK: - IBActions
     
-    @IBAction func starButtonTapped(_ sender: Any) {
-        print("suck a dick")
-    }
+
 }
     
 
