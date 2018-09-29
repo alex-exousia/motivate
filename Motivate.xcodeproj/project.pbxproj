@@ -30,7 +30,7 @@
 		C94AD86C211CB9DA002D9963 /* birthdaySetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94AD86B211CB9DA002D9963 /* birthdaySetupViewController.swift */; };
 		C955CFB1212484A800718ACE /* Vision.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C955CFB0212484A800718ACE /* Vision.storyboard */; };
 		C95ECDCE210D67DC00280631 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95ECDCD210D67DC00280631 /* Categories.swift */; };
-		C95ECDD0210D78BC00280631 /* VideosInCategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95ECDCF210D78BC00280631 /* VideosInCategoriesViewController.swift */; };
+		C95ECDD0210D78BC00280631 /* VideosInLifeAreasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95ECDCF210D78BC00280631 /* VideosInLifeAreasViewController.swift */; };
 		C99795212124089C002DC778 /* VisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99795202124089C002DC778 /* VisionViewController.swift */; };
 		C9B379CC21095231003674BA /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B379CB21095231003674BA /* Launch Screen.storyboard */; };
 		C9B379D0210A4518003674BA /* fakeLaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B379CF210A4518003674BA /* fakeLaunchScreenViewController.swift */; };
@@ -67,7 +67,7 @@
 		C94AD86B211CB9DA002D9963 /* birthdaySetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = birthdaySetupViewController.swift; sourceTree = "<group>"; };
 		C955CFB0212484A800718ACE /* Vision.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Vision.storyboard; sourceTree = "<group>"; };
 		C95ECDCD210D67DC00280631 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
-		C95ECDCF210D78BC00280631 /* VideosInCategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosInCategoriesViewController.swift; sourceTree = "<group>"; };
+		C95ECDCF210D78BC00280631 /* VideosInLifeAreasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosInLifeAreasViewController.swift; sourceTree = "<group>"; };
 		C99795202124089C002DC778 /* VisionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionViewController.swift; sourceTree = "<group>"; };
 		C9B379CB21095231003674BA /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		C9B379CF210A4518003674BA /* fakeLaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fakeLaunchScreenViewController.swift; sourceTree = "<group>"; };
@@ -171,7 +171,7 @@
 				C9B379CF210A4518003674BA /* fakeLaunchScreenViewController.swift */,
 				C99795202124089C002DC778 /* VisionViewController.swift */,
 				C938A15F21079BF000139709 /* LifeAreasViewController.swift */,
-				C95ECDCF210D78BC00280631 /* VideosInCategoriesViewController.swift */,
+				C95ECDCF210D78BC00280631 /* VideosInLifeAreasViewController.swift */,
 				C91934AE21125C7600E9E74E /* ShowVideoViewController.swift */,
 				C904FEBE211CB1CB0034D9EF /* KronosViewController.swift */,
 				C94AD86B211CB9DA002D9963 /* birthdaySetupViewController.swift */,
@@ -322,7 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C95ECDD0210D78BC00280631 /* VideosInCategoriesViewController.swift in Sources */,
+				C95ECDD0210D78BC00280631 /* VideosInLifeAreasViewController.swift in Sources */,
 				C9B379D0210A4518003674BA /* fakeLaunchScreenViewController.swift in Sources */,
 				C9D594A62113A733004966AF /* AppUtility.swift in Sources */,
 				C90EFAD0211B88A300295F22 /* rateAppViewController.swift in Sources */,

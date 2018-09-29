@@ -12,5 +12,6 @@ import UIKit
 struct Categories {
     var image: UIImage
     var name: String
+    var rowNumber: Int
     var videos : [VideosInCategories]
 }

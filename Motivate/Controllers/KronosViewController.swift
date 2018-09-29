@@ -13,6 +13,7 @@ import UIKit
 class KronosViewController: UIViewController {
     
     var birthDate: Date?
+    
     var ans: Double = 0 {
         didSet {
             self.ageDecimalLabel.text = "\(ans)"
@@ -23,6 +24,8 @@ class KronosViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -33,6 +36,7 @@ class KronosViewController: UIViewController {
 //            dateLabel.text = "date of birth"
 //            ageDecimalLabel.text = "Your age represented in a new way"
 //        } else {
+
             dateLabel.text = UserDefaults.standard.string(forKey: "dateString")  ?? ""
             birthDate = UserDefaults.standard.object(forKey: "date") as? Date ?? Date()
             updateAge()
@@ -50,10 +54,12 @@ class KronosViewController: UIViewController {
     @IBOutlet weak var dateLabel: UILabel!
     
     @IBOutlet weak var setBirthdayButton: UIButton!
+
     
     @objc func updateAge() {
+//        if birthDate == nil {
         guard let date = birthDate else {return}
-
+        
         let currentDate = Date()
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
@@ -63,7 +69,8 @@ class KronosViewController: UIViewController {
         let answer = difference2 * 1000
         
         ans = answer
-
+//        } else {
+//            ageDecimalLabel.text = "Set your birthday first"
+//        }
     }
-    
 }

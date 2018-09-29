@@ -39,6 +39,15 @@ class VideosInLifeAreasViewController: UIViewController {
     }
     
     // MARK: - Methods
+   // TBD
+    /*
+    func doSomething(cell: UITableViewCell){
+        
+        let indexPathClicked = videosInCategoryTableView.indexPath(for: cell)
+        print(indexPathClicked)
+        
+    }
+ */
     
     // MARK: - IBActions
     
@@ -53,6 +62,7 @@ extension VideosInLifeAreasViewController: UITableViewDelegate, UITableViewDataS
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: "videosInCategoriesTableViewCell", for: indexPath) as! VideosInCategoriesTableViewCell
+            cell.link = self
             let video = videosInCategories[indexPath.row]
     
             cell.titleLabel.text = video.title

@@ -26,7 +26,6 @@ class birthdaySetupViewController: UIViewController{
     @IBAction func doneAction(_ sender: Any) {
         let dateFormat = DateFormatter()
         dateFormat.dateFormat = "dd-MM-yyyy"
-
         
         let date = birthdayPicker.date
         let dateString = "\(dateFormat.string(from: date))"
