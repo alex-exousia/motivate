@@ -38,7 +38,4 @@ class VisionViewController: UIViewController {
 
             CountdownView.show(countdownFrom: 60.0, spin: true, animation: zoomIn, autoHide: true, completion: nil)
     }
-    
-    
-    
 }

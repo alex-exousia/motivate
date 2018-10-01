@@ -39,16 +39,6 @@ class VideosInLifeAreasViewController: UIViewController {
     }
     
     // MARK: - Methods
-   // TBD
-    /*
-    func doSomething(cell: UITableViewCell){
-        
-        let indexPathClicked = videosInCategoryTableView.indexPath(for: cell)
-        print(indexPathClicked)
-        
-    }
- */
-    
     // MARK: - IBActions
     
 

@@ -10,9 +10,6 @@ import Foundation
 import UIKit
 import YouTubePlayer
 
-//protocol VideosInCategoriesTableViewCellDelegate: class {
-//    func didTapStarButton(_ starButton: UIButton, on cell: VideosInCategoriesTableViewCell)
-//}
 
 class VideosInCategoriesTableViewCell: UITableViewCell {
     
@@ -32,7 +29,6 @@ class VideosInCategoriesTableViewCell: UITableViewCell {
 
     
     @IBAction func starButtonTapped(_ sender: Any) {
-//        link?.doSomething(cell: self)
         if isActive {
             isActive = false
             starButton.setImage(UIImage(named: "star(2)"), for: .normal)
