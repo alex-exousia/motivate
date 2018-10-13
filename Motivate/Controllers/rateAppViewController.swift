@@ -20,7 +20,7 @@ class rateAppViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-        let url = URL(string: "https://en.wikipedia.org/wiki/Mud%C3%A9jar_revolt_of_1264%E2%80%931266")
+        let url = URL(string: "https://itunes.apple.com/us/app/mindup-daily-motivation/id1423960043?ls=1&mt=8")
         let request = URLRequest(url: url!)
         
         webView.load(request)

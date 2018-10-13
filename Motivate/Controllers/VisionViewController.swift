@@ -8,17 +8,15 @@
 
 import UIKit
 import CountdownView
+import AVFoundation
 
 class VisionViewController: UIViewController {
-    
+        
     let zoomIn = CountdownView.Animation.zoomIn
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        diveInButton.layer.cornerRadius = 15
-        diveInButton.layer.masksToBounds = true
-        
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,6 +34,11 @@ class VisionViewController: UIViewController {
             CountdownView.shared.colorTransition = true
             CountdownView.shared.backgroundViewColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.85)
 
-            CountdownView.show(countdownFrom: 60.0, spin: true, animation: zoomIn, autoHide: true, completion: nil)
+            CountdownView.show(countdownFrom: 20.0, spin: true, animation: zoomIn, autoHide: true, completion: nil)
+            //Timer ending sound set up in cocoa pod
+
     }
+    
+
+    
 }

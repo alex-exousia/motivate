@@ -6,7 +6,7 @@
 //
 //
 
-
+import AVFoundation
 import UIKit
 
 public class CountdownView: UIView {
@@ -401,6 +401,7 @@ public class CountdownView: UIView {
         CountdownView.hide(animation: dismissStyleAnimation, options: (duration: 0.5, delay: 0), completion: currentCompletion)
         CountdownView.shared.currentCompletion = nil
         CountdownView.shared.timedTask.cancel()
+        
     }
     
     // MARK: Util
@@ -507,6 +508,9 @@ extension CountdownView {
         case .zoomOut:
             view.alpha = 1
             view.transform = CGAffineTransform.identity
+            let systemSoundID: SystemSoundID = 1304
+            AudioServicesPlaySystemSound (systemSoundID)
+            print("Music shouldplay")
             UIView.animate(withDuration: options.duration, delay: options.delay, usingSpringWithDamping: 0.8,
                            initialSpringVelocity: -0.8, options: .curveEaseOut, animations: {
                             view.transform = CGAffineTransform(scaleX: 0.01, y: 0.01)

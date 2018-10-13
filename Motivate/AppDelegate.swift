@@ -16,7 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var orientationLock = UIInterfaceOrientationMask.all
     
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         Thread.sleep(forTimeInterval: 0.0)
         // Override point for customization after application launch.
@@ -28,7 +27,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         guard let dateToRepeat = components.date else {
             print("failed to create date from components")
-            
             return true
         }
         
@@ -36,9 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let scheduler = DLNotificationScheduler()
         scheduler.scheduleNotification(notification: notification)
-        
         registerForPushNotifications()
-        
         return true
     }
     

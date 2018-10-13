@@ -25,29 +25,22 @@ class KronosViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setBirthdayButton.layer.cornerRadius = 10
         
-//        if birthDate == nil {
-//            dateLabel.text = "date of birth"
-//            ageDecimalLabel.text = "Your age represented in a new way"
-//        } else {
-
             dateLabel.text = UserDefaults.standard.string(forKey: "dateString")  ?? ""
             birthDate = UserDefaults.standard.object(forKey: "date") as? Date ?? Date()
             updateAge()
             timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: (#selector(updateAge)), userInfo: nil, repeats: true)
-//        }
+
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
     
     @IBOutlet weak var ageDecimalLabel: UILabel!
     
@@ -55,9 +48,8 @@ class KronosViewController: UIViewController {
     
     @IBOutlet weak var setBirthdayButton: UIButton!
 
-    
     @objc func updateAge() {
-//        if birthDate == nil {
+
         guard let date = birthDate else {return}
         
         let currentDate = Date()
@@ -69,8 +61,5 @@ class KronosViewController: UIViewController {
         let answer = difference2 * 1000
         
         ans = answer
-//        } else {
-//            ageDecimalLabel.text = "Set your birthday first"
-//        }
     }
 }

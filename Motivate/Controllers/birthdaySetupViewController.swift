@@ -11,7 +11,6 @@ import UIKit
 
 class birthdaySetupViewController: UIViewController{
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         

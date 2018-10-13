@@ -14,7 +14,7 @@ class SettingsTableViewController: UITableViewController {
     
     // MARK: - Properties
     
-    let link = ["MindUP link"]
+    let link = ["https://itunes.apple.com/us/app/mindup-daily-motivation/id1423960043?ls=1&mt=8"]
     
     // MARK: - IBOutlets
     
