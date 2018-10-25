@@ -2,12 +2,14 @@ PODS:
   - AFDateHelper (4.2.7)
   - CountdownView (0.1.2)
   - DLLocalNotifications (0.06)
+  - SwiftyJSON (4.1.0)
   - YouTubePlayer (0.4.0)
 
 DEPENDENCIES:
   - AFDateHelper
   - CountdownView
   - DLLocalNotifications
+  - SwiftyJSON
   - YouTubePlayer
 
 SPEC REPOS:
@@ -15,14 +17,16 @@ SPEC REPOS:
     - AFDateHelper
     - CountdownView
     - DLLocalNotifications
+    - SwiftyJSON
     - YouTubePlayer
 
 SPEC CHECKSUMS:
   AFDateHelper: 4ad66fb19503041fbba8a3018cb7ef9c71b2ff88
   CountdownView: 0f0f5cb346ca5d99342703c834d89598ca1893bd
   DLLocalNotifications: 751d53da896bc396bb23d4d3570b7fd3c7654e4e
+  SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
   YouTubePlayer: 028451f6772f372d4759866db99824c676ac1473
 
-PODFILE CHECKSUM: 076a1f72dadea8eeae9545f6075a5c0ed15ec89d
+PODFILE CHECKSUM: 4eec40d3019138ea29a828610b79f0da86369763
 
 COCOAPODS: 1.5.3

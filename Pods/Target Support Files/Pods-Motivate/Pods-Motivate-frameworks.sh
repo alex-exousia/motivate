@@ -146,12 +146,14 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AFDateHelper/AFDateHelper.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CountdownView/CountdownView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/DLLocalNotifications/DLLocalNotifications.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YouTubePlayer/YouTubePlayer.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AFDateHelper/AFDateHelper.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CountdownView/CountdownView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/DLLocalNotifications/DLLocalNotifications.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YouTubePlayer/YouTubePlayer.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

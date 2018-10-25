@@ -10,5 +10,15 @@ pod 'YouTubePlayer'
 pod 'DLLocalNotifications'
 pod 'AFDateHelper'
 pod "CountdownView"
+pod 'SwiftyJSON'
 
 end
+
+target 'Widget' do
+    
+    use_frameworks!
+    
+pod 'SwiftyJSON'
+
+end
+
