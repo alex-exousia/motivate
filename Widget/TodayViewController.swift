@@ -12,10 +12,9 @@ import SwiftyJSON
 
 class TodayViewController: UIViewController, NCWidgetProviding {
     
-    let randomIndex = Int(arc4random_uniform(UInt32(101)))
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+    
         // Do any additional setup after loading the view from its nib.
         
         guard let jsonURL = Bundle.main.url(forResource: "quotes", withExtension: "json") else {
@@ -26,8 +25,10 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         
         let userData = try! JSON(data: jsonData)
         
-        quoteLabel.text = userData["quotes"][shuffle()]["quote"].stringValue
-        authorLabel.text = userData["quotes"][shuffle()]["author"].stringValue
+        let x = shuffle()
+        quoteLabel.text = userData["quotes"][x]["quote"].stringValue
+        authorLabel.text = userData["quotes"][x]["author"].stringValue
+        
     }
         
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
@@ -45,14 +46,14 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     @IBOutlet weak var authorLabel: UILabel!
     
     func shuffle() -> Int{
-        let x = Int.random(in: 0 ..< 101)
-        
+        let x = Int.random(in: 0 ..< 100)
         return x
         
     }
     
     @IBAction func refreshQuote(_ sender: Any) {
         shuffle()
+        viewDidLoad()
     }
     
 }

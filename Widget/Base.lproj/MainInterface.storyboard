@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,31 +18,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="300" height="160"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQZ-py-Wnl" userLabel="Quote">
-                                <rect key="frame" x="16" y="5" width="268" height="109.5"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                                <color key="textColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGP-Zh-5wE" userLabel="Author">
-                                <rect key="frame" x="16" y="121.5" width="118" height="17.5"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                <color key="textColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ltc-wY-f0J">
                                 <rect key="frame" x="0.0" y="0.0" width="300" height="160"/>
                                 <connections>
                                     <action selector="refreshQuote:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="zS1-wS-Mfz"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="jQZ-py-Wnl" userLabel="Quote">
+                                <rect key="frame" x="16" y="5" width="268" height="114.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGP-Zh-5wE" userLabel="Author">
+                                <rect key="frame" x="16" y="126.5" width="184" height="17.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <constraints>
                             <constraint firstItem="ltc-wY-f0J" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" id="3RL-1x-0pH"/>
-                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="bGP-Zh-5wE" secondAttribute="trailing" constant="166" id="E8j-D9-HgZ"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="bGP-Zh-5wE" secondAttribute="trailing" constant="100" id="E8j-D9-HgZ"/>
                             <constraint firstItem="bGP-Zh-5wE" firstAttribute="top" secondItem="jQZ-py-Wnl" secondAttribute="bottom" constant="7" id="I7m-VX-8pm"/>
                             <constraint firstItem="ltc-wY-f0J" firstAttribute="trailing" secondItem="ssy-KU-ocm" secondAttribute="trailing" id="IOH-jp-MaI"/>
-                            <constraint firstItem="ssy-KU-ocm" firstAttribute="bottom" secondItem="bGP-Zh-5wE" secondAttribute="bottom" constant="21" id="JBL-nf-Spm"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="bottom" secondItem="bGP-Zh-5wE" secondAttribute="bottom" constant="16" id="JBL-nf-Spm"/>
                             <constraint firstItem="ltc-wY-f0J" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" id="KjD-9L-j7u"/>
                             <constraint firstItem="jQZ-py-Wnl" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="16" id="QKq-PM-6B1"/>
                             <constraint firstItem="jQZ-py-Wnl" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" constant="5" id="gMb-GV-KHD"/>
