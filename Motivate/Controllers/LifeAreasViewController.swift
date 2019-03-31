@@ -141,7 +141,6 @@ class LifeAreasViewController: UIViewController {
 extension LifeAreasViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return categories.count
-        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -159,9 +158,9 @@ extension LifeAreasViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-                lastRowSelected = indexPath.row
+        print(indexPath.row)
+        lastRowSelected = indexPath.row
         self.performSegue(withIdentifier: "openToVideos", sender: nil)
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -172,10 +171,10 @@ extension LifeAreasViewController: UITableViewDelegate, UITableViewDataSource {
             
             guard let indexPath = categoriesTableview.indexPathForSelectedRow else { return }
             let videosInCategories = categories[indexPath.row].videos
-            
             let destination = segue.destination as! VideosInLifeAreasViewController
             destination.videosInCategories = videosInCategories
             destination.categoryTitle = categories[lastRowSelected!].name
+            print(categories[lastRowSelected!].name)
             
         default:
             print("unexpected segue identifier")

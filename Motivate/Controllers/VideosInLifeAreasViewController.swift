@@ -11,7 +11,7 @@ import UIKit
 
 class VideosInLifeAreasViewController: UIViewController {
     // MARK: - Properties
-    
+    var video: VideosInCategories?
     var videosInCategories = [VideosInCategories]()
     var categoryTitle: String!
     
