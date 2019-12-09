@@ -314,6 +314,7 @@
 				TargetAttributes = {
 					C938A139210793B000139709 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1120;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -325,6 +326,7 @@
 					};
 					C9E81FC72181B34E00C5F06B = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -638,7 +640,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlexanderNiehaus.MindUP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -660,7 +662,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlexanderNiehaus.MindUP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -683,7 +685,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlexanderNiehaus.MindUP.Widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -705,7 +707,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlexanderNiehaus.MindUP.Widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

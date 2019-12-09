@@ -127,7 +127,7 @@ class LifeAreasViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         AppUtility.lockOrientation(.portrait)
-        categoriesTableview.separatorStyle = UITableViewCellSeparatorStyle.none
+        categoriesTableview.separatorStyle = UITableViewCell.SeparatorStyle.none
 
     }
     

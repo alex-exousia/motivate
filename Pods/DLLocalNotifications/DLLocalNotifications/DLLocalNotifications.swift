@@ -120,7 +120,7 @@ public class DLNotificationScheduler{
             
             content.body = notification.alertBody!
             
-            content.sound = (notification.soundName == nil) ? UNNotificationSound.default() : UNNotificationSound.init(named: notification.soundName!)
+            content.sound = (notification.soundName == nil) ? UNNotificationSound.default : UNNotificationSound.init(named: convertToUNNotificationSoundName(notification.soundName!))
             
             if !(notification.attachments == nil){ content.attachments = notification.attachments! }
             
@@ -323,3 +323,8 @@ public class DLNotification {
     
 }
 
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToUNNotificationSoundName(_ input: String) -> UNNotificationSoundName {
+	return UNNotificationSoundName(rawValue: input)
+}
